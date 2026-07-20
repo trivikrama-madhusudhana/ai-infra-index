@@ -1,5 +1,10 @@
 # Contributing
 
+**We want your input, and this project is better for scrutiny.** Challenge a number you think is
+wrong, point us at a better or missing source, flag a datacenter or deal we have not captured, or
+argue for a smarter way to weigh the score. Open an issue for a correction or an idea, or send a
+pull request against the ledger. Nothing here is settled.
+
 This project tracks the physical infrastructure of frontier AI labs. Its whole
 credibility rests on two things: every number traces to a public source, and the
 scoring logic is deterministic code anyone can rerun. These rules protect both.

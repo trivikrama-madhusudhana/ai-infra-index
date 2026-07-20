@@ -11,6 +11,11 @@ Everyone benchmarks the models. Almost nobody tracks the megawatts. This is a sc
 physical AI race, power capacity, datacenters, owned compute, and energy contracts, built so that
 every number traces to a public source and the score is deterministic code you can rerun.
 
+> **This is an open work in progress and we are actively seeking input.** If a number looks wrong,
+> challenge it. If you have a better or missing source, send it. If you think the scoring should
+> weigh things differently, make the case. [Open an issue](https://github.com/trivikrama-madhusudhana/ai-infra-index/issues)
+> or a pull request. Every fact traces to a public source precisely so it can be checked and argued with.
+
 Two rules hold the whole thing up. Every fact carries the URL it came from, a verbatim excerpt,
 and a computed source tier. And the score is a pure function of the ledger plus a versioned YAML
 rubric, with no model and no network anywhere in the path.

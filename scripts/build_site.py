@@ -167,6 +167,8 @@ PAGE = """<!doctype html>
 </main>
 <footer>
   <p>Every number links to a public source. Unknown means unknown. We never estimate.</p>
+  <p><strong>This is an open work in progress and we want your input.</strong> Challenge a number, send a
+  better source, or propose a smarter way to score. <a href="{repo}/issues">Open an issue or a pull request</a>.</p>
   <p class="muted">Scores come from a deterministic engine anyone can rerun: <code>python scripts/score.py --as-of {asof}</code>.</p>
 </footer>
 </body>
@@ -334,6 +336,15 @@ A lab at 0 is not one with no infrastructure, it is one whose infrastructure is 
 in public sources we will score.</p>
 <p class="muted">Baseline as of {esc(asof)}, scoring version {index['meta']['scoring_version']}. The
 <a href="methodology.html">methodology</a> has the full rubric and the command to reproduce every number.</p>
+
+<h2>Help make it better</h2>
+<p>This index is early and it gets sharper the more people push on it. We are actively looking for
+input from anyone who knows this terrain: challenge a number you think is wrong, point us at a
+better or missing source, flag a datacenter or deal we have not captured, or argue for a smarter way
+to weigh the score. Nothing here is settled.</p>
+<p><a href="{REPO_URL}/issues">Open an issue</a> to raise a correction or an idea, or send a
+<a href="{REPO_URL}/pulls">pull request</a> against the evidence ledger. Every fact traces to a public
+source precisely so it can be checked and argued with.</p>
 """
     (SITE / "index.html").write_text(page("AI Infrastructure Index", body, 0, asof))
 
