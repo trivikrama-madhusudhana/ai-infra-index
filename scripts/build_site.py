@@ -3,7 +3,7 @@
 
     python scripts/build_site.py
 
-Writes plain HTML/CSS into site/. Built for two readers at once: someone
+Writes plain HTML/CSS into docs/. Built for two readers at once: someone
 non-technical who wants to know who is winning the physical AI buildout and why,
 and someone technical who wants the exact math and the underlying evidence. Every
 displayed number links to the fact that produced it.
@@ -18,7 +18,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE = ROOT / "site"
+SITE = ROOT / "docs"
 COMPANIES_DIR = ROOT / "data" / "companies"
 REPO_URL = "https://github.com/trivikrama-madhusudhana/ai-infra-index"
 
@@ -497,7 +497,7 @@ def main():
     build_doc("CHANGELOG.md", "changelog.html", "Changelog - AI Infrastructure Index", asof)
     (SITE / ".nojekyll").write_text("")
     n = len(index["companies"])
-    print(f"built site/ : home + {n} company pages + methodology + changelog")
+    print(f"built docs/ : home + {n} company pages + methodology + changelog")
 
 
 CSS = """

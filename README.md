@@ -54,7 +54,7 @@ python scripts/score.py --as-of 2026-07-20   # rewrites index.json, byte-identic
 ```bash
 python scripts/validate.py                # schema + hygiene gate (CI runs this)
 python scripts/gen_methodology.py         # regenerate METHODOLOGY.md from the rubric
-python scripts/build_site.py              # regenerate the static site into site/
+python scripts/build_site.py              # regenerate the static site into docs/
 python -m pytest tests/                   # golden determinism test
 ```
 
@@ -71,7 +71,7 @@ appends new facts and can run headless on a cron to open a PR unattended; a huma
 | `config/scoring.v1.yaml` | The rubric: weights, bands, decay. Rendered verbatim to `METHODOLOGY.md` |
 | `index.json` | Scoring output, committed and CI-checked for byte-identical reproduction |
 | `schema/fact.schema.json` | Fact schema the validator enforces |
-| `site/` | Generated static site, no framework, no build step |
+| `docs/` | Generated static site served by GitHub Pages, no framework, no build step |
 
 ## What it does not do
 
