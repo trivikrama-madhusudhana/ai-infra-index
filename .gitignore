@@ -9,3 +9,6 @@ audit-*.md
 
 # Claude Code tooling, never publish
 CLAUDE.md
+
+# Claude Code automation stays local, never published
+.claude/

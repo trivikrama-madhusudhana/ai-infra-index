@@ -71,8 +71,8 @@ python -m pytest tests/                   # golden determinism test
 ```
 
 Facts enter through pull requests only, and `main` is never pushed to directly. `CONTRIBUTING.md` is the
-binding rulebook for how a fact is added and verified. The 15-day update cycle (`/update-cycle`)
-appends new facts and can run headless on a cron to open a PR unattended; a human still merges.
+binding rulebook for how a fact is added and verified. A 15-day update cycle appends new facts
+and opens a PR unattended; a human still merges.
 
 ## Data layout
 
