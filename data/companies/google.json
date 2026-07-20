@@ -15,7 +15,7 @@
         "publisher": "Google Cloud (blog)",
         "date_published": "2024-04-10",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260712204846/https://cloud.google.com/blog/products/compute/introducing-googles-new-arm-based-cpu"
       },
       "excerpt": "Google Axion Processors, our first custom Arm-based CPUs designed for the data center",
       "notes": "Axion = Google's first in-house Arm-based data center CPU (Arm Neoverse V2); up to 50% better perf and 60% better energy efficiency vs comparable x86.",
@@ -41,7 +41,7 @@
         "publisher": "Google (The Keyword blog)",
         "date_published": "2024-06-11",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20251118002549/https://blog.google/outreach-initiatives/sustainability/google-clean-energy-partnership/"
       },
       "excerpt": "energy supply agreement that will add 115 MW of new around-the-clock enhanced geothermal power... developed by Fervo Energy and delivered by NV Energy",
       "notes": "Enhanced geothermal via Fervo (Corsac Station), delivered through NV Energy Clean Transition Tariff for Google's Storey County NV data centers + Las Vegas cloud region. Nevada regulators approved May 2025; expected online 2026.",
@@ -67,7 +67,7 @@
         "publisher": "Google (blog.google)",
         "date_published": "2024-10-14",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260524225931/https://blog.google/company-news/outreach-and-initiatives/sustainability/google-kairos-power-nuclear-energy-agreement/"
       },
       "excerpt": "this deal will enable up to 500 MW of new 24/7 carbon-free power to U.S. electricity grids",
       "notes": "Master Plant Development Agreement with Kairos Power for advanced nuclear SMRs; 'up to 500 MW', first SMR by 2030, remainder through 2035. First corporate PPA for new nuclear SMRs. Value is stated ceiling.",
@@ -93,7 +93,7 @@
         "publisher": "Google (blog.google)",
         "date_published": "2025-06-27",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260417092351/https://blog.google/company-news/outreach-and-initiatives/sustainability/environmental-report-2025/"
       },
       "excerpt": "This record investment pushed our carbon-free energy use from 64% to 66% on an hourly basis",
       "notes": "Carbon-free energy share across Google data centers+offices on hourly-matching basis (2024 reporting year); 2.5 GW of new clean energy added to serving grids in 2024. Value = 66 (percent).",
@@ -119,7 +119,7 @@
         "publisher": "Utility Dive",
         "date_published": "2025-07-15",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260213161924/https://www.utilitydive.com/news/google-cloud-blackstone-aws-us-ai-data-center-buildouts/753202/"
       },
       "excerpt": "an additional $3 billion figure for hydroelectric facility upgrades... $3 billion to modernize two Pennsylvania hydropower plants",
       "notes": "$3B to modernize/refurbish two PA hydro plants (Holtwood & Safe Harbor) supporting PJM operations; part of the Brookfield hydro framework. utilitydive.com domain flagged.",
@@ -145,7 +145,7 @@
         "publisher": "Utility Dive",
         "date_published": "2025-07-15",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260213161924/https://www.utilitydive.com/news/google-cloud-blackstone-aws-us-ai-data-center-buildouts/753202/"
       },
       "excerpt": "Google announced it would spend more than $25 billion to build out data center and AI infrastructure across the Pennsylvania-based PJM Interconnection power grid in the next two years",
       "notes": "Two-year buildout across the 13-state PJM grid region, announced at the Pennsylvania Energy & Innovation Summit. utilitydive.com is trade press, not in preferred list — flagged for review.",
@@ -171,7 +171,7 @@
         "publisher": "Brookfield Asset Management",
         "date_published": "2025-07-15",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260521190803/https://bam.brookfield.com/press-releases/brookfield-and-google-sign-hydro-framework-agreement-deliver-3000-mw-homegrown"
       },
       "excerpt": "Brookfield and Google Sign Hydro Framework Agreement to Deliver up to 3,000 MW of Homegrown Energy in the United States",
       "notes": "Framework agreement 'up to 3,000 MW' hydro by end of 2032; first two 20-yr PPAs total 670 MW (Holtwood & Safe Harbor, PA, >$3B). Recorded framework ceiling 3000 MW; note first firm contracts = 670 MW.",
@@ -197,7 +197,7 @@
         "publisher": "Anthropic",
         "date_published": "2025-10-23",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260712235033/https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services"
       },
       "excerpt": "up to one million TPUs... well over a gigawatt of capacity online in 2026... worth tens of billions of dollars",
       "notes": "Google Cloud SELLING/renting TPU capacity to Anthropic (Google is the provider) — recorded as cloud_partnership, NOT Google-owned capacity. Later Nov-2025 expansion (anthropic.com/news/google-broadcom-partnership-compute) adds 'multiple gigawatts' of next-gen TPU capacity from 2027.",
@@ -223,7 +223,7 @@
         "publisher": "NextEra Energy (newsroom)",
         "date_published": "2025-10-28",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260712113614/https://newsroom.nexteraenergy.com/NextEra-Energy-and-Google-Announce-New-Collaboration-to-Accelerate-Nuclear-Energy-Deployment-in-the-U-S?l=12"
       },
       "excerpt": "Google will purchase power from the 615-MW plant as a 24/7 carbon-free energy source ... a 25-year agreement",
       "notes": "25-year PPA to restart Iowa's Duane Arnold Energy Center nuclear plant (615 MW), expected online by Q1 2029.",
@@ -249,7 +249,7 @@
         "publisher": "Google Cloud (blog)",
         "date_published": "2025-11-07",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260717191139/https://cloud.google.com/blog/products/compute/ironwood-tpus-and-new-axion-based-vms-for-your-ai-workloads"
       },
       "excerpt": "Ironwood, our seventh generation TPU ... our most powerful and energy-efficient custom silicon to date ... 9,216 chips in a superpod",
       "notes": "TPU v7 'Ironwood', in-house custom silicon; scales to 9,216 chips/superpod, 1.77 PB shared HBM; GA 'in coming weeks' after Nov 2025. Co-designed/fabbed with Broadcom + TSMC per press reports.",
@@ -275,7 +275,7 @@
         "publisher": "Solar Power World",
         "date_published": "2025-11-12",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260715073238/https://www.solarpowerworldonline.com/2025/11/google-inks-ppa-for-49-mw-solar-project-to-power-ohio-data-center-operations/"
       },
       "excerpt": "Google has signed a 15-year PPA with TotalEnergies for energy from its 49-MW Montpelier solar farm in Ohio.",
       "notes": "15-yr PPA, ~1.5 TWh total, Montpelier solar farm (Williams County OH), PJM grid, serves Google's Ohio data centers. Domain solarpowerworldonline.com (not allowlisted; totalenergies.com press release corroborates).",
@@ -405,7 +405,7 @@
         "publisher": "ESG Dive",
         "date_published": "2026-01-05",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260528051707/https://www.esgdive.com/news/alphabet-acquires-clean-energy-developer-intersect-portfolio-4-75b-google-data-centers/808756/"
       },
       "excerpt": "Alphabet ... will acquire clean energy and data center infrastructure developer Intersect in a $4.75 billion deal",
       "notes": "Announced 2025-12-22, closing H1 2026. Portfolio ~10.8 GW clean energy operating/under-construction by late 2028; enables co-located 'energy parks'. Domain esgdive.com (not allowlisted).",
@@ -431,7 +431,7 @@
         "publisher": "Epoch AI",
         "date_published": "2026-04-06",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260517185121/https://epoch.ai/blog/introducing-the-ai-chip-owners-explorer"
       },
       "excerpt": "Google's TPU chips ... a total compute capacity of almost 4 million H100-equivalents [confidence interval: 3.1M to 4.5M]",
       "notes": "Epoch AI estimate (H100-equivalents, not physical GPUs), end-2025. Recorded conservative low end of CI (3.1M); central estimate 'almost 4M', CI 3.1M-4.5M. Google's total incl. GPUs ~5M H100e, ~25% of world total.",
@@ -457,7 +457,7 @@
         "publisher": "ESG Dive",
         "date_published": "2026-01-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260521193751/https://www.esgdive.com/news/google-inks-ppas-clearway-energy-power-data-centers-with-carbon-free-wv-missouri-tx/810006/"
       },
       "excerpt": "1.17 gigawatts of 'carbon-free energy projects' ... 20-year power purchase agreements",
       "notes": "Trio of 20-yr PPAs with Clearway Energy Group across Missouri, Texas, West Virginia (SPP/ERCOT/MISO); online 2027-2028. Recorded 1.17 GW = 1,170 MW. Domain esgdive.com (not allowlisted).",
@@ -509,7 +509,7 @@
         "publisher": "PR Newswire (Google press release)",
         "date_published": "2026-05-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260620095156/https://www.prnewswire.com/news-releases/google-deepens-missouri-roots-with-new-data-center-energy-and-community-investments-302778322.html"
       },
       "excerpt": "$15 billion investment in building infrastructure in Missouri, including a new data center in New Florence, located in Montgomery County",
       "notes": "New owned datacenter campus in New Florence, Montgomery County MO. Source domain prnewswire.com (Google-issued release) — not in preferred list, flagged for review.",
@@ -535,7 +535,7 @@
         "publisher": "PR Newswire (Google press release)",
         "date_published": "2026-05-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260620095156/https://www.prnewswire.com/news-releases/google-deepens-missouri-roots-with-new-data-center-energy-and-community-investments-302778322.html"
       },
       "excerpt": "through its partnership with Ameren—Google is supporting the development of more than 500 megawatts (MW) of additional capacity",
       "notes": "Additional MO capacity via utility Ameren, on top of the 1 GW contracted. 'more than 500 MW'; conservative low end recorded. prnewswire.com domain flagged.",
@@ -561,7 +561,7 @@
         "publisher": "PR Newswire (Google press release)",
         "date_published": "2026-05-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260620095156/https://www.prnewswire.com/news-releases/google-deepens-missouri-roots-with-new-data-center-energy-and-community-investments-302778322.html"
       },
       "excerpt": "Google has contracted to bring more than one gigawatt (GW) of new generation capacity to Missouri",
       "notes": "Source says 'more than 1 GW'; recorded conservative low end 1000 MW. For the Missouri campus. prnewswire.com domain flagged.",
@@ -571,6 +571,370 @@
         "verified": false,
         "checked_on": null,
         "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "google-2026-07-20-023",
+      "company": "google",
+      "metric": "ppa_mw",
+      "value": 115,
+      "unit": "MW",
+      "status": "under_construction",
+      "site": "corsac-station-nv",
+      "as_of_date": "2024-06-21",
+      "source": {
+        "url": "https://www.utilitydive.com/news/google-fervo-nv-energy-nevada-puc-clean-energy-tariff/719472/",
+        "publisher": "Utility Dive",
+        "date_published": "2024-06-21",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "NV Energy would buy electricity from Fervo Energy's 115-MW Corsac Station Enhanced Geothermal Project, which is under development",
+      "notes": "Enhanced geothermal (Fervo). Structured as a Clean Transition Tariff: NV Energy buys from Fervo's Corsac Station and sells 24/7 carbon-free power to Google (anchor offtaker) in Nevada. Project under development (under construction).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "Number matches: page states '115-MW Corsac Station Enhanced Geothermal Project.' However the STATUS does not literally match. The page says the project is 'under development,' not 'under construction.' Value 115 MW is correct; the status field 'under_construction' is not supported by the source's li"
+      }
+    },
+    {
+      "id": "google-2026-07-20-024",
+      "company": "google",
+      "metric": "capex_announced_usd",
+      "value": 91000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "n/a",
+      "as_of_date": "2025-10-30",
+      "source": {
+        "url": "https://www.theregister.com/2025/10/30/alphabet_capex/",
+        "publisher": "The Register",
+        "date_published": "2025-10-30",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "We now expect capex to be in the range of $91 billion to $93 billion in 2025, up from our previous estimate of $85 billion",
+      "notes": "Raised full-year 2025 guidance (Q3 2025 earnings). Range $91B-$93B; conservative low end $91B recorded. Prior estimate $85B (itself raised from initial $75B). Covers calendar year 2025.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "The Register page states: 'We now expect capex to be in the range of $91 billion to $93 billion in 2025' (guidance from CFO). The recorded value $91B is the literal lower bound of the stated range; status 'announced'/guidance confirmed. Note: page gives a $91-93B range, not a single $91B figure."
+      }
+    },
+    {
+      "id": "google-2026-07-20-025",
+      "company": "google",
+      "metric": "capex_announced_usd",
+      "value": 4750000000,
+      "unit": "USD",
+      "status": "n/a",
+      "site": "n/a",
+      "as_of_date": "2025-12-22",
+      "source": {
+        "url": "https://www.powermag.com/alphabet-buying-clean-energy-developer-to-support-data-centers/",
+        "publisher": "POWER Magazine",
+        "date_published": "2025-12-22",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Alphabet, the parent of technology giant Google, has announced a definitive agreement to acquire Intersect, which provides data center and energy infrastructure solutions, for $4.75 billion in cash, p",
+      "notes": "Alphabet/Google acquisition of clean-energy developer Intersect Power to support data centers; deal 'includes ... multiple gigawatts of energy and data center projects in development, or under construction.' No specific MW disclosed on this page (GW only, not recordable). Related earlier partnership targets ~$20B of co-located solar+storage. Acquisition, not a PPA.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "POWER Magazine page literally states Alphabet agreed to acquire Intersect Power 'for $4.75 billion in cash, plus the assumption of debt.' $4.75 billion = 4,750,000,000, matching the announced capex value; site/status n/a is appropriate."
+      }
+    },
+    {
+      "id": "google-2026-07-20-026",
+      "company": "google",
+      "metric": "capex_announced_usd",
+      "value": 180000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "n/a",
+      "as_of_date": "2026-06-03",
+      "source": {
+        "url": "https://blog.google/alphabet/investor-presentation-june-2026/",
+        "publisher": "Google (blog.google)",
+        "date_published": "2026-06-03",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "This year, we expect that number to be six times larger than 2022 and double last year's at $180-190 billion",
+      "notes": "Raised full-year 2026 capex guidance to $180B-$190B (up from $175B-$185B; raise first stated at Q1 2026 earnings Apr 29 2026, restated in June 2026 investor presentation). Conservative low end $180B recorded; high end $190B. ~6x 2022 (~$31B), ~double 2025. Covers calendar year 2026.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "blog.google page states: 'we expect that number ... at $180-190 billion' for 2026 (projection). Recorded value $180B is the literal lower bound of the stated range; status 'announced'/projected confirmed. Note: it is a $180-190B range."
+      }
+    },
+    {
+      "id": "google-2026-07-20-027",
+      "company": "google",
+      "metric": "capex_announced_usd",
+      "value": 7000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "council-bluffs-ia",
+      "as_of_date": "2026-07-20",
+      "source": {
+        "url": "https://datacenters.google/locations/iowa/",
+        "publisher": "Google (datacenters.google)",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "\"the recent $7 billion investment to expand our footprint in Council Bluffs\" ... \"Google has invested more than $20 billion in Iowa since building our data center in Council Bluffs in 2007\"",
+      "notes": "$7B recent Council Bluffs expansion; $20B cumulative Iowa investment (statewide). No explicit publish date on live official page.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Iowa page: '$7 billion investment to expand our footprint in Council Bluffs and establish a new data center campus in Cedar Rapids.' $7B announced; matches, though the figure also covers Cedar Rapids (separate from the $20B+ 'to date' figure)."
+      }
+    },
+    {
+      "id": "google-2026-07-20-028",
+      "company": "google",
+      "metric": "capex_announced_usd",
+      "value": 13000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "south-carolina",
+      "as_of_date": "2026-07-20",
+      "source": {
+        "url": "https://datacenters.google/locations/berkeley-county-south-carolina/",
+        "publisher": "Google (datacenters.google)",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "\"Google has invested more than $13 billion in the state\" (South Carolina, since 2007)",
+      "notes": "Cumulative South Carolina investment across Berkeley/Dorchester campuses. No explicit publish date on live official page.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "Berkeley County SC page states 'Since the Berkeley County... data center was built in 2007, Google has invested more than $13 billion in the state' — cumulative invested-to-date, not an 'announced' figure. Dollar value ($13B) and site are correct, but status 'announced' does not match the page's to-"
+      }
+    },
+    {
+      "id": "google-2026-07-20-029",
+      "company": "google",
+      "metric": "capex_announced_usd",
+      "value": 7000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "the-dalles-or",
+      "as_of_date": "2026-07-20",
+      "source": {
+        "url": "https://datacenters.google/locations/oregon/",
+        "publisher": "Google (datacenters.google)",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "\"Google has invested more than $7 billion in Oregon since building our data center in The Dalles in 2006.\"",
+      "notes": "Cumulative Oregon investment (statewide, centered on The Dalles). No explicit publish date on live official page.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "Oregon page states 'Google has invested more than $7 billion in Oregon since building our data center in The Dalles in 2006' — this is cumulative investment-to-date, not a newly 'announced' capex. Dollar value ($7B) and site are correct, but the status 'announced' does not match the page's to-date f"
+      }
+    },
+    {
+      "id": "google-2026-07-20-030",
+      "company": "google",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "operational",
+      "site": "berkeley-county-sc",
+      "as_of_date": "2026-07-20",
+      "source": {
+        "url": "https://datacenters.google/locations/berkeley-county-south-carolina/",
+        "publisher": "Google (datacenters.google)",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "\"Google has invested more than $13 billion in the state\" ... Google data center in Berkeley County (Moncks Corner), part of Google's South Carolina cloud region",
+      "notes": "Google-owned data center campus in Berkeley County, SC. No explicit publish date on live official page.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Berkeley County SC page: 'Our three facilities in South Carolina... include one of our first data centers in the United States... Since coming to South Carolina in 2007.' Owned facility confirmed."
+      }
+    },
+    {
+      "id": "google-2026-07-20-031",
+      "company": "google",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "operational",
+      "site": "council-bluffs-ia",
+      "as_of_date": "2026-07-20",
+      "source": {
+        "url": "https://datacenters.google/locations/iowa/",
+        "publisher": "Google (datacenters.google)",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "\"Google has invested more than $20 billion in Iowa since building our data center in Council Bluffs in 2007\" ... references \"our existing facility in Council Bluffs\"",
+      "notes": "Google-owned/built data center; confirmed via Google's own possessive language on official page. No explicit publish date on live page.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Iowa page: 'Since 2007, Google has been proud to call Iowa home... a single hub in Council Bluffs' — Google owns/operates its own data center there. Confirmed."
+      }
+    },
+    {
+      "id": "google-2026-07-20-032",
+      "company": "google",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "operational",
+      "site": "the-dalles-or",
+      "as_of_date": "2026-07-20",
+      "source": {
+        "url": "https://datacenters.google/locations/oregon/",
+        "publisher": "Google (datacenters.google)",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "\"Google has invested more than $7 billion in Oregon since building our data center in The Dalles in 2006.\"",
+      "notes": "Google-owned/built data center at The Dalles, operational since 2006. No explicit publish date on live official page.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Oregon page: 'In 2006, we began a path of building and operating our own data centers — and it all began here in The Dalles, Oregon.' Owned facility confirmed."
+      }
+    },
+    {
+      "id": "google-2026-07-20-033",
+      "company": "google",
+      "metric": "power_capacity_mw",
+      "value": 100,
+      "unit": "MW",
+      "status": "operational",
+      "site": "council-bluffs-ia",
+      "as_of_date": "2026-07-20",
+      "source": {
+        "url": "https://www.interconnection.fyi/data-center/project/google-council-bluffs-east-d8c434a9",
+        "publisher": "Interconnection.fyi",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "\"100-250 MW\" capacity range for this operational hyperscaler facility ... \"MidAmerican Energy\" serves as the grid operator ... \"Google Cloud\" operates and owns the facility (10410 Bunge Ave, Council B",
+      "notes": "interconnection.fyi tracker range bucket 100-250 MW derived from interconnection filings; conservative low end (100) recorded, full range 100-250 MW. Non-preferred domain (interconnection.fyi); live tracker, no explicit publish date. Operator/owner: Google Cloud; utility MidAmerican Energy.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "Page marks the project Operational (status matches), but capacity is shown as a bucketed range '100-250 MW', not a precise 100 MW. The fact picked the low bound; page does not state 100 MW as the capacity."
+      }
+    },
+    {
+      "id": "google-2026-07-20-034",
+      "company": "google",
+      "metric": "power_capacity_mw",
+      "value": 250,
+      "unit": "MW",
+      "status": "operational",
+      "site": "new-albany-oh",
+      "as_of_date": "2026-07-20",
+      "source": {
+        "url": "https://www.interconnection.fyi/data-center/project/google-new-albany-7310a596",
+        "publisher": "Interconnection.fyi",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Power Capacity: \"250+ MW\" ... Grid Operator: \"American Electric Power\" ... Status: \"Operational\" ... Address: \"1101 Beech Rd SW, New Albany, OH 43054\" ... operated by Google Cloud",
+      "notes": "interconnection.fyi tracker bucket \"250+ MW\"; recorded 250 as conservative low end (open-ended range). Non-preferred domain (interconnection.fyi); live tracker no explicit publish date. Utility: American Electric Power.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Page shows capacity '250+ MW' and status Operational (actual op date 2024). 250 is the stated figure/floor; status matches."
+      }
+    },
+    {
+      "id": "google-2026-07-20-035",
+      "company": "google",
+      "metric": "power_capacity_mw",
+      "value": 50,
+      "unit": "MW",
+      "status": "operational",
+      "site": "pryor-ok",
+      "as_of_date": "2026-07-20",
+      "source": {
+        "url": "https://www.interconnection.fyi/data-center/project/google-pryor-north-be7b42dd",
+        "publisher": "Interconnection.fyi",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Capacity: \"50-100 MW\" ... Status: \"Operational\" ... Address: \"4581 Webb St, Pryor, OK 74361\" ... Operator: Google Cloud ... Mayes County, Oklahoma",
+      "notes": "interconnection.fyi tracker range bucket 50-100 MW; conservative low end (50) recorded, full range 50-100 MW. Non-preferred domain (interconnection.fyi); live tracker no explicit publish date. Pryor (North) campus, Mayes County.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "Page marks Operational (status matches), but capacity is a bucketed range '50-100 MW', not a precise 50 MW. Fact picked the low bound; page does not state 50 MW as the capacity."
+      }
+    },
+    {
+      "id": "google-2026-07-20-036",
+      "company": "google",
+      "metric": "ppa_mw",
+      "value": 225,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "berkeley-county-sc",
+      "as_of_date": "2026-07-20",
+      "source": {
+        "url": "https://datacenters.google/locations/berkeley-county-south-carolina/",
+        "publisher": "Google (datacenters.google)",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "\"Google signs 225-megawatt renewable energy deal\" (2023 milestone)",
+      "notes": "225 MW renewable energy PPA associated with Google's South Carolina operations (2023 milestone listed on official page). No explicit publish date on live page.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Page lists 2023 milestone: 'Google signs 225-megawatt renewable energy deal.' Matches 225 MW, contracted status, Berkeley County SC."
       }
     }
   ]

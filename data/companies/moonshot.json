@@ -41,7 +41,7 @@
         "publisher": "Alibaba Cloud",
         "date_published": "2025-04-08",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260515082412/https://www.alibabacloud.com/blog/602119"
       },
       "excerpt": "The solution is centered on Alibaba Cloud Container Service for Kubernetes (ACK), featuring deep optimizations for Ray and Spark tasks.",
       "notes": "Moonshot RENTS this capacity from Alibaba Cloud; it is NOT Moonshot-owned. Source is the partner's own (Alibaba Cloud) engineering blog; describes ability to create 50,000+ pods in an ACK cluster and OSS/ECS/ACS usage for the Kimi model, but discloses NO GPU count, MW, or cluster size. English secondary/partner-marketing source; no independent verification of scale figures.",

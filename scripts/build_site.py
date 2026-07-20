@@ -129,6 +129,14 @@ def ver_badge(v: dict) -> str:
     return '<span class="badge no" title="Not yet confirmed against its source; shown but not scored">unverified</span>'
 
 
+def is_judgment_call(f: dict) -> bool:
+    return (f.get("notes") or "").lower().startswith("judgment call")
+
+
+def jc_badge(f: dict) -> str:
+    return '<span class="badge warn" title="A deliberate, debatable classification choice">judgment call</span> ' if is_judgment_call(f) else ""
+
+
 LEGEND = (
     '<p class="legend muted">'
     'Badges: <span class="badge tier tier-a">Tier A</span> primary source, '
@@ -430,7 +438,7 @@ def build_company(c, facts, asof):
             f'<span class="status">{esc(f["status"].replace("_", " "))}</span> '
             f'<span class="muted">at {esc(f["site"])}, as of {esc(f["as_of_date"])}</span></div>'
             f'<blockquote>{esc(f["excerpt"])}</blockquote>'
-            f'<div class="fmeta">{tier_badge(t)} {ver_badge(f["verification"])} '
+            f'<div class="fmeta">{tier_badge(t)} {ver_badge(f["verification"])} {jc_badge(f)}'
             f'<span class="muted">{esc(src["publisher"])}, {esc(src["date_published"])}</span> &middot; '
             f'<a href="{esc(src["url"])}">source</a>{arch} '
             f'<span class="muted mono small">{esc(f["id"])}</span></div>{notes}</article>'
@@ -441,12 +449,28 @@ def build_company(c, facts, asof):
     nd = NOT_DISCLOSED_ALWAYS + missing_metrics
     verified_n = sum(1 for f in live if f["verification"]["verified"])
 
+    jc_facts = [f for f in live if is_judgment_call(f)]
+    jc_callout = ""
+    if jc_facts:
+        items = "".join(
+            f'<li>{esc(METRIC_LABEL.get(f["metric"], f["metric"]))} at {esc(f["site"])}: '
+            f'{esc((f.get("notes") or "").split(". ", 1)[0].replace("Judgment call: ", ""))}. '
+            f'<a href="#f-{esc(f["id"])}">see the evidence</a>.</li>'
+            for f in jc_facts
+        )
+        jc_callout = (
+            '<div class="note jcnote"><strong>A judgment call affects this score.</strong> '
+            'One or more facts below rest on a classification we made deliberately and that a '
+            f'reasonable person could dispute:<ul>{items}</ul></div>'
+        )
+
     body = f"""
 <p class="crumb"><a href="index.html">&larr; all labs</a></p>
 <h1>{esc(slug)}</h1>
 <p class="scoreline"><span class="big">{c['score']:.1f}</span> <span class="muted">out of 100 &middot; as of {esc(asof)}</span></p>
 <p class="muted">The score below is built only from facts confirmed against a public source. This lab has
 {verified_n} such facts on record.</p>
+{jc_callout}
 
 <h2>At a glance</h2>
 {stat_tiles(slug, facts)}
@@ -570,11 +594,16 @@ td.facts a{margin-right:.35rem;font-family:ui-monospace,monospace;font-size:.82e
 .badge.tier-c{background:#f5f0e6;color:#7a5c1e;border-color:#e8ddc4}
 .badge.ok{background:#e7f0e7;color:#245c24;border-color:#cfe3cf}
 .badge.no{background:#f6eaea;color:#8a3232;border-color:#eccccc}
+.badge.warn{background:#fbf2e0;color:#8a5a1e;border-color:#ecdcbb}
+.jcnote{border-left-color:#c98a2e}
+.jcnote ul{margin:.4rem 0 0;padding-left:1.1rem}
+.jcnote li{margin:.2rem 0}
 @media (prefers-color-scheme:dark){
  .badge.tier-a,.badge.ok{background:#1a2e1a;color:#8fce8f;border-color:#274027}
  .badge.tier-b{background:#1a2436;color:#9cc0f0;border-color:#26364f}
  .badge.tier-c{background:#332b18;color:#d9c088;border-color:#4a3e22}
- .badge.no{background:#331a1a;color:#e29a9a;border-color:#4d2626}}
+ .badge.no{background:#331a1a;color:#e29a9a;border-color:#4d2626}
+ .badge.warn{background:#33290f;color:#e0b878;border-color:#4d3d1a}}
 ul.nd-list{columns:2;max-width:40rem}
 @media(max-width:560px){ul.nd-list{columns:1}}
 blockquote{margin:.8rem 0;padding:.5rem .9rem;border-left:3px solid var(--line);color:var(--muted)}

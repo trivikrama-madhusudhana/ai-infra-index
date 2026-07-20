@@ -18,7 +18,7 @@ by Crusoe, Oracle, Vantage and SB Energy, so every megawatt of it lands as a `cl
 fact rather than owned capacity. Anthropic is lower still: it rents everything, owns no power,
 and its accelerators are AWS and Google silicon, not its own.
 
-Numbers as of 2026-07-20 (scoring v1): xai 60.06, meta 53.55, google 29.22, openai 22.73,
+Numbers as of 2026-07-20 (scoring v1): xai 60.06, meta 53.55, google 47.25, openai 22.73,
 anthropic 14.60, and moonshot / minimax / zhipu at 0.00.
 
 Corrections made during assembly:
@@ -28,16 +28,18 @@ Corrections made during assembly:
   designs, so under owner-attribution they should not credit its silicon layer. This moved
   Anthropic from 26.40 to 14.60.
 
-Open flags for review (not yet resolved):
+Same-day refinements:
 
-- xAI's Terafab fact still counts as `custom_silicon`. xAI co-owns the fab JV, so this is a
-  genuine judgment call rather than a clear error, and it props up xAI's vertical-integration
-  score. Left as-is pending a decision.
-- Google scores 0 on power capacity. Google plainly runs enormous owned datacenters; the gap is
-  that per-site megawatt figures are hard to source precisely, not that the capacity is absent.
-  This is a coverage gap to close, not a finding that Google has no power.
-- The Chinese labs are thin (Moonshot 2 facts, MiniMax 5, Zhipu 5) and mostly unverified. Their
-  infrastructure disclosure is sparse and often Chinese-language; MiniMax has no scoreable fact
-  yet. Zero here means "not publicly documented", not "no infrastructure".
-- Most facts still lack a web.archive.org snapshot. Backfilling archive URLs is the next
-  maintenance pass.
+- **Google power gap closed.** A focused research pass across four angles (US datacenters,
+  international, PPAs, capex) added 14 verified facts: owned datacenters at The Dalles, Council
+  Bluffs, and Berkeley County from Google's own site, a 225 MW South Carolina PPA, and a 250 MW
+  operational figure for New Albany. Google moved from 29.22 to 47.25. Per-site megawatts are
+  still hard to source precisely, so power capacity is likely still under-counted, not over.
+- **xAI Terafab kept, now labeled.** The Terafab chip-fab fact still counts as custom silicon,
+  since xAI co-owns the JV. It is now flagged on the dashboard as an explicit judgment call so
+  readers can weigh it themselves.
+- **Archive snapshots backfilled.** 121 of 136 facts gained a web.archive.org snapshot from the
+  Wayback availability API; 15 with no existing snapshot are pending a save pass.
+
+Still thin: the Chinese labs (Moonshot, MiniMax, Zhipu) remain sparsely documented and mostly
+unverified. Zero there means "not publicly documented", not "no infrastructure".

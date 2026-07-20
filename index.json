@@ -639,27 +639,31 @@
               "weighted_points": 0.0
             },
             "owned_sites": {
-              "aggregated_value": 0.0,
+              "aggregated_value": 3.0,
               "aggregation": "count_distinct_site",
-              "band_points": 0.0,
+              "band_points": 70.0,
               "decayed_fact_ids": [],
-              "fact_ids": [],
-              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 0",
+              "fact_ids": [
+                "google-2026-07-20-030",
+                "google-2026-07-20-031",
+                "google-2026-07-20-032"
+              ],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 3",
               "label": "Owned datacenter sites",
-              "missing": true,
+              "missing": false,
               "weight": 0.2,
-              "weighted_points": 0.0
+              "weighted_points": 14.0
             }
           },
           "label": "Compute ownership",
-          "points": 15.0,
+          "points": 29.0,
           "weight": 0.2,
-          "weighted_contribution": 3.0
+          "weighted_contribution": 5.8
         },
         "energy_security": {
           "components": {
             "contracted_ppa_mw": {
-              "aggregated_value": 8534.0,
+              "aggregated_value": 8759.0,
               "aggregation": "sum",
               "band_points": 100.0,
               "decayed_fact_ids": [],
@@ -668,9 +672,10 @@
                 "google-2026-07-20-009",
                 "google-2026-07-20-011",
                 "google-2026-07-20-015",
-                "google-2026-07-20-018"
+                "google-2026-07-20-018",
+                "google-2026-07-20-036"
               ],
-              "input_expression": "sum(ppa_mw where status in [contracted,operational]) = 8534 MW",
+              "input_expression": "sum(ppa_mw where status in [contracted,operational]) = 8759 MW",
               "label": "Contracted power (PPA MW)",
               "missing": false,
               "weight": 0.55,
@@ -711,19 +716,23 @@
         "expansion_pipeline": {
           "components": {
             "capex_announced": {
-              "aggregated_value": 44750000000.0,
+              "aggregated_value": 327500000000.0,
               "aggregation": "sum",
-              "band_points": 60.0,
+              "band_points": 100.0,
               "decayed_fact_ids": [],
               "fact_ids": [
                 "google-2026-07-20-012",
-                "google-2026-07-20-016"
+                "google-2026-07-20-016",
+                "google-2026-07-20-024",
+                "google-2026-07-20-025",
+                "google-2026-07-20-026",
+                "google-2026-07-20-027"
               ],
-              "input_expression": "sum(capex_announced_usd where status in [announced,contracted,under_construction,operational,n/a]) = 44750000000 USD",
+              "input_expression": "sum(capex_announced_usd where status in [announced,contracted,under_construction,operational,n/a]) = 327500000000 USD",
               "label": "Announced capital (USD)",
               "missing": false,
               "weight": 0.3,
-              "weighted_points": 18.0
+              "weighted_points": 30.0
             },
             "interconnection_filings": {
               "aggregated_value": 0.0,
@@ -751,23 +760,25 @@
             }
           },
           "label": "Expansion pipeline",
-          "points": 18.0,
+          "points": 30.0,
           "weight": 0.15,
-          "weighted_contribution": 2.7
+          "weighted_contribution": 4.5
         },
         "power_capacity": {
           "components": {
             "operational_mw": {
-              "aggregated_value": 0.0,
+              "aggregated_value": 250.0,
               "aggregation": "sum",
-              "band_points": 0.0,
+              "band_points": 35.0,
               "decayed_fact_ids": [],
-              "fact_ids": [],
-              "input_expression": "sum(power_capacity_mw where status in [operational]) = 0 MW",
+              "fact_ids": [
+                "google-2026-07-20-034"
+              ],
+              "input_expression": "sum(power_capacity_mw where status in [operational]) = 250 MW",
               "label": "Operational capacity (MW)",
-              "missing": true,
+              "missing": false,
               "weight": 0.65,
-              "weighted_points": 0.0
+              "weighted_points": 22.75
             },
             "under_construction_mw": {
               "aggregated_value": 0.0,
@@ -783,23 +794,27 @@
             }
           },
           "label": "Power capacity",
-          "points": 0.0,
+          "points": 22.75,
           "weight": 0.3,
-          "weighted_contribution": 0.0
+          "weighted_contribution": 6.825
         },
         "vertical_integration": {
           "components": {
             "datacenter_layer": {
-              "aggregated_value": 0.0,
+              "aggregated_value": 3.0,
               "aggregation": "count_distinct_site",
-              "band_points": 0.0,
+              "band_points": 100.0,
               "decayed_fact_ids": [],
-              "fact_ids": [],
-              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 0",
+              "fact_ids": [
+                "google-2026-07-20-030",
+                "google-2026-07-20-031",
+                "google-2026-07-20-032"
+              ],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 3",
               "label": "Datacenter layer",
-              "missing": true,
+              "missing": false,
               "weight": 0.33,
-              "weighted_points": 0.0
+              "weighted_points": 33.0
             },
             "power_layer": {
               "aggregated_value": 1.0,
@@ -812,7 +827,8 @@
                 "google-2026-07-20-009",
                 "google-2026-07-20-011",
                 "google-2026-07-20-015",
-                "google-2026-07-20-018"
+                "google-2026-07-20-018",
+                "google-2026-07-20-036"
               ],
               "input_expression": "bool_any(energy_source_mix|ppa_mw where status in [contracted,under_construction,operational]) = 1 MW",
               "label": "Power layer",
@@ -836,13 +852,13 @@
             }
           },
           "label": "Vertical integration",
-          "points": 67.0,
+          "points": 100.0,
           "weight": 0.2,
-          "weighted_contribution": 13.4
+          "weighted_contribution": 20.0
         }
       },
       "company": "google",
-      "eligible_fact_count": 10,
+      "eligible_fact_count": 19,
       "ineligible_facts": [
         {
           "id": "google-2026-07-20-001",
@@ -915,9 +931,39 @@
           "superseded": false,
           "tier": "B",
           "verified": false
+        },
+        {
+          "id": "google-2026-07-20-023",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-028",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-029",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-033",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-035",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
         }
       ],
-      "score": 29.22
+      "score": 47.25
     },
     {
       "categories": {

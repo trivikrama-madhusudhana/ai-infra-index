@@ -15,7 +15,7 @@
         "publisher": "The Register",
         "date_published": "2025-07-04",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260404142857/https://www.theregister.com/2025/07/04/project_rainier_deep_dive/"
       },
       "excerpt": "one site in Indiana will span thirty datacenters at 200,000 square feet apiece. This facility alone was recently reported to consume upwards of 2.2 gigawatts of power.",
       "notes": "Quantifies the power of the AWS-owned Project Rainier campus that Anthropic rents → cloud_partnership, NOT Anthropic-owned power_capacity_mw. Conservative low end 2.2 GW = 2,200 MW; some trackers (aidatacenterindex.com) cite 2.4 GW — used the lower figure. 30 buildings, ~6M sq ft, ~$11B AWS investment.",
@@ -41,7 +41,7 @@
         "publisher": "SemiAnalysis",
         "date_published": "2025-09-03",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260614125303/https://newsletter.semianalysis.com/p/amazons-ai-resurgence-aws-anthropics-multi-gigawatt-trainium-expansion"
       },
       "excerpt": "world's largest cluster of non-Nvidia AI chips, with just under a million Trainium2 in the largest campus... over 1.3GW of IT capacity across three AWS campuses.",
       "notes": "Third-party SemiAnalysis estimate: 'just under a million' Trainium2 accelerators in the largest AWS campus; >1.3 GW IT capacity across three AWS campuses in final construction. Value kept as text since only a 'just under a million' range is given (conservative, not rounded up).",
@@ -67,7 +67,7 @@
         "publisher": "Anthropic",
         "date_published": "2025-10-23",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260712235033/https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services"
       },
       "excerpt": "up to one million TPUs... well over a gigawatt of capacity online in 2026... investment worth tens of billions of dollars.",
       "notes": "Google Cloud-owned TPU capacity rented by Anthropic; recorded as cloud_partnership not power_capacity_mw. Capacity of 'well over a gigawatt' comes online in 2026 (>1000 MW).",
@@ -93,7 +93,7 @@
         "publisher": "Amazon (aboutamazon.com)",
         "date_published": "2025-10-29",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260715051318/https://www.aboutamazon.com/news/aws/aws-project-rainier-ai-trainium-chips-compute-cluster"
       },
       "excerpt": "Project Rainier is now fully operational... Nearly half a million Trainium2 chips... Anthropic is actively using Project Rainier to build and deploy... Claude.",
       "notes": "AWS-OWNED facility rented by Anthropic (its primary training partner) — NOT Anthropic-owned capacity, hence recorded as cloud_partnership. Amazon $11B campus, 1,200 acres, 30 buildings of 200,000 sq ft; The Register (2025-07-04) reports the campus will draw 'upwards of 2.2 gigawatts of power'. Plan to scale to over 1 million Trainium2 chips by end of year.",
@@ -119,7 +119,7 @@
         "publisher": "Anthropic",
         "date_published": "2025-11-12",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260716071445/https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure"
       },
       "excerpt": "$50 billion investment in American computing infrastructure... in partnership with Fluidstack... approximately 800 permanent jobs and 2,400 construction jobs... sites coming online throughout 2026.",
       "notes": "Anthropic's own announced capex figure ($50B) for US infrastructure with Fluidstack, starting Texas + New York. Described as Anthropic's first major data-center build-out taken on directly rather than solely through cloud partners.",
@@ -145,7 +145,7 @@
         "publisher": "Anthropic",
         "date_published": "2025-11-12",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260716071445/https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure"
       },
       "excerpt": "$50 billion investment in American computing infrastructure... data centers with Fluidstack in Texas and New York... come online throughout 2026.",
       "notes": "Fluidstack-built/operated custom site; Anthropic is funder/tenant not owner, so no power_capacity_mw recorded. Secondary reporting (DCD/others) identifies the NY site as a ~360 MW Fluidstack-TeraWulf project at Lake Mariner — that 360 MW figure is NOT confirmed from a fetched primary/allowed source and should be verified before use.",
@@ -171,7 +171,7 @@
         "publisher": "Anthropic",
         "date_published": "2025-11-18",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260716071415/https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships"
       },
       "excerpt": "Anthropic has committed to purchase $30 billion of Azure compute capacity",
       "notes": "Rented capacity from Microsoft (not Anthropic-owned) → recorded as cloud_partnership. Deal also includes Anthropic contracting additional compute capacity up to one gigawatt. Announced at Microsoft Ignite, Nov 18 2025.",
@@ -197,7 +197,7 @@
         "publisher": "Anthropic",
         "date_published": "2025-11-18",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260716071415/https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships"
       },
       "excerpt": "up to one gigawatt of compute capacity with NVIDIA Grace Blackwell and Vera Rubin systems",
       "notes": "First direct NVIDIA compute commitment (existing dataset only had AWS/Google/Broadcom silicon). Rented capacity → cloud_partnership, NOT owned power. 1 GW = 1,000 MW (upper bound; source says 'up to'). Same announcement: NVIDIA to invest up to $10B and Microsoft up to $5B into Anthropic (equity, not infra capex).",
@@ -223,7 +223,7 @@
         "publisher": "Epoch AI",
         "date_published": "2026-05-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260714055207/https://epoch.ai/gradient-updates/frontier-labs-dont-use-most-ai-compute"
       },
       "excerpt": "over 1 million H100e by end of 2025... 1.4 GW in capacity at the end of 2025, around 70% of OpenAI's 1.9 GW total.",
       "notes": "Third-party Epoch AI estimate of Anthropic's total accelerator fleet in H100-equivalents (Trainium + Nvidia + TPU, rented from AWS and Google). 'Over 1 million' is a floor; 1.4 GW total capacity also cited by Epoch (per internal OpenAI memo).",
@@ -249,7 +249,7 @@
         "publisher": "Epoch AI",
         "date_published": "2026-05-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260714055207/https://epoch.ai/gradient-updates/frontier-labs-dont-use-most-ai-compute"
       },
       "excerpt": "around 500,000 H100-equivalents (H100e) in Trainium2 chips at the end of 2025... housed in Amazon's Project Rainier campus in Indiana.",
       "notes": "Third-party estimate by Epoch AI. Units are H100-equivalents (H100e), not literal GPUs — measures Trainium2 fleet in the AWS Project Rainier campus at end of 2025.",
@@ -275,7 +275,7 @@
         "publisher": "Anthropic",
         "date_published": "2026-04-06",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260717222016/https://www.anthropic.com/news/google-broadcom-partnership-compute"
       },
       "excerpt": "multiple gigawatts of next-generation TPU capacity... we expect to come online starting in 2027.",
       "notes": "Google/Broadcom-provided TPU capacity (rented) — cloud_partnership. No specific GW figure disclosed ('multiple gigawatts'). date_published per page as read; publication month should be re-verified.",
@@ -301,7 +301,7 @@
         "publisher": "Anthropic",
         "date_published": "2026-04-06",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260717222016/https://www.anthropic.com/news/google-broadcom-partnership-compute"
       },
       "excerpt": "multiple gigawatts of next-generation TPU capacity... partnership with Google and Broadcom.",
       "notes": "RECLASSIFIED from custom_silicon per owner-attribution: this is a PARTNER-designed chip Anthropic uses, not Anthropic-designed silicon. Anthropic partnership with Broadcom (and Google) for next-generation custom TPU silicon. Chip designed by Google/Broadcom, not Anthropic.",
@@ -327,7 +327,7 @@
         "publisher": "Anthropic",
         "date_published": "2026-04-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260716071322/https://www.anthropic.com/news/anthropic-amazon-compute"
       },
       "excerpt": "up to 5 gigawatts (GW) of capacity for training and deploying Claude... nearly 1GW total of Trainium2 and Trainium3 capacity coming online by the end of 2026... committing more than $100 billion over ",
       "notes": "AWS-owned/operated capacity leased by Anthropic; recorded as cloud_partnership not power_capacity_mw. Anthropic states it currently uses 'over one million Trainium2 chips' (Anthropic's own claim, not a third-party fleet estimate). $100B AWS spend commitment over 10 years. Conservative low end of stated range: up to 5 GW; nearly 1 GW by end 2026.",
@@ -353,7 +353,7 @@
         "publisher": "Anthropic",
         "date_published": "2026-04-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260716071322/https://www.anthropic.com/news/anthropic-amazon-compute"
       },
       "excerpt": "nearly 1GW total of Trainium2 and Trainium3 capacity coming online by the end of 2026... currently use over one million Trainium2 chips to train and serve Claude.",
       "notes": "RECLASSIFIED from custom_silicon per owner-attribution: this is a PARTNER-designed chip Anthropic uses, not Anthropic-designed silicon. Anthropic runs Claude on AWS custom silicon (Trainium2/Trainium3, with Trainium4 in the multi-generation commitment) and co-optimizes for it. Not an Anthropic-designed chip; AWS/Annapurna is the designer.",
@@ -379,7 +379,7 @@
         "publisher": "Epoch AI",
         "date_published": "2026-05-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260714055207/https://epoch.ai/gradient-updates/frontier-labs-dont-use-most-ai-compute"
       },
       "excerpt": "Paying up to $15 billion per year for xAI's Colossus data center access.",
       "notes": "xAI/SpaceX-owned Colossus capacity rented by Anthropic — cloud_partnership. Figure ('up to $15 billion per year') is Epoch AI's characterization; no MW disclosed in this source. CoreWeave was also reported (Epoch/SemiAnalysis, April 2026) as an added compute partner but no fetched primary figure was captured.",
@@ -405,7 +405,7 @@
         "publisher": "TeraWulf Inc. (investors.terawulf.com)",
         "date_published": "2026-07-06",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260713092431/https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack"
       },
       "excerpt": "168 MW critical IT load AI data center campus in Abernathy, Texas... TeraWulf... sold its entire 50.1% ownership interest... to Fluidstack.",
       "notes": "Fluidstack/TeraWulf-owned (Anthropic is tenant/offtaker) — cloud_partnership, not Anthropic-owned. 168 MW critical IT (240 MW gross per secondary reporting), 120 acres, construction delivery targeted Q4 2026. Part of the Anthropic-Fluidstack $50B build-out. Publisher domain terawulf.com — flag for review.",
@@ -431,7 +431,7 @@
         "publisher": "TeraWulf Inc. (GlobeNewswire)",
         "date_published": "2026-07-06",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260711172207/https://www.globenewswire.com/news-release/2026/07/06/3322382/0/en/TeraWulf-Announces-Anthropic-Lease-at-Justified-Data-Campus-and-Sale-of-Majority-Interest-in-Abernathy-Joint-Venture-to-Fluidstack.html"
       },
       "excerpt": "The lease is expected to generate approximately $19 billion of contracted lease revenue over the initial term... The campus will accommodate approximately 401 MW of critical IT load",
       "notes": "Adds dollar figure ($19B / 20-year term) to existing hawesville-ky entry which only had ~401 MW. Value = $19,000,000,000. Leased from TeraWulf (not owned) → cloud_partnership. Same release: TeraWulf sold its 50.1% Abernathy TX (168 MW) JV stake to a Fluidstack-led group for ~$530M.",
@@ -457,7 +457,7 @@
         "publisher": "TeraWulf Inc. (investors.terawulf.com)",
         "date_published": "2026-07-06",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260713092431/https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack"
       },
       "excerpt": "approximately 401 MW of critical IT load... 20-year lease agreement... approximately $19 billion of contracted lease revenue... ramping to the full 401 MW by early 2028.",
       "notes": "TeraWulf-OWNED facility LEASED by Anthropic — attribute capacity to owner, so cloud_partnership not power_capacity_mw. 401 MW critical IT, initial capacity in service H2 2027, full 401 MW early 2028; $19B lease over 20-yr term. Publisher domain terawulf.com is the owner's newsroom (not in the pre-approved press list) — flag for review.",

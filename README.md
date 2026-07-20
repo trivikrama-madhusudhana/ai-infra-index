@@ -1,5 +1,12 @@
 # AI Infrastructure Index
 
+### ▶ Live dashboard: https://trivikrama-madhusudhana.github.io/ai-infra-index/
+
+Open it and click any lab to see its score broken down to the individual facts, each one linked to
+the public source it came from. No install, no code to run.
+
+[![The AI Infrastructure Index dashboard](docs/preview.jpg)](https://trivikrama-madhusudhana.github.io/ai-infra-index/)
+
 Everyone benchmarks the models. Almost nobody tracks the megawatts. This is a scorecard of the
 physical AI race, power capacity, datacenters, owned compute, and energy contracts, built so that
 every number traces to a public source and the score is deterministic code you can rerun.
@@ -58,7 +65,7 @@ python scripts/build_site.py              # regenerate the static site into docs
 python -m pytest tests/                   # golden determinism test
 ```
 
-Facts enter through pull requests only, and `main` is never pushed to directly. `CLAUDE.md` is the
+Facts enter through pull requests only, and `main` is never pushed to directly. `CONTRIBUTING.md` is the
 binding rulebook for how a fact is added and verified. The 15-day update cycle (`/update-cycle`)
 appends new facts and can run headless on a cron to open a PR unattended; a human still merges.
 

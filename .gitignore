@@ -6,3 +6,6 @@ __pycache__/
 venv/
 # audit reports are working artifacts pasted into PRs, not committed source
 audit-*.md
+
+# Claude Code tooling, never publish
+CLAUDE.md

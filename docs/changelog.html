@@ -21,19 +21,18 @@
 <h2>2026-07-20: Baseline</h2>
 <p>First pass at all eight labs. Eight research agents pulled the documented record from public sources, a second agent re-fetched every source to confirm the number matched the page, and a third searched for anything the first pass missed. 152 candidate facts came back; 136 survived into the ledger. The 16 that did not were all sourced from domains I will not score a facts ledger on (Wikipedia, an aggregator, a fan blog, an arxiv preprint), and each dropped fact is logged with its reason.</p>
 <p>Capacity is credited to whoever owns the site. That single rule drives most of the ranking. xAI and Meta lead because they own their datacenters (Colossus, Prineville and the Hyperion build). OpenAI scores low despite the 500 billion dollar Stargate program, because Stargate is operated by Crusoe, Oracle, Vantage and SB Energy, so every megawatt of it lands as a <code>cloud_partnership</code> fact rather than owned capacity. Anthropic is lower still: it rents everything, owns no power, and its accelerators are AWS and Google silicon, not its own.</p>
-<p>Numbers as of 2026-07-20 (scoring v1): xai 60.06, meta 53.55, google 29.22, openai 22.73, anthropic 14.60, and moonshot / minimax / zhipu at 0.00.</p>
+<p>Numbers as of 2026-07-20 (scoring v1): xai 60.06, meta 53.55, google 47.25, openai 22.73, anthropic 14.60, and moonshot / minimax / zhipu at 0.00.</p>
 <p>Corrections made during assembly:</p>
 <ul><li>Anthropic&#x27;s two <code>custom_silicon</code> facts (Broadcom TPU, AWS Trainium) were reclassified to</li></ul>
 <p>  <code>cloud_partnership</code>. Both describe a partner&#x27;s chip that Anthropic uses, not silicon Anthropic   designs, so under owner-attribution they should not credit its silicon layer. This moved   Anthropic from 26.40 to 14.60.</p>
-<p>Open flags for review (not yet resolved):</p>
-<ul><li>xAI&#x27;s Terafab fact still counts as <code>custom_silicon</code>. xAI co-owns the fab JV, so this is a</li></ul>
-<p>  genuine judgment call rather than a clear error, and it props up xAI&#x27;s vertical-integration   score. Left as-is pending a decision.</p>
-<ul><li>Google scores 0 on power capacity. Google plainly runs enormous owned datacenters; the gap is</li></ul>
-<p>  that per-site megawatt figures are hard to source precisely, not that the capacity is absent.   This is a coverage gap to close, not a finding that Google has no power.</p>
-<ul><li>The Chinese labs are thin (Moonshot 2 facts, MiniMax 5, Zhipu 5) and mostly unverified. Their</li></ul>
-<p>  infrastructure disclosure is sparse and often Chinese-language; MiniMax has no scoreable fact   yet. Zero here means &quot;not publicly documented&quot;, not &quot;no infrastructure&quot;.</p>
-<ul><li>Most facts still lack a web.archive.org snapshot. Backfilling archive URLs is the next</li></ul>
-<p>  maintenance pass.</p>
+<p>Same-day refinements:</p>
+<ul><li><strong>Google power gap closed.</strong> A focused research pass across four angles (US datacenters,</li></ul>
+<p>  international, PPAs, capex) added 14 verified facts: owned datacenters at The Dalles, Council   Bluffs, and Berkeley County from Google&#x27;s own site, a 225 MW South Carolina PPA, and a 250 MW   operational figure for New Albany. Google moved from 29.22 to 47.25. Per-site megawatts are   still hard to source precisely, so power capacity is likely still under-counted, not over.</p>
+<ul><li><strong>xAI Terafab kept, now labeled.</strong> The Terafab chip-fab fact still counts as custom silicon,</li></ul>
+<p>  since xAI co-owns the JV. It is now flagged on the dashboard as an explicit judgment call so   readers can weigh it themselves.</p>
+<ul><li><strong>Archive snapshots backfilled.</strong> 121 of 136 facts gained a web.archive.org snapshot from the</li></ul>
+<p>  Wayback availability API; 15 with no existing snapshot are pending a save pass.</p>
+<p>Still thin: the Chinese labs (Moonshot, MiniMax, Zhipu) remain sparsely documented and mostly unverified. Zero there means &quot;not publicly documented&quot;, not &quot;no infrastructure&quot;.</p>
 </main>
 <footer>
   <p>Every number links to a public source. Unknown means unknown. We never estimate.</p>

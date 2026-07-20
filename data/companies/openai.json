@@ -41,7 +41,7 @@
         "publisher": "CoreWeave",
         "date_published": "2025-03-10",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260701234315/https://coreweave.com/news/coreweave-announces-agreement-with-openai-to-deliver-ai-infrastructure"
       },
       "excerpt": "up to $11.9 billion",
       "notes": "Initial CoreWeave-OpenAI infrastructure agreement, up to $11.9B; OpenAI to receive $350M of CoreWeave stock. Later expanded by up to $4B (May 2025) and a further $6.5B (per CoreWeave investor releases), ~$22.4B cumulative. Rented compute = cloud_partnership.",
@@ -67,7 +67,7 @@
         "publisher": "Lancium",
         "date_published": "2025-03-18",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260714180354/https://lancium.com/locations/"
       },
       "excerpt": "Lancium's Abilene campus features a 1.2GW interconnect, which has been fully approved by ERCOT",
       "notes": "ERCOT interconnection rights (1.2 GW) secured by Lancium (AEP interconnection study, grid rights obtained 2021); Crusoe operator-tenant. Domain lancium.com (not in scoreable-domain list). Site leased to OpenAI workloads via Oracle.",
@@ -93,7 +93,7 @@
         "publisher": "Data Center Frontier",
         "date_published": "2025-03-24",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260308135928/https://www.datacenterfrontier.com/hyperscale/article/55276169/crusoe-adds-45-gw-natural-gas-to-fuel-ai-expands-abilene-data-center-to-12-gw"
       },
       "excerpt": "Crusoe Adds 4.5 GW Natural Gas to Fuel AI, Expands Abilene Data Center to 1.2 GW",
       "notes": "Flagship Stargate site. Operated by Crusoe Energy on land leased from Lancium; developed with Oracle; OpenAI is workload tenant via Oracle/OCI. NOT OpenAI-owned, hence cloud_partnership. 8 buildings, ~4M sq ft. Epoch reports OpenAI later capped this site at 1.2 GW (dropped a 2.1 GW expansion).",
@@ -119,7 +119,7 @@
         "publisher": "Tom's Hardware",
         "date_published": "2025-05-01",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260413210224/https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-follows-elon-musks-lead-gas-turbines-to-be-deployed-at-its-first-stargate-site-for-additional-power"
       },
       "excerpt": "29 GE Vernova LM2500XPRESS gas turbines ... each capable of producing 34MW. If all turbines are installed, the total output would be 986MW.",
       "notes": "Abilene campus: on-site natural gas microgrid (up to 986 MW from 29 GE Vernova turbines) plus ERCOT grid power including local wind. Crusoe adds 4.5 GW natural gas via Engine No. 1 JV (per Data Center Frontier). Domain tomshardware.com (press, not in explicit scoreable list).",
@@ -145,7 +145,7 @@
         "publisher": "G42",
         "date_published": "2025-05-22",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260623124247/https://www.g42.ai/resources/news/global-tech-alliance-launches-stargate-uae"
       },
       "excerpt": "Stargate UAE is a 1-gigawatt compute cluster ... The first 200-megawatt AI cluster is expected to go live in 2026",
       "notes": "Stargate UAE (Abu Dhabi), part of the 5GW UAE-U.S. AI Campus. Built by G42, operated by OpenAI and Oracle; Nvidia GB300 systems, plus Cisco, SoftBank. First cluster 200 MW; full cluster planned 1 GW (1000 MW). Recorded as cloud_partnership since OpenAI does not own the facility (G42-built/owned campus).",
@@ -171,7 +171,7 @@
         "publisher": "G42",
         "date_published": "2025-05-22",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260623124247/https://www.g42.ai/resources/news/global-tech-alliance-launches-stargate-uae"
       },
       "excerpt": "The facility will be powered by nuclear, solar, and natural gas to minimize carbon emissions",
       "notes": "Energy mix for the UAE-U.S. AI Campus hosting Stargate UAE.",
@@ -197,7 +197,7 @@
         "publisher": "Data Center Dynamics",
         "date_published": "2025-09-10",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20251031030823/https://www.datacenterdynamics.com/en/news/openai-signs-300bn-cloud-deal-with-oracle-report/"
       },
       "excerpt": "OpenAI signed an agreement with Oracle to buy $300 billion in computing power over a five-year period, beginning in 2027, which will supply 4.5 GW of capacity for OpenAI's Stargate buildout.",
       "notes": "OpenAI-Oracle 4.5 GW additional Stargate capacity; ~$300 billion over five years starting 2027. Rented compute from Oracle = cloud_partnership. 4.5 GW announcement 2025-07-22 (OpenAI); $300B term reported Sep 2025. DCD direct fetch 403; quote via WebSearch of DCD/OpenAI.",
@@ -223,7 +223,7 @@
         "publisher": "Nscale",
         "date_published": "2025-07-31",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260713102057/https://www.nscale.com/press-releases/stargate-norway-nscale-aker-openai"
       },
       "excerpt": "Stargate Norway is planned to deliver 230MW of capacity, with ambitions to expand by an additional 290MW",
       "notes": "Stargate Norway in Narvik (Kvandal), OpenAI's first European data center. 50/50 JV between Nscale and Aker (~$1B initial capital); OpenAI is offtaker/operator, does not own — recorded as cloud_partnership. Targeting 100,000 NVIDIA GPUs by end-2026 (company target, not a third-party tracker so not recorded as gpu_count). Base 230 MW + potential 290 MW expansion.",
@@ -249,7 +249,7 @@
         "publisher": "Nscale",
         "date_published": "2025-07-31",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260713102057/https://www.nscale.com/press-releases/stargate-norway-nscale-aker-openai"
       },
       "excerpt": "Powered entirely by renewable energy",
       "notes": "Northern Norway hydropower; closed-loop direct-to-chip liquid cooling with heat reuse.",
@@ -301,7 +301,7 @@
         "publisher": "Data Center Dynamics",
         "date_published": "2025-09-10",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20251031030823/https://www.datacenterdynamics.com/en/news/openai-signs-300bn-cloud-deal-with-oracle-report/"
       },
       "excerpt": "OpenAI signed an agreement with Oracle to buy $300 billion in computing power over a five-year period, beginning in 2027",
       "notes": "Dollar value of OpenAI's Oracle cloud commitment (~$300B, 5 years from 2027). Same deal as the 4.5 GW fact. Recorded separately as the USD figure. DCD fetch 403; quote via WebSearch.",
@@ -327,7 +327,7 @@
         "publisher": "NVIDIA Newsroom",
         "date_published": "2025-09-22",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260712235256/https://nvidianews.nvidia.com/news/openai-and-nvidia-announce-strategic-partnership-to-deploy-10gw-of-nvidia-systems"
       },
       "excerpt": "at least 10 gigawatts of NVIDIA systems ... NVIDIA intends to invest up to $100 billion in OpenAI ... The first gigawatt of NVIDIA systems will be deployed in the second half of 2026",
       "notes": "Letter of intent (announced). Nvidia to invest up to $100B in OpenAI progressively as each GW deploys; first GW 2H2026 on Vera Rubin platform. Jensen Huang told CNBC 10 GW ~= 4-5 million GPUs (not recorded as gpu_count: CEO statement, not a tracker).",
@@ -353,7 +353,7 @@
         "publisher": "OpenAI",
         "date_published": "2025-09-23",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260715083129/https://openai.com/index/five-new-stargate-sites/"
       },
       "excerpt": "brings Stargate to nearly 7 gigawatts of planned capacity and over $400 billion in investment over the next three years.",
       "notes": "Five new sites announced with Oracle and SoftBank. openai.com direct fetch 403; quote captured via WebSearch of the OpenAI page. 'over $400 billion' recorded at conservative floor of 400000000000.",
@@ -379,7 +379,7 @@
         "publisher": "OpenAI",
         "date_published": "2025-09-23",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260715083129/https://openai.com/index/five-new-stargate-sites/"
       },
       "excerpt": "brings Stargate to nearly 7 gigawatts of planned capacity",
       "notes": "Aggregate planned Stargate capacity across Abilene + five new sites + CoreWeave. Partner-operated (Crusoe/Vantage/STACK/SB Energy/Oracle), OpenAI is customer via Stargate JV, so recorded as cloud_partnership not owned capacity. 'nearly 7 GW' recorded at conservative 7000 MW.",
@@ -405,7 +405,7 @@
         "publisher": "CoreWeave",
         "date_published": "2025-09-25",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260512092657/https://www.coreweave.com/news/coreweave-expands-agreement-with-openai-by-up-to-6-5b"
       },
       "excerpt": "The agreement announced today brings the total contract value with OpenAI up to approximately $22.4 billion.",
       "notes": "Updated CoreWeave total contract value. Existing dataset has the initial $11.9B (March 2025). Sept 25 2025 expansion added up to $6.5B (on top of a $4B May expansion), bringing cumulative total to ~$22.4B. OpenAI rents this capacity — cloud_partnership, not owned.",
@@ -431,7 +431,7 @@
         "publisher": "AMD",
         "date_published": "2025-10-06",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260710200703/https://www.amd.com/en/newsroom/press-releases/2025-10-6-amd-and-openai-announce-strategic-partnership-to-d.html"
       },
       "excerpt": "6 gigawatt agreement to power OpenAI's next-generation AI infrastructure across multiple generations of AMD Instinct GPUs ... first 1 gigawatt deployment of AMD Instinct MI450 GPUs ... second half of ",
       "notes": "Definitive agreement. AMD issued OpenAI a warrant for up to 160M AMD shares vesting to 6 GW; potential ~$90B cumulative hardware revenue for AMD. amd.com direct fetch timed out; quote via WebSearch of AMD/OpenAI/SEC (SEC filing d28189dex991.htm).",
@@ -457,7 +457,7 @@
         "publisher": "TechCrunch",
         "date_published": "2025-10-14",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260201071622/https://techcrunch.com/2025/10/14/openai-and-broadcom-partner-on-ai-hardware/"
       },
       "excerpt": "10 gigawatts of custom AI accelerator hardware ... OpenAI designs the chips; Broadcom manufactures them ... Deployment ... Starting in 2026 through 2029",
       "notes": "OpenAI-Broadcom strategic collaboration announced 2025-10-13 to deploy 10 GW of OpenAI-designed AI accelerators; Broadcom develops/deploys with Ethernet networking; racks start 2H2026, complete by end 2029. FT estimated potential cost $350B-$500B (not disclosed). Custom silicon program = true.",
@@ -483,7 +483,7 @@
         "publisher": "Vantage Data Centers",
         "date_published": "2025-10-22",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260712080200/https://vantage-dc.com/news/openai-oracle-and-vantage-data-centers-announce-stargate-data-center-site-in-wisconsin/"
       },
       "excerpt": "close to 1 gigawatt of AI capacity",
       "notes": "'Lighthouse' campus, Port Washington WI; Vantage $15B+ investment; 100% matched zero-emission energy (solar, wind, battery), 70% to campus; completion 2028. Primary source says 'close to 1 gigawatt' (recorded 1000 MW, conservative); Epoch projects 1.3 GW. Vantage-operated, OpenAI = customer.",
@@ -509,7 +509,7 @@
         "publisher": "Data Center Dynamics",
         "date_published": "2025-10-28",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20251129222342/https://www.datacenterdynamics.com/en/news/openai-completes-for-profit-move-microsoft-given-27-stake-and-250bn-azure-contract-but-no-longer-has-cloud-right-of-first-refusal/"
       },
       "excerpt": "OpenAI contracted to purchase an incremental $250 billion of Azure services, with Microsoft no longer having a right of first refusal to be OpenAI's compute provider.",
       "notes": "Signed 2025-10-28 alongside OpenAI for-profit recapitalization; Microsoft holds ~27% of the PBC. Microsoft no longer exclusive cloud provider. Rented Azure compute = cloud_partnership. Corroborated by GeekWire and MSFT 10-Q.",
@@ -535,7 +535,7 @@
         "publisher": "Data Center Dynamics",
         "date_published": "2025-11-01",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260608181025/https://www.datacenterdynamics.com/en/news/google-offers-its-tpus-to-ai-cloud-providers-report/"
       },
       "excerpt": "OpenAI has diversified its compute infrastructure by moving a significant portion of ChatGPT's inference operations onto Google's custom Tensor Processing Units (TPUs)",
       "notes": "Reported late 2025: OpenAI runs part of ChatGPT inference on Google Cloud TPUs (Ironwood generation). No specific MW/dollar figure disclosed. Softer/reported deal; recorded as boolean cloud_partnership. Cross-referenced CNBC.",
@@ -561,7 +561,7 @@
         "publisher": "About Amazon (AWS)",
         "date_published": "2025-11-03",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260712203047/https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure"
       },
       "excerpt": "$38 billion agreement, which will have continued growth over the next seven years ... hundreds of thousands of state-of-the-art NVIDIA GPUs ... GB200s and GB300s",
       "notes": "Seven-year deal; hundreds of thousands of Nvidia GB200/GB300 GPUs via EC2 UltraServers; all capacity targeted before end of 2026. Rented compute = cloud_partnership. Followed removal of Microsoft's cloud exclusivity.",
@@ -587,7 +587,7 @@
         "publisher": "Epoch AI",
         "date_published": "2026-04-17",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260711080535/https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
       },
       "excerpt": "Dona Ana County, New Mexico - Projected Capacity: 2.2 GW (4.6 million H100-equivalents) ... Operator: STACK Infrastructure (Project Jupiter)",
       "notes": "New Stargate site near Las Cruces (Project Jupiter). Operated by STACK Infrastructure; two natural gas microgrids; foundation work underway; completion Q4 2028. Epoch AI projection. OpenAI = customer via Stargate, not owner.",
@@ -613,7 +613,7 @@
         "publisher": "Epoch AI",
         "date_published": "2026-04-17",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260711080535/https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
       },
       "excerpt": "Milam County, Texas - Projected Capacity: 1.2 GW (2.5 million H100-equivalents) ... Operator: SB Energy (SoftBank subsidiary)",
       "notes": "New Stargate site ~70 miles NE of Austin. Operated by SB Energy (SoftBank); first building delivery Oct; completion Q4 2028. Epoch AI projection. OpenAI = Stargate customer, not owner.",
@@ -639,7 +639,7 @@
         "publisher": "Epoch AI",
         "date_published": "2026-04-17",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260711080535/https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
       },
       "excerpt": "Saline Township, Michigan - Projected Capacity: 1.4 GW (2.9 million H100-equivalents) ... DTE Energy will provide 100% of the power, augmented by battery",
       "notes": "'The Barn' campus SW of Detroit; operator Related Digital; grid power from DTE Energy + battery; foundation work underway; completion Q4 2028. Epoch AI projection. OpenAI = Stargate customer, not owner.",
@@ -665,7 +665,7 @@
         "publisher": "Epoch AI",
         "date_published": "2026-04-17",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260711080535/https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
       },
       "excerpt": "Shackelford County, Texas - Projected Capacity: 2.0 GW (4.2 million H100-equivalents) ... Operator: Vantage Data Centers",
       "notes": "New Stargate site (greater Abilene / Vantage 'Frontier' project, part of ~$25B development). Operated by Vantage Data Centers with Oracle; OpenAI is Stargate customer, not owner. Capacity is Epoch AI projection; onsite natural gas microgrid; completion Q4 2028.",
@@ -691,7 +691,7 @@
         "publisher": "Epoch AI",
         "date_published": "2026-04-17",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260711080535/https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
       },
       "excerpt": "Lordstown, Ohio - Projected Capacity: <0.3 GW ... primarily server manufacturing facility ... Operator: SoftBank-Foxconn joint venture",
       "notes": "Announced as Stargate site but primarily a server-manufacturing facility (SoftBank-Foxconn JV) on former GM/Foxconn complex, small (<0.3 GW) compute; local ban on future data centers noted. Epoch AI.",
@@ -717,7 +717,7 @@
         "publisher": "Epoch AI",
         "date_published": "2026-04-17",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260711080535/https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
       },
       "excerpt": "Abilene, Texas - Current Capacity: 0.3 GW (250,000 H100-equivalents) ... four of the eight buildings already operational",
       "notes": "Third-party estimate by Epoch AI (H100-equivalents), for the Abilene Stargate site serving OpenAI. Projected 1.2 GW = ~1.0 million H100-equivalents at full build. Fleet estimator: Epoch AI.",
@@ -743,7 +743,7 @@
         "publisher": "TechCrunch",
         "date_published": "2026-06-24",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260702015013/https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/"
       },
       "excerpt": "OpenAI unveils its first custom chip, built by Broadcom",
       "notes": "'Jalapeño' - OpenAI's first custom AI (inference) chip, designed with Broadcom and manufactured by TSMC (TSMC confirmed via Digitimes/CNBC). First accelerator in a multi-generation platform; deployments begin late 2026. Value true = program exists.",

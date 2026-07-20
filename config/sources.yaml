@@ -20,6 +20,7 @@ tiers:
     - google.com
     - blog.google
     - deepmind.google
+    - datacenters.google
     - ai.meta.com
     - meta.com
     - x.ai
@@ -97,6 +98,9 @@ tiers:
     - epochai.org
     - epoch.ai
     - semianalysis.com
+    # Grid interconnection-queue tracker (aggregates FERC/ISO filings; capacities are
+    # range buckets, recorded at the conservative low end and noted as such)
+    - interconnection.fyi
     # China-focused English press (owner decision 2026-07-20: scoreable Tier B
     # for Chinese labs; flag translation uncertainty in each fact's `notes`).
     - scmp.com
