@@ -1,0 +1,212 @@
+# AI Infrastructure Index scoring rubric v1
+#
+# This file IS the methodology. scripts/gen_methodology.py renders it verbatim
+# into METHODOLOGY.md, and scripts/score.py is a pure function of (ledger, this
+# file, --as-of). No LLM, no network, no randomness. Change the rubric here and
+# the version below; never hand-edit METHODOLOGY.md or index.json.
+#
+# Scoring pipeline, per company:
+#   1. Take eligible facts only (see `eligibility`).
+#   2. For each category -> each component: filter the eligible facts to the
+#      component's metric(s) and status_filter, apply staleness decay, aggregate,
+#      then map the aggregate through the component's bands to 0-100 points.
+#   3. category.points = sum(component.weight * component.band_points)
+#      category.contribution = category.weight * category.points
+#   4. score = sum(category.contribution)  ->  a 0-100 number.
+#
+# Bands: a sorted list of [threshold, points]. A value scores the points of the
+# highest threshold it meets or exceeds. Thresholds start at 0 so every value maps.
+
+version: 1
+title: AI Infrastructure Index
+description: >-
+  A deterministic scorecard of the physical AI race: power capacity, compute
+  ownership, vertical integration, expansion pipeline, and energy security.
+  Every input is a verified fact from a Tier A/B public source; nothing is
+  estimated or imputed. Missing data scores zero and displays as unknown.
+
+eligibility:
+  require_verified: true          # verification.verified must be true
+  require_tiers: [A, B]           # source domain must resolve to Tier A or B
+  exclude_superseded: true        # facts with superseded_by set do not score
+  note: >-
+    A fact that fails any eligibility rule contributes nothing and is listed as
+    ineligible in the per-company breakdown, never silently dropped.
+
+decay:
+  # Announcements that never progressed are worth less than fresh ones.
+  applies_to_status: [announced]
+  age_months: 24
+  age_measured_from: as_of_date   # fact.as_of_date compared to the --as-of date
+  multiplier: 0.5
+  follow_up_status: [contracted, under_construction, operational]
+  note: >-
+    An `announced` fact at least 24 months older than the scoring date, with no
+    later eligible fact at the same (company, site) in a follow_up_status, has
+    its numeric value multiplied by 0.5 before sum/max aggregation. Decay never
+    removes a fact from count or presence (bool_any) aggregations.
+
+aggregations:
+  sum: Sum of the (decay-adjusted) numeric values.
+  max: Largest single (decay-adjusted) numeric value.
+  count: Number of qualifying facts.
+  count_distinct_site: Number of distinct `site` values among qualifying facts.
+  bool_any: 1 if any qualifying fact exists, else 0.
+
+categories:
+
+  power_capacity:
+    label: Power capacity
+    weight: 0.30
+    description: >-
+      Electrical capacity physically being delivered today or actively under
+      construction. This is the hardest constraint in the AI build-out and the
+      heaviest category. Operational capacity is weighted above construction.
+    components:
+      operational_mw:
+        label: Operational capacity (MW)
+        weight: 0.65
+        metric: power_capacity_mw
+        status_filter: [operational]
+        aggregation: sum
+        bands: [[0, 0], [1, 15], [100, 35], [300, 50], [600, 65], [1000, 80], [2000, 90], [4000, 100]]
+        description: Total MW of power capacity reported as operational, summed across sites.
+      under_construction_mw:
+        label: Under-construction capacity (MW)
+        weight: 0.35
+        metric: power_capacity_mw
+        status_filter: [under_construction]
+        aggregation: sum
+        bands: [[0, 0], [1, 15], [100, 35], [300, 50], [600, 65], [1000, 80], [2000, 90], [4000, 100]]
+        description: Total MW of power capacity reported as under construction, summed across sites.
+
+  compute_ownership:
+    label: Compute ownership
+    weight: 0.20
+    description: >-
+      The scale of accelerator compute the lab controls, plus whether it designs
+      its own silicon and owns datacenter sites rather than renting all of them.
+    components:
+      gpu_fleet:
+        label: Accelerator fleet (chips)
+        weight: 0.55
+        metric: gpu_count
+        status_filter: [announced, contracted, under_construction, operational, n/a]
+        aggregation: sum
+        bands: [[0, 0], [1, 20], [10000, 40], [50000, 60], [100000, 75], [300000, 90], [1000000, 100]]
+        description: >-
+          Total accelerators attributed to the lab. These are third-party
+          estimates (Epoch AI, SemiAnalysis) recorded as facts and attributed to
+          their source; we never estimate fleet sizes ourselves.
+      custom_silicon_programs:
+        label: Custom silicon programs
+        weight: 0.25
+        metric: custom_silicon
+        status_filter: [announced, contracted, under_construction, operational, n/a]
+        aggregation: count
+        bands: [[0, 0], [1, 60], [2, 100]]
+        description: Count of distinct in-house accelerator/silicon programs.
+      owned_sites:
+        label: Owned datacenter sites
+        weight: 0.20
+        metric: owned_facility
+        status_filter: [under_construction, operational]
+        aggregation: count_distinct_site
+        bands: [[0, 0], [1, 40], [3, 70], [6, 100]]
+        description: Distinct datacenter sites the lab owns (not solely rented from a cloud).
+
+  vertical_integration:
+    label: Vertical integration
+    weight: 0.20
+    description: >-
+      How many layers of the stack (silicon, datacenter, power) the lab
+      demonstrably owns or controls rather than renting from a partner.
+    components:
+      silicon_layer:
+        label: Silicon layer
+        weight: 0.34
+        metric: custom_silicon
+        status_filter: [announced, contracted, under_construction, operational, n/a]
+        aggregation: bool_any
+        bands: [[0, 0], [1, 100]]
+        description: Whether the lab designs its own accelerators.
+      datacenter_layer:
+        label: Datacenter layer
+        weight: 0.33
+        metric: owned_facility
+        status_filter: [under_construction, operational]
+        aggregation: count_distinct_site
+        bands: [[0, 0], [1, 60], [3, 100]]
+        description: Whether the lab owns datacenter facilities, and at how many sites.
+      power_layer:
+        label: Power layer
+        weight: 0.33
+        metrics: [ppa_mw, energy_source_mix]
+        status_filter: [contracted, under_construction, operational]
+        aggregation: bool_any
+        bands: [[0, 0], [1, 100]]
+        description: Whether the lab directly contracts or owns power supply.
+
+  expansion_pipeline:
+    label: Expansion pipeline
+    weight: 0.15
+    description: >-
+      Committed-but-not-yet-live growth: announced and contracted power, capital
+      commitments, and grid interconnection filings. Subject to staleness decay.
+    components:
+      pipeline_mw:
+        label: Announced / contracted capacity (MW)
+        weight: 0.50
+        metric: power_capacity_mw
+        status_filter: [announced, contracted]
+        aggregation: sum
+        bands: [[0, 0], [1, 15], [100, 35], [300, 50], [600, 65], [1000, 80], [2000, 90], [4000, 100]]
+        description: MW of power announced or contracted but not yet under construction.
+      capex_announced:
+        label: Announced capital (USD)
+        weight: 0.30
+        metric: capex_announced_usd
+        status_filter: [announced, contracted, under_construction, operational, n/a]
+        aggregation: sum
+        bands: [[0, 0], [1, 20], [1000000000, 40], [10000000000, 60], [50000000000, 80], [100000000000, 100]]
+        description: Publicly announced infrastructure capital commitments, in USD.
+      interconnection_filings:
+        label: Grid interconnection filings
+        weight: 0.20
+        metric: interconnection_filing
+        status_filter: [announced, contracted, under_construction, operational, n/a]
+        aggregation: count
+        bands: [[0, 0], [1, 50], [3, 80], [6, 100]]
+        description: Count of grid interconnection queue filings (ERCOT/FERC/utility).
+
+  energy_security:
+    label: Energy security
+    weight: 0.15
+    description: >-
+      Secured, ideally firm and clean, power supply: long-term PPAs, energy-mix
+      disclosures, and any owned generation feeding operational sites.
+    components:
+      contracted_ppa_mw:
+        label: Contracted power (PPA MW)
+        weight: 0.55
+        metric: ppa_mw
+        status_filter: [contracted, operational]
+        aggregation: sum
+        bands: [[0, 0], [1, 15], [100, 35], [300, 50], [600, 65], [1000, 80], [2000, 100]]
+        description: MW of power secured through contracted or operational power-purchase agreements.
+      energy_source_diversity:
+        label: Energy-source diversity
+        weight: 0.25
+        metric: energy_source_mix
+        status_filter: [announced, contracted, under_construction, operational, n/a]
+        aggregation: count_distinct_site
+        bands: [[0, 0], [1, 50], [2, 80], [3, 100]]
+        description: Distinct sites with a disclosed energy-source mix.
+      owned_generation:
+        label: Owned / operational generation
+        weight: 0.20
+        metric: ppa_mw
+        status_filter: [operational]
+        aggregation: bool_any
+        bands: [[0, 0], [1, 100]]
+        description: Whether any PPA/generation is actually operational and feeding load.

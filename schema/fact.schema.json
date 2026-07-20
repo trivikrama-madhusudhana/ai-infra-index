@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/trivikrama-madhusudhana/ai-infra-index/schema/fact.schema.json",
+  "title": "AI Infrastructure Index, company fact ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["company", "facts"],
+  "properties": {
+    "company": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "facts": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/fact" }
+    }
+  },
+  "definitions": {
+    "fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "company", "metric", "value", "unit", "status", "site",
+        "as_of_date", "source", "excerpt", "added", "superseded_by", "verification"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+-[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{3}$" },
+        "company": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "metric": {
+          "type": "string",
+          "enum": [
+            "power_capacity_mw", "datacenter_site", "ppa_mw", "gpu_count",
+            "custom_silicon", "cloud_partnership", "owned_facility",
+            "capex_announced_usd", "interconnection_filing", "energy_source_mix"
+          ]
+        },
+        "value": { "type": ["number", "string", "boolean"] },
+        "unit": {
+          "type": "string",
+          "enum": ["MW", "USD", "GPUs", "count", "text", "boolean"]
+        },
+        "status": {
+          "type": "string",
+          "enum": ["announced", "contracted", "under_construction", "operational", "n/a"]
+        },
+        "site": { "type": "string", "minLength": 1 },
+        "as_of_date": { "type": "string", "format": "date" },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["url", "publisher", "date_published", "date_accessed"],
+          "properties": {
+            "url": { "type": "string", "pattern": "^https://" },
+            "publisher": { "type": "string", "minLength": 1 },
+            "date_published": { "type": "string", "format": "date" },
+            "date_accessed": { "type": "string", "format": "date" },
+            "archive_url": { "type": ["string", "null"], "pattern": "^https://" }
+          }
+        },
+        "excerpt": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "notes": { "type": ["string", "null"] },
+        "added": { "type": "string", "format": "date" },
+        "superseded_by": { "type": ["string", "null"], "pattern": "^[a-z0-9-]+-[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{3}$" },
+        "verification": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["verified", "checked_on", "verifier_note"],
+          "properties": {
+            "verified": { "type": "boolean" },
+            "checked_on": { "type": ["string", "null"], "format": "date" },
+            "verifier_note": { "type": ["string", "null"] }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "company": "minimax",
+  "facts": [
+    {
+      "id": "minimax-2026-07-20-001",
+      "company": "minimax",
+      "metric": "cloud_partnership",
+      "value": 142000000,
+      "unit": "USD",
+      "status": "operational",
+      "site": "alibaba-cloud",
+      "as_of_date": "2025-09-30",
+      "source": {
+        "url": "https://eu.36kr.com/en/p/3609403248542466",
+        "publisher": "36Kr (EU)",
+        "date_published": "2025-11-25",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "MiniMax spent about 142 million US dollars (about 1 billion yuan) on computing - service expenses related to training in the first three quarters of this year.",
+      "notes": "Rented compute (opex, not owned-facility capex). Figure is training-related computing-service spend for first three quarters of 2025, from MiniMax IPO prospectus as reported by 36Kr. IPO prospectus separately reports Alibaba Cloud spend of ~$40k (2022), $3.1M (2023), $10M (2024), $58.4M (9M2025) and future purchase caps $115M/$125M/$135M for 2026/2027/2028 - but I could not fetch a page carrying those verbatim (itiger.com 403), so those specific figures are search-summary only and unverified. date_published approximate. Translation/secondary-source uncertainty.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "The $142M number and period ARE on the page: 'MiniMax spent about 142 million US dollars (about 1 billion yuan) on computing-service expenses related to training in the first three quarters of this year' (Q1-Q3 2025, i.e. through 2025-09-30). BUT the page attributes this to general 'computing-servic"
+      }
+    },
+    {
+      "id": "minimax-2026-07-20-002",
+      "company": "minimax",
+      "metric": "cloud_partnership",
+      "value": "Light-asset strategy: MiniMax does not own training clusters and has no meaningful local compute; rents from a diverse set of cloud suppliers, including Chinese firms and Singapore-based providers, beyond Alibaba Cloud.",
+      "unit": "text",
+      "status": "operational",
+      "site": "multi-cloud-suppliers",
+      "as_of_date": "2026-01-08",
+      "source": {
+        "url": "https://www.chinatalk.media/p/zhipu-and-minimax-ipo",
+        "publisher": "ChinaTalk (Irene Zhang)",
+        "date_published": "2026-01-08",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "MiniMax \"does not have its own training clusters and has no meaningful local compute\"; the prospectus lists diverse cloud suppliers, some Chinese and some Singapore-based.",
+      "notes": "Source domain chinatalk.media is NOT on the preferred list (Tier-B analysis of the HK IPO prospectus) - flag for review. Reinforces that MiniMax owns no datacenters/GPU clusters. Suppliers are anonymized A-K in the prospectus; only Alibaba Cloud is publicly identified. Article publish date approximate (early Jan 2026, around the Jan 9 2026 HK listing) - date uncertain. Secondary-source / English-summary-of-Chinese-filing uncertainty.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    }
+  ]
+}

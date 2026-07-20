@@ -1,0 +1,707 @@
+{
+  "company": "xai",
+  "facts": [
+    {
+      "id": "xai-2026-07-20-001",
+      "company": "xai",
+      "metric": "gpu_count",
+      "value": 100000,
+      "unit": "GPUs",
+      "status": "operational",
+      "site": "colossus-1-memphis-tn",
+      "as_of_date": "2024-09-02",
+      "source": {
+        "url": "https://epoch.ai/data/gpu_clusters.csv",
+        "publisher": "Epoch AI",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "This weekend, the @xAI team brought our Colossus 100k H100 training cluster online.... Moreover, it will double in size to 200k (50k H200s) in a few months",
+      "notes": "Epoch AI tracker: Colossus Memphis Phase 1 = 100,000 NVIDIA H100 SXM5, first operational 2024-09-02.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Epoch CSV 'xAI Colossus Memphis Phase 1', 2024-09-02, 100,000 GPUs (H100s), status 'Existing'. Exact match."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-002",
+      "company": "xai",
+      "metric": "gpu_count",
+      "value": 200000,
+      "unit": "GPUs",
+      "status": "operational",
+      "site": "colossus-1-memphis-tn",
+      "as_of_date": "2025-02-18",
+      "source": {
+        "url": "https://epoch.ai/data/gpu_clusters.csv",
+        "publisher": "Epoch AI",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "the @xAI team brought our Colossus 100k H100 training cluster online.... Moreover, it will double in size to 200k (50k H200s) in a few months.",
+      "notes": "Epoch AI tracker: Colossus Memphis Phase 2 = 200,000 GPUs (150k H100 + 50k H200), first operational 2025-02-18 (some evidence suggests operational by Dec 4, 2024).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Epoch CSV 'xAI Colossus Memphis Phase 2', 2025-02-18, 200,000 GPUs, status 'Existing'. Exact match."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-003",
+      "company": "xai",
+      "metric": "energy_source_mix",
+      "value": "on-site natural-gas turbines + grid power (TVA/MLGW) + Tesla Megapack battery storage",
+      "unit": "text",
+      "status": "operational",
+      "site": "colossus-1-memphis-tn",
+      "as_of_date": "2025-05-08",
+      "source": {
+        "url": "https://www.theregister.com/2025/05/08/xai_turbines_colossus/",
+        "publisher": "The Register",
+        "date_published": "2025-05-08",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "The temporary natural gas turbines...prior to grid connection are now being demobilized and will be removed from the site over the next two months.",
+      "notes": "Interim power was 35 natural-gas turbines; ~half demobilized after MLGW's first 150 MW substation came online. 15 permanent turbines planned (8 new with SCR + 7 retrofitted). Grid from TVA/MLGW; Tesla Megapack backup per multiple reports.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Register article confirms the mix: temporary natural-gas turbines (plus 15 permanent backup turbines), MLGW 150 MW grid substation, and 150 MW of Tesla batteries. Substantially supported. Minor: page says 'Tesla batteries' (not literally 'Megapack') and names MLGW (TVA not explicitly quoted, though "
+      }
+    },
+    {
+      "id": "xai-2026-07-20-004",
+      "company": "xai",
+      "metric": "gpu_count",
+      "value": 230000,
+      "unit": "GPUs",
+      "status": "operational",
+      "site": "colossus-1-memphis-tn",
+      "as_of_date": "2025-07-22",
+      "source": {
+        "url": "https://epoch.ai/data/gpu_clusters.csv",
+        "publisher": "Epoch AI",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "230k GPUs, including 30k GB200s, are operational for training Grok @xAI in a single supercluster called Colossus 1",
+      "notes": "Epoch AI tracker: Colossus Memphis Phase 3 = 230,000 GPUs (150k H100 + 50k H200 + 30k GB200), first operational 2025-07-22. Corroborated by SemiAnalysis (~200k H100/H200 + ~30k GB200 NVL72).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Epoch CSV 'xAI Colossus Memphis Phase 3', 2025-07-22, 230,000 GPUs, status 'Existing'. Exact match."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-005",
+      "company": "xai",
+      "metric": "power_capacity_mw",
+      "value": 352.352,
+      "unit": "MW",
+      "status": "operational",
+      "site": "colossus-1-memphis-tn",
+      "as_of_date": "2025-07-22",
+      "source": {
+        "url": "https://epoch.ai/data/gpu_clusters.csv",
+        "publisher": "Epoch AI",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "230k GPUs, including 30k GB200s, are operational for training Grok @xAI in a single supercluster called Colossus 1",
+      "notes": "Epoch AI third-party tracker: 'Power Capacity (MW)' field = 352.352 for Colossus Memphis Phase 3 (230k GPUs). This is Epoch's CALCULATED figure (from H100-equivalents), not a reported nameplate; reported grid target is 300 MW.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Epoch CSV 'xAI Colossus Memphis Phase 3', dated 2025-07-22, Power Capacity 352.352 MW, status 'Existing' (=operational). Exact match."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-006",
+      "company": "xai",
+      "metric": "gpu_count",
+      "value": 110000,
+      "unit": "GPUs",
+      "status": "under_construction",
+      "site": "colossus-2-southaven-ms",
+      "as_of_date": "2025-08-25",
+      "source": {
+        "url": "https://newsletter.semianalysis.com/p/xais-colossus-2-first-gigawatt-datacenter",
+        "publisher": "SemiAnalysis",
+        "date_published": "2025-08-25",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "enough to power roughly 110k GB200 NVL72",
+      "notes": "SemiAnalysis estimate for Colossus 2 capacity: ~110,000 GB200 (in NVL72 racks). Article date approximate (~Aug 2025).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "SemiAnalysis: ~200MW capacity 'enough to power roughly 110k GB200 NVL72' at Colossus 2 (under construction). ~110,000 GPUs supported."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-007",
+      "company": "xai",
+      "metric": "power_capacity_mw",
+      "value": 245,
+      "unit": "MW",
+      "status": "operational",
+      "site": "colossus-2-southaven-ms",
+      "as_of_date": "2025-08-25",
+      "source": {
+        "url": "https://newsletter.semianalysis.com/p/xais-colossus-2-first-gigawatt-datacenter",
+        "publisher": "SemiAnalysis",
+        "date_published": "2025-08-25",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "seven 35MW turbines in operations",
+      "notes": "On-site Solaris/xAI gas-turbine generation at Colossus 2 (Southaven). 7 x 35 MW = 245 MW operational; SemiAnalysis also states '~460MW are currently installed and in operations/under construction'. Article date approximate (SemiAnalysis newsletter, ~Aug 2025). Owned generation (behind-the-meter JV), not a PPA.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "SemiAnalysis: 'seven 35MW turbines in operations' = 245 MW operational at Southaven/Colossus 2. Supported."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-008",
+      "company": "xai",
+      "metric": "ppa_mw",
+      "value": 1140,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "colossus-2-southaven-ms",
+      "as_of_date": "2025-08-25",
+      "source": {
+        "url": "https://newsletter.semianalysis.com/p/xais-colossus-2-first-gigawatt-datacenter",
+        "publisher": "SemiAnalysis",
+        "date_published": "2025-08-25",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "remaining 900MW will be owned by a Joint Venture owned at 50.1% by Solaris and 49.9% by xAI",
+      "notes": "Solaris Energy Infrastructure allocated 1,140 MW of turbine capacity to xAI: ~240 MW on the Memphis Colossus 1 site + 900 MW via a 50.1% Solaris / 49.9% xAI JV. Solaris expects >1.1 GW operating for xAI by Q2 2027. This is behind-the-meter gas generation (JV/supply arrangement), recorded here as the nearest PPA-type metric; conservative low end noted as 900 MW JV + 240 MW = 1,140 MW total allocation.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "SemiAnalysis: 'Musk's firm weighs 67% of SEI's 1700MW orderbook, i.e. 1,140MW.' 1,140 MW contracted allocation supported."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-009",
+      "company": "xai",
+      "metric": "cloud_partnership",
+      "value": "xAI is first/anchor customer of Nvidia-Humain Saudi Arabia data center (~500 MW, ~600,000 GPUs)",
+      "unit": "text",
+      "status": "announced",
+      "site": "humain-saudi-arabia",
+      "as_of_date": "2025-11-19",
+      "source": {
+        "url": "https://www.cnbc.com/2025/11/19/musks-xai-will-be-customer-for-nvidia-data-center-in-saudi-arabia.html",
+        "publisher": "CNBC",
+        "date_published": "2025-11-19",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Nvidia said it would provide Saudi Arabia's Humain with chips that use 500 megawatts of power. On Wednesday, Humain said the project would include about 600,000 Nvidia graphics processing units.",
+      "notes": "xAI RENTS this capacity — the facility is owned by Humain (Saudi PIF). NOT xAI-owned; recorded as cloud_partnership only. The 500 MW / 600,000 GPUs belong to Humain, not xAI.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "CNBC confirms xAI as 'first customer' of the Saudi Arabia (Humain) Nvidia data center and '500 megawatts of power'. But the page says 'hundreds of thousands of Nvidia chips' and does NOT state ~600,000 GPUs, so that specific figure is unsupported."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-010",
+      "company": "xai",
+      "metric": "power_capacity_mw",
+      "value": 2000,
+      "unit": "MW",
+      "status": "announced",
+      "site": "colossus-cluster-memphis",
+      "as_of_date": "2026-01-08",
+      "source": {
+        "url": "https://governorreeves.ms.gov/tech-leader-xai-investing-more-than-20-billion-in-southaven/",
+        "publisher": "Office of Governor Tate Reeves (Mississippi)",
+        "date_published": "2026-01-08",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Power Capacity: \"nearly 2 gigawatts\"",
+      "notes": "CAVEAT: source says 'nearly 2 gigawatts' (Musk's Jan 2026 announcement of a third building / MACROHARDRR expanding total training capacity toward ~2 GW); true value is slightly UNDER 2000 MW, so 2000 is an upper bound not conservative low end. Corroborated by Tom's Hardware and DCD headlines ('almost 2GW'). Flag as approximate.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "xai-2026-07-20-011",
+      "company": "xai",
+      "metric": "capex_announced_usd",
+      "value": 20000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "macrohardrr-southaven-ms",
+      "as_of_date": "2026-01-14",
+      "source": {
+        "url": "https://www.datacenterfrontier.com/machine-learning/article/55343403/xais-ai-factories-from-colossus-to-macrohardrr-in-the-gigawatt-era",
+        "publisher": "Data Center Frontier",
+        "date_published": "2026-01-14",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "xAI will invest more than $20 billion in a new campus in Southaven, in DeSoto County just south of Memphis. The site, called MACROHARDRR, is expected to begin operations in February 2026.",
+      "notes": "'more than $20 billion' announced by Mississippi officials for the Southaven MACROHARDRR campus; conservative low end recorded as $20B.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "DCF: 'xAI will invest more than $20 billion in a new campus in Southaven.' $20B announced capex supported."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-012",
+      "company": "xai",
+      "metric": "datacenter_site",
+      "value": "Colossus 1, Memphis, TN (former Electrolux plant, 3231 Riverport Rd)",
+      "unit": "text",
+      "status": "operational",
+      "site": "colossus-1-memphis-tn",
+      "as_of_date": "2026-01-14",
+      "source": {
+        "url": "https://www.datacenterfrontier.com/machine-learning/article/55343403/xais-ai-factories-from-colossus-to-macrohardrr-in-the-gigawatt-era",
+        "publisher": "Data Center Frontier",
+        "date_published": "2026-01-14",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "The Memphis-area facility, carved out of a vacant Electrolux factory, became shorthand for a new kind of AI build: fast, dense, liquid-cooled, and powered on a schedule that often ran ahead of the gri",
+      "notes": "xAI-owned/operated flagship site. Epoch AI lists location as 3231 Riverport Rd, Memphis, TN 38109.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "DCF article confirms Colossus was 'carved out of a vacant Electrolux factory' in 'Southwest Memphis' and treats it as operational (~100k then ~200k GPUs). Site identity + operational status match. Caveat: the exact street address '3231 Riverport Rd' is NOT literally stated on this page."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-013",
+      "company": "xai",
+      "metric": "datacenter_site",
+      "value": "MACROHARDRR / Colossus 2, Southaven, DeSoto County, Mississippi",
+      "unit": "text",
+      "status": "under_construction",
+      "site": "macrohardrr-southaven-ms",
+      "as_of_date": "2026-01-14",
+      "source": {
+        "url": "https://www.datacenterfrontier.com/machine-learning/article/55343403/xais-ai-factories-from-colossus-to-macrohardrr-in-the-gigawatt-era",
+        "publisher": "Data Center Frontier",
+        "date_published": "2026-01-14",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "The site, called MACROHARDRR, is expected to begin operations in February 2026.",
+      "notes": "xAI-owned second campus in Southaven MS, built in an existing structure. Combined Memphis-Southaven cluster marketed at ~2 GW eventual footprint.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "DCF article: Southaven campus 'expected to begin operations in February 2026' (article dated Jan 2026), i.e. under construction. Site = Southaven, MS (Colossus 2 / MACROHARDRR). Supported."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-014",
+      "company": "xai",
+      "metric": "interconnection_filing",
+      "value": 150,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "colossus-1-memphis-tn",
+      "as_of_date": "2026-01-14",
+      "source": {
+        "url": "https://www.datacenterfrontier.com/machine-learning/article/55343403/xais-ai-factories-from-colossus-to-macrohardrr-in-the-gigawatt-era",
+        "publisher": "Data Center Frontier",
+        "date_published": "2026-01-14",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "TVA and Memphis Light, Gas & Water approved an initial 150 megawatts of grid service for Colossus, with a second 150-megawatt increment planned to bring the campus to 300 MW.",
+      "notes": "Grid-service approval by TVA + MLGW (Memphis Light, Gas & Water), NOT ERCOT/FERC (Memphis is TVA territory). Conservative low end = initial 150 MW; second 150 MW increment planned to reach 300 MW; xAI accepted curtailment provisions.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Article: 'TVA and Memphis Light, Gas & Water approved an initial 150 megawatts of grid service for Colossus.' 150 MW initial grid service approved (~contracted) is supported."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-015",
+      "company": "xai",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "under_construction",
+      "site": "macrohardrr-southaven-ms",
+      "as_of_date": "2026-01-14",
+      "source": {
+        "url": "https://www.datacenterfrontier.com/machine-learning/article/55343403/xais-ai-factories-from-colossus-to-macrohardrr-in-the-gigawatt-era",
+        "publisher": "Data Center Frontier",
+        "date_published": "2026-01-14",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Mississippi officials announced that xAI will invest more than $20 billion in a new campus in Southaven, in DeSoto County just south of Memphis.",
+      "notes": "xAI-owned/operated Southaven campus (MACROHARDRR).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "DCF: 'xAI will invest more than $20 billion in a new campus in Southaven' — xAI-owned, under construction. Supports owned_facility=true, under_construction."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-016",
+      "company": "xai",
+      "metric": "power_capacity_mw",
+      "value": 300,
+      "unit": "MW",
+      "status": "announced",
+      "site": "colossus-1-memphis-tn",
+      "as_of_date": "2026-01-14",
+      "source": {
+        "url": "https://www.datacenterfrontier.com/machine-learning/article/55343403/xais-ai-factories-from-colossus-to-macrohardrr-in-the-gigawatt-era",
+        "publisher": "Data Center Frontier",
+        "date_published": "2026-01-14",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "TVA and Memphis Light, Gas & Water approved an initial 150 megawatts of grid service for Colossus, with a second 150-megawatt increment planned to bring the campus to 300 MW.",
+      "notes": "300 MW = full campus grid target for Colossus 1 (150 MW operational + 150 MW planned second increment). This is xAI-owned grid capacity.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Article: 'a second 150-megawatt increment planned to bring the campus to 300 MW.' 300 MW is planned/announced, matching status=announced."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-017",
+      "company": "xai",
+      "metric": "energy_source_mix",
+      "value": "on-site natural-gas power plant (Southaven)",
+      "unit": "text",
+      "status": "announced",
+      "site": "macrohardrr-southaven-ms",
+      "as_of_date": "2026-03-09",
+      "source": {
+        "url": "https://www.cnbc.com/2026/03/09/mississippi-regulators-to-hold-xai-permit-meeting-on-election-day.html",
+        "publisher": "CNBC",
+        "date_published": "2026-03-09",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "With Elon Musk's xAI planning to build a massive, natural-gas burning power plant in Southaven, Mississippi, the state's environmental authority has scheduled a board meeting... to decide whether to g",
+      "notes": "xAI is building a natural-gas power plant for the Southaven/Macrohardrr campus; also relied on 'temporary' gas turbines pending permits.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "CNBC: 'Elon Musk's xAI is seeking permission to build a gigantic, natural gas-burning power plant in Southaven, Mississippi, to run the company's nearby data centers.' On-site gas plant, announced/seeking-permit. Supported."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-018",
+      "company": "xai",
+      "metric": "interconnection_filing",
+      "value": "MDEQ air-permit / power-plant permit hearing for Southaven gas plant",
+      "unit": "text",
+      "status": "announced",
+      "site": "macrohardrr-southaven-ms",
+      "as_of_date": "2026-03-09",
+      "source": {
+        "url": "https://www.cnbc.com/2026/03/09/mississippi-regulators-to-hold-xai-permit-meeting-on-election-day.html",
+        "publisher": "CNBC",
+        "date_published": "2026-03-09",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "the state's environmental authority has scheduled a board meeting for Tuesday — Election Day for the 2026 primaries — to decide whether to grant the company key permits.",
+      "notes": "Regulator = Mississippi Department of Environmental Quality (MDEQ) permit board, NOT ERCOT/FERC. NAACP filed notice of intent to sue over alleged Clean Air Act violations. Recorded as the nearest interconnection/permit metric.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "CNBC: 'the state's environmental authority has scheduled a board meeting... to decide whether to grant the company key permits' for the Southaven gas plant. Permit hearing for the gas plant supported. Minor: page says 'state's environmental authority'/'key permits', not literally 'MDEQ air-permit'."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-019",
+      "company": "xai",
+      "metric": "capex_announced_usd",
+      "value": 55000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "terafab-austin-tx",
+      "as_of_date": "2026-05-06",
+      "source": {
+        "url": "https://www.cnbc.com/2026/05/06/elon-musks-spacex-chip-fab-in-texas-to-cost-up-to-119-billion.html",
+        "publisher": "CNBC",
+        "date_published": "2026-05-06",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "cost at least $55 billion for the first phase, and up to $119 billion if the full buildout comes to fruition.",
+      "notes": "Terafab chip fab: conservative low end = $55B first phase (range $55B–$119B). Jointly funded by SpaceX/xAI/Tesla with SpaceX taking the initial scaled phase — attribute with caution (not solely xAI capex).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "CNBC: 'the first phase will cost $55 billion and could scale to $119 billion.' $55B announced (first phase) supported. Location caveat: facility is in Grimes County / East Texas, not Austin."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-020",
+      "company": "xai",
+      "metric": "cloud_partnership",
+      "value": "Anthropic rents all compute at xAI Colossus 1 (>300 MW / >220,000 GPUs)",
+      "unit": "text",
+      "status": "contracted",
+      "site": "colossus-1-memphis-tn",
+      "as_of_date": "2026-05-06",
+      "source": {
+        "url": "https://www.cnbc.com/2026/05/06/anthropic-spacex-data-center-capacity.html",
+        "publisher": "CNBC",
+        "date_published": "2026-05-06",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Anthropic will get access to more than 300 megawatts of compute capacity",
+      "notes": "xAI/SpaceX is the PROVIDER (landlord) here — Anthropic rents xAI's own Colossus 1 capacity (>300 MW, >220,000 Nvidia GPUs). Per DCD/TechCrunch: ~$1.25B/month through May 2029. This 300 MW is xAI-owned capacity leased OUT, not capacity xAI rents from others.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "CNBC article states 'Anthropic will get access to more than 300 megawatts of compute capacity' at Colossus 1 — supports 'all compute' and >300 MW. But the page does NOT state any GPU count, so the '>220,000 GPUs' claim is unsupported."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-021",
+      "company": "xai",
+      "metric": "custom_silicon",
+      "value": true,
+      "unit": "boolean",
+      "status": "announced",
+      "site": "terafab-austin-tx",
+      "as_of_date": "2026-05-06",
+      "source": {
+        "url": "https://www.cnbc.com/2026/05/06/elon-musks-spacex-chip-fab-in-texas-to-cost-up-to-119-billion.html",
+        "publisher": "CNBC",
+        "date_published": "2026-05-06",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "The chip complex outside Austin would be designed to manufacture chips for SpaceX, xAI and Tesla, and would be jointly built by those companies.",
+      "notes": "'Terafab' chip-manufacturing project near Austin, jointly built by SpaceX/xAI/Tesla (launched Mar 2026, Intel joined Apr 2026). xAI is a co-owner/customer of the custom-silicon effort. Separately, xAI has publicly said it plans to develop its own custom silicon (DCD, 2025 — page returned 403 to fetch).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "CNBC: Terafab is a chip-manufacturing project 'to make chips for Tesla, SpaceX and xAI' — custom silicon, announced. Supported. Location caveat: main Terafab is in Grimes County / East Texas (a separate ~$3B research fab is in Austin), not Austin itself."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-022",
+      "company": "xai",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "operational",
+      "site": "colossus-1-memphis-tn",
+      "as_of_date": "2026-05-06",
+      "source": {
+        "url": "https://www.cnbc.com/2026/05/06/anthropic-spacex-data-center-capacity.html",
+        "publisher": "CNBC",
+        "date_published": "2026-05-06",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "XAI has been building out its data infrastructure, primarily around Memphis... Colossus 1 is its largest facility to date.",
+      "notes": "xAI owns/operates Colossus 1 (now under SpaceX/'SpaceXAI' after the Feb 2026 merger).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Article: Anthropic deal to 'use all of the compute capacity at his company's Colossus 1 data center in Memphis'; 'Colossus 1 is its largest facility to date.' Facility is xAI/SpaceX-owned and operational. Supports owned_facility=true, operational."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-023",
+      "company": "xai",
+      "metric": "capex_announced_usd",
+      "value": 7700000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "colossus-cluster-memphis",
+      "as_of_date": "2026-06-05",
+      "source": {
+        "url": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
+        "publisher": "CNBC",
+        "date_published": "2026-06-05",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "capital expenditures in the first quarter totaled $10.1 billion, more than doubling from a year earlier, with the vast majority of those costs — $7.7 billion — committed to AI.",
+      "notes": "SpaceX prospectus Q1 2026: $7.7B of $10.1B total capex committed to AI (xAI merged into SpaceX Feb 2026). Represents actual quarterly AI capex, not a single project announcement.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "The cited Google/SpaceX article contains NO $7.7 billion figure. It states $920M/month from Oct 2026 through Jun 2029 (32 months, ~$29.4B total contract value). The $7,700,000,000 capex value is not stated on this page."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-024",
+      "company": "xai",
+      "metric": "cloud_partnership",
+      "value": "Google to pay SpaceX/xAI $920M/month for ~110,000 Nvidia GPUs (Oct 2026–Jun 2029)",
+      "unit": "text",
+      "status": "contracted",
+      "site": "colossus-cluster-memphis",
+      "as_of_date": "2026-06-05",
+      "source": {
+        "url": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
+        "publisher": "CNBC",
+        "date_published": "2026-06-05",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Google will use about 110,000 Nvidia graphics processing units... housed in SpaceX's data centers. The agreement spans from October of this year through June 2029 at the $920 million rate",
+      "notes": "xAI/SpaceX is the PROVIDER — Google leases ~110,000 GPUs from xAI's data centers for $920M/month (~$30B total). Capacity xAI leases OUT, not rented from others.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "CNBC: '$920 million per month'; 'Google will use about 110,000 Nvidia graphics processing units'; 'The agreement spans from October of this year through June 2029.' All match ($920M/mo, ~110,000 GPUs, Oct 2026–Jun 2029)."
+      }
+    },
+    {
+      "id": "xai-2026-07-20-025",
+      "company": "xai",
+      "metric": "capex_announced_usd",
+      "value": 35800000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "colossus-2",
+      "as_of_date": "2026-07-01",
+      "source": {
+        "url": "https://epoch.ai/data/ai-data-centers/directory/colossus-2",
+        "publisher": "Epoch AI",
+        "date_published": "2026-07-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Capital Cost: \"$35.8 B\"",
+      "notes": "Epoch AI ESTIMATE of Colossus 2 capital cost. Distinct from existing $20B MACROHARDRR, $7.7B cluster, $55B TeraFab capex records.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "xai-2026-07-20-026",
+      "company": "xai",
+      "metric": "gpu_count",
+      "value": 440000,
+      "unit": "GPUs",
+      "status": "under_construction",
+      "site": "colossus-2",
+      "as_of_date": "2026-07-01",
+      "source": {
+        "url": "https://epoch.ai/data/ai-data-centers/directory/colossus-2",
+        "publisher": "Epoch AI",
+        "date_published": "2026-07-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "\"1,112k H100-equivalents of compute\" with \"440k\" total GPU count (110k B200s + 330k B300s)",
+      "notes": "Third-party tracker Epoch AI. 440,000 physical GPUs = 110k Nvidia B200 + 330k B300; Epoch also states 1,112,000 H100-equivalents. Buildout: ~110k GB200 online Oct 2025 (210 MW), +110k GB300 Apr 2026 (220 MW), +220k GB300 Jul 2026 (400+ MW). Existing record had only 110,000 (under_construction).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "xai-2026-07-20-027",
+      "company": "xai",
+      "metric": "power_capacity_mw",
+      "value": 946,
+      "unit": "MW",
+      "status": "under_construction",
+      "site": "colossus-2",
+      "as_of_date": "2026-07-01",
+      "source": {
+        "url": "https://epoch.ai/data/ai-data-centers/directory/colossus-2",
+        "publisher": "Epoch AI",
+        "date_published": "2026-07-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "\"946 MW of IT power\" (current and projected)",
+      "notes": "Epoch AI ESTIMATE of IT power for Colossus 2 (owned by SpaceXAI, geolocated by Epoch to Memphis TN; turbines physically in Southaven MS). Not a company-stated figure.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    }
+  ]
+}

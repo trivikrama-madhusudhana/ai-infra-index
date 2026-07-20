@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Infrastructure Index</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <a class="wordmark" href="index.html">AI Infrastructure Index</a>
+  <nav>
+    <a href="methodology.html">Methodology</a>
+    <a href="changelog.html">Changelog</a>
+    <a href="https://github.com/trivikrama-madhusudhana/ai-infra-index">Source</a>
+  </nav>
+</header>
+<main>
+
+<h1>The physical AI race, scored on public evidence</h1>
+<p class="lede">Model benchmarks are everywhere. The megawatts are not. This index tracks the
+infrastructure the frontier labs actually control, and every number on it traces to a source you
+can open. Capacity is credited to whoever owns the site, so a lab that rents its compute scores
+low here on purpose.</p>
+
+<h2>How to read this</h2>
+<p>Each lab gets a score from 0 to 100. It rewards infrastructure a lab actually owns and can
+point to in public: power its datacenters draw today, sites it holds, chips it designs, deals it
+has signed. Renting compute from someone else's cloud counts for little. Five things go into the
+score:</p>
+<div class="scroll"><table class="measure">
+<thead><tr><th>What we measure</th><th>In plain terms</th><th>Weight</th></tr></thead>
+<tbody><tr><td>Power capacity</td><td>Megawatts the lab&#x27;s own datacenters draw today or are actively building.</td><td class="num">30%</td></tr><tr><td>Compute ownership</td><td>How many AI chips it controls, and whether it designs its own.</td><td class="num">20%</td></tr><tr><td>Vertical integration</td><td>How much of the stack (chips, datacenters, power) it owns rather than rents.</td><td class="num">20%</td></tr><tr><td>Expansion pipeline</td><td>Announced capacity, capital, and grid filings that are committed but not yet live.</td><td class="num">15%</td></tr><tr><td>Energy security</td><td>Power it has locked in through long-term contracts and owned generation.</td><td class="num">15%</td></tr></tbody>
+</table></div>
+
+<h2>The ranking</h2>
+<div class="scroll">
+<table class="rank-table">
+<thead><tr><th>#</th><th>Lab</th><th>Score</th><th>Facts</th><th>Strongest area</th></tr></thead>
+<tbody><tr><td class="rank">1</td><td class="lab"><a href="company/xai.html">xai</a></td><td class="score"><span class="bar"><span class="fill" style="width:100%"></span></span><span class="scoreval">60.1</span></td><td>20</td><td class="muted">Vertical integration</td></tr><tr><td class="rank">2</td><td class="lab"><a href="company/meta.html">meta</a></td><td class="score"><span class="bar"><span class="fill" style="width:89%"></span></span><span class="scoreval">53.5</span></td><td>20</td><td class="muted">Vertical integration</td></tr><tr><td class="rank">3</td><td class="lab"><a href="company/google.html">google</a></td><td class="score"><span class="bar"><span class="fill" style="width:49%"></span></span><span class="scoreval">29.2</span></td><td>10</td><td class="muted">Vertical integration</td></tr><tr><td class="rank">4</td><td class="lab"><a href="company/openai.html">openai</a></td><td class="score"><span class="bar"><span class="fill" style="width:38%"></span></span><span class="scoreval">22.7</span></td><td>19</td><td class="muted">Compute ownership</td></tr><tr><td class="rank">5</td><td class="lab"><a href="company/anthropic.html">anthropic</a></td><td class="score"><span class="bar"><span class="fill" style="width:24%"></span></span><span class="scoreval">14.6</span></td><td>13</td><td class="muted">Compute ownership</td></tr><tr><td class="rank">6</td><td class="lab"><a href="company/minimax.html">minimax</a></td><td class="score"><span class="bar"><span class="fill" style="width:0%"></span></span><span class="scoreval">0.0</span></td><td>0</td><td class="muted">nothing scoreable yet</td></tr><tr><td class="rank">7</td><td class="lab"><a href="company/moonshot.html">moonshot</a></td><td class="score"><span class="bar"><span class="fill" style="width:0%"></span></span><span class="scoreval">0.0</span></td><td>1</td><td class="muted">nothing scoreable yet</td></tr><tr><td class="rank">8</td><td class="lab"><a href="company/zhipu.html">zhipu</a></td><td class="score"><span class="bar"><span class="fill" style="width:0%"></span></span><span class="scoreval">0.0</span></td><td>4</td><td class="muted">nothing scoreable yet</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">Every number on this site links to a public source. Unknown means unknown. We never estimate.
+A lab at 0 is not one with no infrastructure, it is one whose infrastructure is not yet documented
+in public sources we will score.</p>
+<p class="muted">Baseline as of 2026-07-20, scoring version 1. The
+<a href="methodology.html">methodology</a> has the full rubric and the command to reproduce every number.</p>
+
+</main>
+<footer>
+  <p>Every number links to a public source. Unknown means unknown. We never estimate.</p>
+  <p class="muted">Scores come from a deterministic engine anyone can rerun: <code>python scripts/score.py --as-of 2026-07-20</code>.</p>
+</footer>
+</body>
+</html>

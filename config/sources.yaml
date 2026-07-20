@@ -1,0 +1,116 @@
+# Domain -> tier allowlist. Tier is COMPUTED from this file, never judged by an agent.
+#
+#   Tier A  primary / official / regulatory: the entity itself, its named
+#           infrastructure partners speaking on record, and government/utility filings.
+#   Tier B  reputable independent press and specialist research trackers.
+#   Tier C  weaker secondary coverage, recorded but NOT eligible for scoring.
+#   (any domain not listed) -> Tier D -> excluded from scoring, flagged by CI.
+#
+# Matching is by host suffix: a fact URL host matches a domain if it equals the
+# domain or ends with ".<domain>" (so blogs.microsoft.com matches microsoft.com).
+# Add domains here; never let an agent invent a tier.
+
+version: 1
+
+tiers:
+  A:
+    # Frontier labs (own newsrooms / blogs)
+    - openai.com
+    - anthropic.com
+    - google.com
+    - blog.google
+    - deepmind.google
+    - ai.meta.com
+    - meta.com
+    - x.ai
+    - moonshot.cn
+    - moonshot.ai
+    - minimax.io
+    - minimaxi.com
+    - zhipuai.cn
+    - z.ai
+    - bigmodel.cn
+    # Named infrastructure / cloud / silicon partners on the record
+    - microsoft.com
+    - oracle.com
+    - coreweave.com
+    - aws.amazon.com
+    - aboutamazon.com
+    - cloud.google.com
+    - nvidia.com
+    - blogs.nvidia.com
+    - amd.com
+    - broadcom.com
+    - tsmc.com
+    # Meta newsrooms
+    - fb.com
+    - atmeta.com
+    # Datacenter operators / infrastructure partners (first-party)
+    - lancium.com
+    - vantage-dc.com
+    - g42.ai
+    - nscale.com
+    - terawulf.com
+    # Energy partners (first-party)
+    - nexteraenergy.com
+    - brookfield.com
+    # Chinese cloud partner (first-party)
+    - alibabacloud.com
+    # Regulatory / utility / grid (primary filings)
+    - ercot.com
+    - ferc.gov
+    - eia.gov
+    - epa.gov
+    - sec.gov
+    - energy.gov
+    - ms.gov
+  B:
+    # Independent press of record
+    - reuters.com
+    - bloomberg.com
+    - ft.com
+    - wsj.com
+    - nytimes.com
+    - theinformation.com
+    - cnbc.com
+    # Datacenter / energy / semiconductor specialist press
+    - datacenterdynamics.com
+    - datacenterfrontier.com
+    - theregister.com
+    - tomshardware.com
+    - eetimes.com
+    # Energy / grid / infrastructure trade press
+    - powermag.com
+    - utilitydive.com
+    - rtoinsider.com
+    - esgdive.com
+    - solarpowerworldonline.com
+    # General business / tech press of adequate record
+    - fortune.com
+    - itpro.com
+    - siliconangle.com
+    # Press-release wires (first-party company statements, distributed)
+    - prnewswire.com
+    - globenewswire.com
+    - businesswire.com
+    # Independent compute / infra research trackers
+    - epochai.org
+    - epoch.ai
+    - semianalysis.com
+    # China-focused English press (owner decision 2026-07-20: scoreable Tier B
+    # for Chinese labs; flag translation uncertainty in each fact's `notes`).
+    - scmp.com
+    - technode.com
+    - pandaily.com
+    - caixinglobal.com
+    - yicaiglobal.com
+    - 36kr.com
+    - chinatalk.media
+  C:
+    # Recorded for context, NOT scoreable. Use sparingly.
+    - techcrunch.com
+    - theverge.com
+    - arstechnica.com
+
+# Tiers eligible to contribute to a score. Everything else contributes zero.
+scoreable_tiers: [A, B]

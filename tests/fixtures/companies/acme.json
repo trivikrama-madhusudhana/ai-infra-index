@@ -1,0 +1,313 @@
+{
+  "company": "acme",
+  "facts": [
+    {
+      "id": "acme-2026-06-01-001",
+      "company": "acme",
+      "metric": "power_capacity_mw",
+      "value": 900,
+      "unit": "MW",
+      "status": "operational",
+      "site": "alpha-tx",
+      "as_of_date": "2026-05-30",
+      "source": {
+        "url": "https://www.reuters.com/technology/acme-alpha-online",
+        "publisher": "Reuters",
+        "date_published": "2026-06-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2026/acme-alpha"
+      },
+      "excerpt": "Acme's Alpha campus is now drawing 900 MW.",
+      "notes": "conservative low end of 900-950 MW range",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "confirmed" }
+    },
+    {
+      "id": "acme-2023-06-01-002",
+      "company": "acme",
+      "metric": "power_capacity_mw",
+      "value": 200,
+      "unit": "MW",
+      "status": "under_construction",
+      "site": "beta-tx",
+      "as_of_date": "2023-06-01",
+      "source": {
+        "url": "https://blogs.microsoft.com/acme-beta-groundbreaking",
+        "publisher": "Microsoft",
+        "date_published": "2023-06-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2023/acme-beta"
+      },
+      "excerpt": "Ground broke on Beta, initial 200 MW phase.",
+      "notes": "superseded by operational status in 2026",
+      "added": "2026-07-20",
+      "superseded_by": "acme-2026-06-01-003",
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "confirmed then superseded" }
+    },
+    {
+      "id": "acme-2026-06-01-003",
+      "company": "acme",
+      "metric": "power_capacity_mw",
+      "value": 500,
+      "unit": "MW",
+      "status": "under_construction",
+      "site": "beta-tx",
+      "as_of_date": "2026-05-30",
+      "source": {
+        "url": "https://blogs.microsoft.com/acme-beta-expansion",
+        "publisher": "Microsoft",
+        "date_published": "2026-06-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2026/acme-beta"
+      },
+      "excerpt": "Beta expansion under construction, 500 MW.",
+      "notes": null,
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "confirmed" }
+    },
+    {
+      "id": "acme-2023-01-01-004",
+      "company": "acme",
+      "metric": "power_capacity_mw",
+      "value": 1200,
+      "unit": "MW",
+      "status": "announced",
+      "site": "gamma-az",
+      "as_of_date": "2023-01-01",
+      "source": {
+        "url": "https://www.bloomberg.com/acme-gamma-plan",
+        "publisher": "Bloomberg",
+        "date_published": "2023-01-02",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2023/acme-gamma"
+      },
+      "excerpt": "Acme announces a 1,200 MW Gamma project.",
+      "notes": "stale announcement, no follow-up -> decays 0.5x",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "confirmed announcement" }
+    },
+    {
+      "id": "acme-2026-01-01-005",
+      "company": "acme",
+      "metric": "power_capacity_mw",
+      "value": 800,
+      "unit": "MW",
+      "status": "announced",
+      "site": "delta-oh",
+      "as_of_date": "2026-01-01",
+      "source": {
+        "url": "https://www.bloomberg.com/acme-delta-plan",
+        "publisher": "Bloomberg",
+        "date_published": "2026-01-02",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2026/acme-delta"
+      },
+      "excerpt": "Acme announces an 800 MW Delta project.",
+      "notes": "recent announcement, no decay",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "confirmed announcement" }
+    },
+    {
+      "id": "acme-2026-06-01-006",
+      "company": "acme",
+      "metric": "gpu_count",
+      "value": 150000,
+      "unit": "GPUs",
+      "status": "operational",
+      "site": "fleet",
+      "as_of_date": "2026-05-01",
+      "source": {
+        "url": "https://epochai.org/acme-fleet-estimate",
+        "publisher": "Epoch AI",
+        "date_published": "2026-06-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2026/acme-fleet"
+      },
+      "excerpt": "Epoch AI estimates Acme operates ~150,000 accelerators.",
+      "notes": "third-party estimate, attributed to Epoch AI",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "matches source" }
+    },
+    {
+      "id": "acme-2026-06-01-007",
+      "company": "acme",
+      "metric": "custom_silicon",
+      "value": true,
+      "unit": "boolean",
+      "status": "under_construction",
+      "site": "in-house-asic",
+      "as_of_date": "2026-05-01",
+      "source": {
+        "url": "https://www.anthropic.com/acme-partner-note",
+        "publisher": "Acme",
+        "date_published": "2026-06-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2026/acme-silicon"
+      },
+      "excerpt": "Acme confirms an in-house accelerator program.",
+      "notes": null,
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "confirmed" }
+    },
+    {
+      "id": "acme-2026-06-01-008",
+      "company": "acme",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "operational",
+      "site": "alpha-tx",
+      "as_of_date": "2026-05-30",
+      "source": {
+        "url": "https://www.reuters.com/acme-owns-alpha",
+        "publisher": "Reuters",
+        "date_published": "2026-06-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2026/acme-owns-alpha"
+      },
+      "excerpt": "Acme owns and operates the Alpha datacenter outright.",
+      "notes": null,
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "confirmed" }
+    },
+    {
+      "id": "acme-2026-06-01-009",
+      "company": "acme",
+      "metric": "ppa_mw",
+      "value": 400,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "alpha-tx",
+      "as_of_date": "2026-05-01",
+      "source": {
+        "url": "https://www.eia.gov/acme-ppa-filing",
+        "publisher": "EIA",
+        "date_published": "2026-06-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2026/acme-ppa"
+      },
+      "excerpt": "Acme signed a 400 MW power-purchase agreement for Alpha.",
+      "notes": null,
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "confirmed" }
+    },
+    {
+      "id": "acme-2026-06-01-010",
+      "company": "acme",
+      "metric": "capex_announced_usd",
+      "value": 50000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "corporate",
+      "as_of_date": "2026-05-01",
+      "source": {
+        "url": "https://www.reuters.com/acme-capex",
+        "publisher": "Reuters",
+        "date_published": "2026-06-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2026/acme-capex"
+      },
+      "excerpt": "Acme earmarks $50 billion for AI infrastructure.",
+      "notes": null,
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "confirmed" }
+    },
+    {
+      "id": "acme-2026-06-01-011",
+      "company": "acme",
+      "metric": "interconnection_filing",
+      "value": true,
+      "unit": "boolean",
+      "status": "announced",
+      "site": "gamma-az",
+      "as_of_date": "2026-05-01",
+      "source": {
+        "url": "https://www.ercot.com/queue/acme-gamma",
+        "publisher": "ERCOT",
+        "date_published": "2026-06-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2026/acme-erc-gamma"
+      },
+      "excerpt": "ERCOT queue lists an Acme Gamma interconnection request.",
+      "notes": null,
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "confirmed" }
+    },
+    {
+      "id": "acme-2026-06-01-012",
+      "company": "acme",
+      "metric": "energy_source_mix",
+      "value": "solar+gas",
+      "unit": "text",
+      "status": "operational",
+      "site": "alpha-tx",
+      "as_of_date": "2026-05-01",
+      "source": {
+        "url": "https://www.eia.gov/acme-alpha-mix",
+        "publisher": "EIA",
+        "date_published": "2026-06-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2026/acme-mix"
+      },
+      "excerpt": "Alpha runs on a mix of on-site solar and grid gas.",
+      "notes": null,
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "confirmed" }
+    },
+    {
+      "id": "acme-2026-06-01-013",
+      "company": "acme",
+      "metric": "power_capacity_mw",
+      "value": 5000,
+      "unit": "MW",
+      "status": "operational",
+      "site": "zeta-nv",
+      "as_of_date": "2026-05-01",
+      "source": {
+        "url": "https://www.reuters.com/acme-zeta",
+        "publisher": "Reuters",
+        "date_published": "2026-06-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Unverified claim of a 5,000 MW Zeta site.",
+      "notes": "left unverified on purpose -> must not score",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": false, "checked_on": null, "verifier_note": null }
+    },
+    {
+      "id": "acme-2026-06-01-014",
+      "company": "acme",
+      "metric": "power_capacity_mw",
+      "value": 3000,
+      "unit": "MW",
+      "status": "operational",
+      "site": "eta-blog",
+      "as_of_date": "2026-05-01",
+      "source": {
+        "url": "https://example.com/acme-rumor",
+        "publisher": "Some Blog",
+        "date_published": "2026-06-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2026/acme-eta"
+      },
+      "excerpt": "Unknown-domain claim of a 3,000 MW site.",
+      "notes": "Tier D source -> must not score",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "source not in allowlist" }
+    }
+  ]
+}

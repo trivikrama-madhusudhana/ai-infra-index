@@ -1,0 +1,2143 @@
+{
+  "companies": [
+    {
+      "categories": {
+        "compute_ownership": {
+          "components": {
+            "custom_silicon_programs": {
+              "aggregated_value": 1.0,
+              "aggregation": "count",
+              "band_points": 60.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "xai-2026-07-20-021"
+              ],
+              "input_expression": "count(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 1",
+              "label": "Custom silicon programs",
+              "missing": false,
+              "weight": 0.25,
+              "weighted_points": 15.0
+            },
+            "gpu_fleet": {
+              "aggregated_value": 640000.0,
+              "aggregation": "sum",
+              "band_points": 90.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "xai-2026-07-20-001",
+                "xai-2026-07-20-002",
+                "xai-2026-07-20-004",
+                "xai-2026-07-20-006"
+              ],
+              "input_expression": "sum(gpu_count where status in [announced,contracted,under_construction,operational,n/a]) = 640000 chips",
+              "label": "Accelerator fleet (chips)",
+              "missing": false,
+              "weight": 0.55,
+              "weighted_points": 49.5
+            },
+            "owned_sites": {
+              "aggregated_value": 2.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 40.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "xai-2026-07-20-015",
+                "xai-2026-07-20-022"
+              ],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 2",
+              "label": "Owned datacenter sites",
+              "missing": false,
+              "weight": 0.2,
+              "weighted_points": 8.0
+            }
+          },
+          "label": "Compute ownership",
+          "points": 72.5,
+          "weight": 0.2,
+          "weighted_contribution": 14.5
+        },
+        "energy_security": {
+          "components": {
+            "contracted_ppa_mw": {
+              "aggregated_value": 1140.0,
+              "aggregation": "sum",
+              "band_points": 80.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "xai-2026-07-20-008"
+              ],
+              "input_expression": "sum(ppa_mw where status in [contracted,operational]) = 1140 MW",
+              "label": "Contracted power (PPA MW)",
+              "missing": false,
+              "weight": 0.55,
+              "weighted_points": 44.0
+            },
+            "energy_source_diversity": {
+              "aggregated_value": 2.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 80.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "xai-2026-07-20-003",
+                "xai-2026-07-20-017"
+              ],
+              "input_expression": "count_distinct_site(energy_source_mix where status in [announced,contracted,under_construction,operational,n/a]) = 2",
+              "label": "Energy-source diversity",
+              "missing": false,
+              "weight": 0.25,
+              "weighted_points": 20.0
+            },
+            "owned_generation": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(ppa_mw where status in [operational]) = 0 MW",
+              "label": "Owned / operational generation",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Energy security",
+          "points": 64.0,
+          "weight": 0.15,
+          "weighted_contribution": 9.6
+        },
+        "expansion_pipeline": {
+          "components": {
+            "capex_announced": {
+              "aggregated_value": 75000000000.0,
+              "aggregation": "sum",
+              "band_points": 80.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "xai-2026-07-20-011",
+                "xai-2026-07-20-019"
+              ],
+              "input_expression": "sum(capex_announced_usd where status in [announced,contracted,under_construction,operational,n/a]) = 75000000000 USD",
+              "label": "Announced capital (USD)",
+              "missing": false,
+              "weight": 0.3,
+              "weighted_points": 24.0
+            },
+            "interconnection_filings": {
+              "aggregated_value": 2.0,
+              "aggregation": "count",
+              "band_points": 50.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "xai-2026-07-20-014",
+                "xai-2026-07-20-018"
+              ],
+              "input_expression": "count(interconnection_filing where status in [announced,contracted,under_construction,operational,n/a]) = 2",
+              "label": "Grid interconnection filings",
+              "missing": false,
+              "weight": 0.2,
+              "weighted_points": 10.0
+            },
+            "pipeline_mw": {
+              "aggregated_value": 300.0,
+              "aggregation": "sum",
+              "band_points": 50.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "xai-2026-07-20-016"
+              ],
+              "input_expression": "sum(power_capacity_mw where status in [announced,contracted]) = 300 MW",
+              "label": "Announced / contracted capacity (MW)",
+              "missing": false,
+              "weight": 0.5,
+              "weighted_points": 25.0
+            }
+          },
+          "label": "Expansion pipeline",
+          "points": 59.0,
+          "weight": 0.15,
+          "weighted_contribution": 8.85
+        },
+        "power_capacity": {
+          "components": {
+            "operational_mw": {
+              "aggregated_value": 597.352,
+              "aggregation": "sum",
+              "band_points": 50.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "xai-2026-07-20-005",
+                "xai-2026-07-20-007"
+              ],
+              "input_expression": "sum(power_capacity_mw where status in [operational]) = 597.35 MW",
+              "label": "Operational capacity (MW)",
+              "missing": false,
+              "weight": 0.65,
+              "weighted_points": 32.5
+            },
+            "under_construction_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [under_construction]) = 0 MW",
+              "label": "Under-construction capacity (MW)",
+              "missing": true,
+              "weight": 0.35,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Power capacity",
+          "points": 32.5,
+          "weight": 0.3,
+          "weighted_contribution": 9.75
+        },
+        "vertical_integration": {
+          "components": {
+            "datacenter_layer": {
+              "aggregated_value": 2.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 60.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "xai-2026-07-20-015",
+                "xai-2026-07-20-022"
+              ],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 2",
+              "label": "Datacenter layer",
+              "missing": false,
+              "weight": 0.33,
+              "weighted_points": 19.8
+            },
+            "power_layer": {
+              "aggregated_value": 1.0,
+              "aggregation": "bool_any",
+              "band_points": 100.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "xai-2026-07-20-003",
+                "xai-2026-07-20-008"
+              ],
+              "input_expression": "bool_any(energy_source_mix|ppa_mw where status in [contracted,under_construction,operational]) = 1 MW",
+              "label": "Power layer",
+              "missing": false,
+              "weight": 0.33,
+              "weighted_points": 33.0
+            },
+            "silicon_layer": {
+              "aggregated_value": 1.0,
+              "aggregation": "bool_any",
+              "band_points": 100.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "xai-2026-07-20-021"
+              ],
+              "input_expression": "bool_any(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 1",
+              "label": "Silicon layer",
+              "missing": false,
+              "weight": 0.34,
+              "weighted_points": 34.0
+            }
+          },
+          "label": "Vertical integration",
+          "points": 86.8,
+          "weight": 0.2,
+          "weighted_contribution": 17.36
+        }
+      },
+      "company": "xai",
+      "eligible_fact_count": 20,
+      "ineligible_facts": [
+        {
+          "id": "xai-2026-07-20-009",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "xai-2026-07-20-010",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "xai-2026-07-20-020",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "xai-2026-07-20-023",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "xai-2026-07-20-025",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "xai-2026-07-20-026",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "xai-2026-07-20-027",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        }
+      ],
+      "score": 60.06
+    },
+    {
+      "categories": {
+        "compute_ownership": {
+          "components": {
+            "custom_silicon_programs": {
+              "aggregated_value": 1.0,
+              "aggregation": "count",
+              "band_points": 60.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "meta-2026-07-20-028"
+              ],
+              "input_expression": "count(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 1",
+              "label": "Custom silicon programs",
+              "missing": false,
+              "weight": 0.25,
+              "weighted_points": 15.0
+            },
+            "gpu_fleet": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(gpu_count where status in [announced,contracted,under_construction,operational,n/a]) = 0 chips",
+              "label": "Accelerator fleet (chips)",
+              "missing": true,
+              "weight": 0.55,
+              "weighted_points": 0.0
+            },
+            "owned_sites": {
+              "aggregated_value": 3.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 70.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "meta-2026-07-20-002",
+                "meta-2026-07-20-006",
+                "meta-2026-07-20-016"
+              ],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 3",
+              "label": "Owned datacenter sites",
+              "missing": false,
+              "weight": 0.2,
+              "weighted_points": 14.0
+            }
+          },
+          "label": "Compute ownership",
+          "points": 29.0,
+          "weight": 0.2,
+          "weighted_contribution": 5.8
+        },
+        "energy_security": {
+          "components": {
+            "contracted_ppa_mw": {
+              "aggregated_value": 2176.0,
+              "aggregation": "sum",
+              "band_points": 100.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "meta-2026-07-20-024"
+              ],
+              "input_expression": "sum(ppa_mw where status in [contracted,operational]) = 2176 MW",
+              "label": "Contracted power (PPA MW)",
+              "missing": false,
+              "weight": 0.55,
+              "weighted_points": 55.0
+            },
+            "energy_source_diversity": {
+              "aggregated_value": 2.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 80.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "meta-2026-07-20-004",
+                "meta-2026-07-20-015"
+              ],
+              "input_expression": "count_distinct_site(energy_source_mix where status in [announced,contracted,under_construction,operational,n/a]) = 2",
+              "label": "Energy-source diversity",
+              "missing": false,
+              "weight": 0.25,
+              "weighted_points": 20.0
+            },
+            "owned_generation": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(ppa_mw where status in [operational]) = 0 MW",
+              "label": "Owned / operational generation",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Energy security",
+          "points": 75.0,
+          "weight": 0.15,
+          "weighted_contribution": 11.25
+        },
+        "expansion_pipeline": {
+          "components": {
+            "capex_announced": {
+              "aggregated_value": 247200000000.0,
+              "aggregation": "sum",
+              "band_points": 100.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "meta-2026-07-20-012",
+                "meta-2026-07-20-030",
+                "meta-2026-07-20-031"
+              ],
+              "input_expression": "sum(capex_announced_usd where status in [announced,contracted,under_construction,operational,n/a]) = 247200000000 USD",
+              "label": "Announced capital (USD)",
+              "missing": false,
+              "weight": 0.3,
+              "weighted_points": 30.0
+            },
+            "interconnection_filings": {
+              "aggregated_value": 2.0,
+              "aggregation": "count",
+              "band_points": 50.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "meta-2026-07-20-005",
+                "meta-2026-07-20-013"
+              ],
+              "input_expression": "count(interconnection_filing where status in [announced,contracted,under_construction,operational,n/a]) = 2",
+              "label": "Grid interconnection filings",
+              "missing": false,
+              "weight": 0.2,
+              "weighted_points": 10.0
+            },
+            "pipeline_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [announced,contracted]) = 0 MW",
+              "label": "Announced / contracted capacity (MW)",
+              "missing": true,
+              "weight": 0.5,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Expansion pipeline",
+          "points": 40.0,
+          "weight": 0.15,
+          "weighted_contribution": 6.0
+        },
+        "power_capacity": {
+          "components": {
+            "operational_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [operational]) = 0 MW",
+              "label": "Operational capacity (MW)",
+              "missing": true,
+              "weight": 0.65,
+              "weighted_points": 0.0
+            },
+            "under_construction_mw": {
+              "aggregated_value": 9000.0,
+              "aggregation": "sum",
+              "band_points": 100.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "meta-2026-07-20-003",
+                "meta-2026-07-20-007",
+                "meta-2026-07-20-008",
+                "meta-2026-07-20-017"
+              ],
+              "input_expression": "sum(power_capacity_mw where status in [under_construction]) = 9000 MW",
+              "label": "Under-construction capacity (MW)",
+              "missing": false,
+              "weight": 0.35,
+              "weighted_points": 35.0
+            }
+          },
+          "label": "Power capacity",
+          "points": 35.0,
+          "weight": 0.3,
+          "weighted_contribution": 10.5
+        },
+        "vertical_integration": {
+          "components": {
+            "datacenter_layer": {
+              "aggregated_value": 3.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 100.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "meta-2026-07-20-002",
+                "meta-2026-07-20-006",
+                "meta-2026-07-20-016"
+              ],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 3",
+              "label": "Datacenter layer",
+              "missing": false,
+              "weight": 0.33,
+              "weighted_points": 33.0
+            },
+            "power_layer": {
+              "aggregated_value": 1.0,
+              "aggregation": "bool_any",
+              "band_points": 100.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "meta-2026-07-20-004",
+                "meta-2026-07-20-024"
+              ],
+              "input_expression": "bool_any(energy_source_mix|ppa_mw where status in [contracted,under_construction,operational]) = 1 MW",
+              "label": "Power layer",
+              "missing": false,
+              "weight": 0.33,
+              "weighted_points": 33.0
+            },
+            "silicon_layer": {
+              "aggregated_value": 1.0,
+              "aggregation": "bool_any",
+              "band_points": 100.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "meta-2026-07-20-028"
+              ],
+              "input_expression": "bool_any(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 1",
+              "label": "Silicon layer",
+              "missing": false,
+              "weight": 0.34,
+              "weighted_points": 34.0
+            }
+          },
+          "label": "Vertical integration",
+          "points": 100.0,
+          "weight": 0.2,
+          "weighted_contribution": 20.0
+        }
+      },
+      "company": "meta",
+      "eligible_fact_count": 20,
+      "ineligible_facts": [
+        {
+          "id": "meta-2026-07-20-001",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "meta-2026-07-20-009",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "meta-2026-07-20-010",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "meta-2026-07-20-014",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "meta-2026-07-20-018",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "meta-2026-07-20-020",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "meta-2026-07-20-021",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "meta-2026-07-20-025",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "meta-2026-07-20-026",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "meta-2026-07-20-027",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "meta-2026-07-20-029",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        }
+      ],
+      "score": 53.55
+    },
+    {
+      "categories": {
+        "compute_ownership": {
+          "components": {
+            "custom_silicon_programs": {
+              "aggregated_value": 1.0,
+              "aggregation": "count",
+              "band_points": 60.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "google-2026-07-20-010"
+              ],
+              "input_expression": "count(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 1",
+              "label": "Custom silicon programs",
+              "missing": false,
+              "weight": 0.25,
+              "weighted_points": 15.0
+            },
+            "gpu_fleet": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(gpu_count where status in [announced,contracted,under_construction,operational,n/a]) = 0 chips",
+              "label": "Accelerator fleet (chips)",
+              "missing": true,
+              "weight": 0.55,
+              "weighted_points": 0.0
+            },
+            "owned_sites": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 0",
+              "label": "Owned datacenter sites",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Compute ownership",
+          "points": 15.0,
+          "weight": 0.2,
+          "weighted_contribution": 3.0
+        },
+        "energy_security": {
+          "components": {
+            "contracted_ppa_mw": {
+              "aggregated_value": 8534.0,
+              "aggregation": "sum",
+              "band_points": 100.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "google-2026-07-20-003",
+                "google-2026-07-20-009",
+                "google-2026-07-20-011",
+                "google-2026-07-20-015",
+                "google-2026-07-20-018"
+              ],
+              "input_expression": "sum(ppa_mw where status in [contracted,operational]) = 8534 MW",
+              "label": "Contracted power (PPA MW)",
+              "missing": false,
+              "weight": 0.55,
+              "weighted_points": 55.0
+            },
+            "energy_source_diversity": {
+              "aggregated_value": 1.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 50.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "google-2026-07-20-004"
+              ],
+              "input_expression": "count_distinct_site(energy_source_mix where status in [announced,contracted,under_construction,operational,n/a]) = 1",
+              "label": "Energy-source diversity",
+              "missing": false,
+              "weight": 0.25,
+              "weighted_points": 12.5
+            },
+            "owned_generation": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(ppa_mw where status in [operational]) = 0 MW",
+              "label": "Owned / operational generation",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Energy security",
+          "points": 67.5,
+          "weight": 0.15,
+          "weighted_contribution": 10.125
+        },
+        "expansion_pipeline": {
+          "components": {
+            "capex_announced": {
+              "aggregated_value": 44750000000.0,
+              "aggregation": "sum",
+              "band_points": 60.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "google-2026-07-20-012",
+                "google-2026-07-20-016"
+              ],
+              "input_expression": "sum(capex_announced_usd where status in [announced,contracted,under_construction,operational,n/a]) = 44750000000 USD",
+              "label": "Announced capital (USD)",
+              "missing": false,
+              "weight": 0.3,
+              "weighted_points": 18.0
+            },
+            "interconnection_filings": {
+              "aggregated_value": 0.0,
+              "aggregation": "count",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count(interconnection_filing where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Grid interconnection filings",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            },
+            "pipeline_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [announced,contracted]) = 0 MW",
+              "label": "Announced / contracted capacity (MW)",
+              "missing": true,
+              "weight": 0.5,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Expansion pipeline",
+          "points": 18.0,
+          "weight": 0.15,
+          "weighted_contribution": 2.7
+        },
+        "power_capacity": {
+          "components": {
+            "operational_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [operational]) = 0 MW",
+              "label": "Operational capacity (MW)",
+              "missing": true,
+              "weight": 0.65,
+              "weighted_points": 0.0
+            },
+            "under_construction_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [under_construction]) = 0 MW",
+              "label": "Under-construction capacity (MW)",
+              "missing": true,
+              "weight": 0.35,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Power capacity",
+          "points": 0.0,
+          "weight": 0.3,
+          "weighted_contribution": 0.0
+        },
+        "vertical_integration": {
+          "components": {
+            "datacenter_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 0",
+              "label": "Datacenter layer",
+              "missing": true,
+              "weight": 0.33,
+              "weighted_points": 0.0
+            },
+            "power_layer": {
+              "aggregated_value": 1.0,
+              "aggregation": "bool_any",
+              "band_points": 100.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "google-2026-07-20-003",
+                "google-2026-07-20-004",
+                "google-2026-07-20-009",
+                "google-2026-07-20-011",
+                "google-2026-07-20-015",
+                "google-2026-07-20-018"
+              ],
+              "input_expression": "bool_any(energy_source_mix|ppa_mw where status in [contracted,under_construction,operational]) = 1 MW",
+              "label": "Power layer",
+              "missing": false,
+              "weight": 0.33,
+              "weighted_points": 33.0
+            },
+            "silicon_layer": {
+              "aggregated_value": 1.0,
+              "aggregation": "bool_any",
+              "band_points": 100.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "google-2026-07-20-010"
+              ],
+              "input_expression": "bool_any(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 1",
+              "label": "Silicon layer",
+              "missing": false,
+              "weight": 0.34,
+              "weighted_points": 34.0
+            }
+          },
+          "label": "Vertical integration",
+          "points": 67.0,
+          "weight": 0.2,
+          "weighted_contribution": 13.4
+        }
+      },
+      "company": "google",
+      "eligible_fact_count": 10,
+      "ineligible_facts": [
+        {
+          "id": "google-2026-07-20-001",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-002",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-005",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-006",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-007",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-008",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-013",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-017",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-019",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-020",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-021",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "google-2026-07-20-022",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        }
+      ],
+      "score": 29.22
+    },
+    {
+      "categories": {
+        "compute_ownership": {
+          "components": {
+            "custom_silicon_programs": {
+              "aggregated_value": 0.0,
+              "aggregation": "count",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Custom silicon programs",
+              "missing": true,
+              "weight": 0.25,
+              "weighted_points": 0.0
+            },
+            "gpu_fleet": {
+              "aggregated_value": 250000.0,
+              "aggregation": "sum",
+              "band_points": 75.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "openai-2026-07-20-028"
+              ],
+              "input_expression": "sum(gpu_count where status in [announced,contracted,under_construction,operational,n/a]) = 250000 chips",
+              "label": "Accelerator fleet (chips)",
+              "missing": false,
+              "weight": 0.55,
+              "weighted_points": 41.25
+            },
+            "owned_sites": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 0",
+              "label": "Owned datacenter sites",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Compute ownership",
+          "points": 41.25,
+          "weight": 0.2,
+          "weighted_contribution": 8.25
+        },
+        "energy_security": {
+          "components": {
+            "contracted_ppa_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(ppa_mw where status in [contracted,operational]) = 0 MW",
+              "label": "Contracted power (PPA MW)",
+              "missing": true,
+              "weight": 0.55,
+              "weighted_points": 0.0
+            },
+            "energy_source_diversity": {
+              "aggregated_value": 1.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 50.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "openai-2026-07-20-005"
+              ],
+              "input_expression": "count_distinct_site(energy_source_mix where status in [announced,contracted,under_construction,operational,n/a]) = 1",
+              "label": "Energy-source diversity",
+              "missing": false,
+              "weight": 0.25,
+              "weighted_points": 12.5
+            },
+            "owned_generation": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(ppa_mw where status in [operational]) = 0 MW",
+              "label": "Owned / operational generation",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Energy security",
+          "points": 12.5,
+          "weight": 0.15,
+          "weighted_contribution": 1.875
+        },
+        "expansion_pipeline": {
+          "components": {
+            "capex_announced": {
+              "aggregated_value": 900000000000.0,
+              "aggregation": "sum",
+              "band_points": 100.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "openai-2026-07-20-001",
+                "openai-2026-07-20-014"
+              ],
+              "input_expression": "sum(capex_announced_usd where status in [announced,contracted,under_construction,operational,n/a]) = 900000000000 USD",
+              "label": "Announced capital (USD)",
+              "missing": false,
+              "weight": 0.3,
+              "weighted_points": 30.0
+            },
+            "interconnection_filings": {
+              "aggregated_value": 1.0,
+              "aggregation": "count",
+              "band_points": 50.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "openai-2026-07-20-003"
+              ],
+              "input_expression": "count(interconnection_filing where status in [announced,contracted,under_construction,operational,n/a]) = 1",
+              "label": "Grid interconnection filings",
+              "missing": false,
+              "weight": 0.2,
+              "weighted_points": 10.0
+            },
+            "pipeline_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [announced,contracted]) = 0 MW",
+              "label": "Announced / contracted capacity (MW)",
+              "missing": true,
+              "weight": 0.5,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Expansion pipeline",
+          "points": 40.0,
+          "weight": 0.15,
+          "weighted_contribution": 6.0
+        },
+        "power_capacity": {
+          "components": {
+            "operational_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [operational]) = 0 MW",
+              "label": "Operational capacity (MW)",
+              "missing": true,
+              "weight": 0.65,
+              "weighted_points": 0.0
+            },
+            "under_construction_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [under_construction]) = 0 MW",
+              "label": "Under-construction capacity (MW)",
+              "missing": true,
+              "weight": 0.35,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Power capacity",
+          "points": 0.0,
+          "weight": 0.3,
+          "weighted_contribution": 0.0
+        },
+        "vertical_integration": {
+          "components": {
+            "datacenter_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 0",
+              "label": "Datacenter layer",
+              "missing": true,
+              "weight": 0.33,
+              "weighted_points": 0.0
+            },
+            "power_layer": {
+              "aggregated_value": 1.0,
+              "aggregation": "bool_any",
+              "band_points": 100.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "openai-2026-07-20-005"
+              ],
+              "input_expression": "bool_any(energy_source_mix|ppa_mw where status in [contracted,under_construction,operational]) = 1 MW",
+              "label": "Power layer",
+              "missing": false,
+              "weight": 0.33,
+              "weighted_points": 33.0
+            },
+            "silicon_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Silicon layer",
+              "missing": true,
+              "weight": 0.34,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Vertical integration",
+          "points": 33.0,
+          "weight": 0.2,
+          "weighted_contribution": 6.6
+        }
+      },
+      "company": "openai",
+      "eligible_fact_count": 19,
+      "ineligible_facts": [
+        {
+          "id": "openai-2026-07-20-006",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "openai-2026-07-20-007",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "openai-2026-07-20-009",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "openai-2026-07-20-010",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "openai-2026-07-20-011",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "openai-2026-07-20-016",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "openai-2026-07-20-018",
+          "superseded": false,
+          "tier": "C",
+          "verified": true
+        },
+        {
+          "id": "openai-2026-07-20-019",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "openai-2026-07-20-021",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "openai-2026-07-20-029",
+          "superseded": false,
+          "tier": "C",
+          "verified": true
+        }
+      ],
+      "score": 22.73
+    },
+    {
+      "categories": {
+        "compute_ownership": {
+          "components": {
+            "custom_silicon_programs": {
+              "aggregated_value": 0.0,
+              "aggregation": "count",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Custom silicon programs",
+              "missing": true,
+              "weight": 0.25,
+              "weighted_points": 0.0
+            },
+            "gpu_fleet": {
+              "aggregated_value": 1500000.0,
+              "aggregation": "sum",
+              "band_points": 100.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "anthropic-2026-07-20-009",
+                "anthropic-2026-07-20-010"
+              ],
+              "input_expression": "sum(gpu_count where status in [announced,contracted,under_construction,operational,n/a]) = 1500000 chips",
+              "label": "Accelerator fleet (chips)",
+              "missing": false,
+              "weight": 0.55,
+              "weighted_points": 55.0
+            },
+            "owned_sites": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 0",
+              "label": "Owned datacenter sites",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Compute ownership",
+          "points": 55.0,
+          "weight": 0.2,
+          "weighted_contribution": 11.0
+        },
+        "energy_security": {
+          "components": {
+            "contracted_ppa_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(ppa_mw where status in [contracted,operational]) = 0 MW",
+              "label": "Contracted power (PPA MW)",
+              "missing": true,
+              "weight": 0.55,
+              "weighted_points": 0.0
+            },
+            "energy_source_diversity": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(energy_source_mix where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Energy-source diversity",
+              "missing": true,
+              "weight": 0.25,
+              "weighted_points": 0.0
+            },
+            "owned_generation": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(ppa_mw where status in [operational]) = 0 MW",
+              "label": "Owned / operational generation",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Energy security",
+          "points": 0.0,
+          "weight": 0.15,
+          "weighted_contribution": 0.0
+        },
+        "expansion_pipeline": {
+          "components": {
+            "capex_announced": {
+              "aggregated_value": 50000000000.0,
+              "aggregation": "sum",
+              "band_points": 80.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [
+                "anthropic-2026-07-20-005"
+              ],
+              "input_expression": "sum(capex_announced_usd where status in [announced,contracted,under_construction,operational,n/a]) = 50000000000 USD",
+              "label": "Announced capital (USD)",
+              "missing": false,
+              "weight": 0.3,
+              "weighted_points": 24.0
+            },
+            "interconnection_filings": {
+              "aggregated_value": 0.0,
+              "aggregation": "count",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count(interconnection_filing where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Grid interconnection filings",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            },
+            "pipeline_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [announced,contracted]) = 0 MW",
+              "label": "Announced / contracted capacity (MW)",
+              "missing": true,
+              "weight": 0.5,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Expansion pipeline",
+          "points": 24.0,
+          "weight": 0.15,
+          "weighted_contribution": 3.6
+        },
+        "power_capacity": {
+          "components": {
+            "operational_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [operational]) = 0 MW",
+              "label": "Operational capacity (MW)",
+              "missing": true,
+              "weight": 0.65,
+              "weighted_points": 0.0
+            },
+            "under_construction_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [under_construction]) = 0 MW",
+              "label": "Under-construction capacity (MW)",
+              "missing": true,
+              "weight": 0.35,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Power capacity",
+          "points": 0.0,
+          "weight": 0.3,
+          "weighted_contribution": 0.0
+        },
+        "vertical_integration": {
+          "components": {
+            "datacenter_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 0",
+              "label": "Datacenter layer",
+              "missing": true,
+              "weight": 0.33,
+              "weighted_points": 0.0
+            },
+            "power_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(energy_source_mix|ppa_mw where status in [contracted,under_construction,operational]) = 0 MW",
+              "label": "Power layer",
+              "missing": true,
+              "weight": 0.33,
+              "weighted_points": 0.0
+            },
+            "silicon_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Silicon layer",
+              "missing": true,
+              "weight": 0.34,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Vertical integration",
+          "points": 0.0,
+          "weight": 0.2,
+          "weighted_contribution": 0.0
+        }
+      },
+      "company": "anthropic",
+      "eligible_fact_count": 13,
+      "ineligible_facts": [
+        {
+          "id": "anthropic-2026-07-20-001",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "anthropic-2026-07-20-002",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "anthropic-2026-07-20-007",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "anthropic-2026-07-20-008",
+          "superseded": false,
+          "tier": "A",
+          "verified": false
+        },
+        {
+          "id": "anthropic-2026-07-20-017",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        }
+      ],
+      "score": 14.6
+    },
+    {
+      "categories": {
+        "compute_ownership": {
+          "components": {
+            "custom_silicon_programs": {
+              "aggregated_value": 0.0,
+              "aggregation": "count",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Custom silicon programs",
+              "missing": true,
+              "weight": 0.25,
+              "weighted_points": 0.0
+            },
+            "gpu_fleet": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(gpu_count where status in [announced,contracted,under_construction,operational,n/a]) = 0 chips",
+              "label": "Accelerator fleet (chips)",
+              "missing": true,
+              "weight": 0.55,
+              "weighted_points": 0.0
+            },
+            "owned_sites": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 0",
+              "label": "Owned datacenter sites",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Compute ownership",
+          "points": 0.0,
+          "weight": 0.2,
+          "weighted_contribution": 0.0
+        },
+        "energy_security": {
+          "components": {
+            "contracted_ppa_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(ppa_mw where status in [contracted,operational]) = 0 MW",
+              "label": "Contracted power (PPA MW)",
+              "missing": true,
+              "weight": 0.55,
+              "weighted_points": 0.0
+            },
+            "energy_source_diversity": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(energy_source_mix where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Energy-source diversity",
+              "missing": true,
+              "weight": 0.25,
+              "weighted_points": 0.0
+            },
+            "owned_generation": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(ppa_mw where status in [operational]) = 0 MW",
+              "label": "Owned / operational generation",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Energy security",
+          "points": 0.0,
+          "weight": 0.15,
+          "weighted_contribution": 0.0
+        },
+        "expansion_pipeline": {
+          "components": {
+            "capex_announced": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(capex_announced_usd where status in [announced,contracted,under_construction,operational,n/a]) = 0 USD",
+              "label": "Announced capital (USD)",
+              "missing": true,
+              "weight": 0.3,
+              "weighted_points": 0.0
+            },
+            "interconnection_filings": {
+              "aggregated_value": 0.0,
+              "aggregation": "count",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count(interconnection_filing where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Grid interconnection filings",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            },
+            "pipeline_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [announced,contracted]) = 0 MW",
+              "label": "Announced / contracted capacity (MW)",
+              "missing": true,
+              "weight": 0.5,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Expansion pipeline",
+          "points": 0.0,
+          "weight": 0.15,
+          "weighted_contribution": 0.0
+        },
+        "power_capacity": {
+          "components": {
+            "operational_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [operational]) = 0 MW",
+              "label": "Operational capacity (MW)",
+              "missing": true,
+              "weight": 0.65,
+              "weighted_points": 0.0
+            },
+            "under_construction_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [under_construction]) = 0 MW",
+              "label": "Under-construction capacity (MW)",
+              "missing": true,
+              "weight": 0.35,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Power capacity",
+          "points": 0.0,
+          "weight": 0.3,
+          "weighted_contribution": 0.0
+        },
+        "vertical_integration": {
+          "components": {
+            "datacenter_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 0",
+              "label": "Datacenter layer",
+              "missing": true,
+              "weight": 0.33,
+              "weighted_points": 0.0
+            },
+            "power_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(energy_source_mix|ppa_mw where status in [contracted,under_construction,operational]) = 0 MW",
+              "label": "Power layer",
+              "missing": true,
+              "weight": 0.33,
+              "weighted_points": 0.0
+            },
+            "silicon_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Silicon layer",
+              "missing": true,
+              "weight": 0.34,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Vertical integration",
+          "points": 0.0,
+          "weight": 0.2,
+          "weighted_contribution": 0.0
+        }
+      },
+      "company": "minimax",
+      "eligible_fact_count": 0,
+      "ineligible_facts": [
+        {
+          "id": "minimax-2026-07-20-001",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        },
+        {
+          "id": "minimax-2026-07-20-002",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        }
+      ],
+      "score": 0.0
+    },
+    {
+      "categories": {
+        "compute_ownership": {
+          "components": {
+            "custom_silicon_programs": {
+              "aggregated_value": 0.0,
+              "aggregation": "count",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Custom silicon programs",
+              "missing": true,
+              "weight": 0.25,
+              "weighted_points": 0.0
+            },
+            "gpu_fleet": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(gpu_count where status in [announced,contracted,under_construction,operational,n/a]) = 0 chips",
+              "label": "Accelerator fleet (chips)",
+              "missing": true,
+              "weight": 0.55,
+              "weighted_points": 0.0
+            },
+            "owned_sites": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 0",
+              "label": "Owned datacenter sites",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Compute ownership",
+          "points": 0.0,
+          "weight": 0.2,
+          "weighted_contribution": 0.0
+        },
+        "energy_security": {
+          "components": {
+            "contracted_ppa_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(ppa_mw where status in [contracted,operational]) = 0 MW",
+              "label": "Contracted power (PPA MW)",
+              "missing": true,
+              "weight": 0.55,
+              "weighted_points": 0.0
+            },
+            "energy_source_diversity": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(energy_source_mix where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Energy-source diversity",
+              "missing": true,
+              "weight": 0.25,
+              "weighted_points": 0.0
+            },
+            "owned_generation": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(ppa_mw where status in [operational]) = 0 MW",
+              "label": "Owned / operational generation",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Energy security",
+          "points": 0.0,
+          "weight": 0.15,
+          "weighted_contribution": 0.0
+        },
+        "expansion_pipeline": {
+          "components": {
+            "capex_announced": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(capex_announced_usd where status in [announced,contracted,under_construction,operational,n/a]) = 0 USD",
+              "label": "Announced capital (USD)",
+              "missing": true,
+              "weight": 0.3,
+              "weighted_points": 0.0
+            },
+            "interconnection_filings": {
+              "aggregated_value": 0.0,
+              "aggregation": "count",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count(interconnection_filing where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Grid interconnection filings",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            },
+            "pipeline_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [announced,contracted]) = 0 MW",
+              "label": "Announced / contracted capacity (MW)",
+              "missing": true,
+              "weight": 0.5,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Expansion pipeline",
+          "points": 0.0,
+          "weight": 0.15,
+          "weighted_contribution": 0.0
+        },
+        "power_capacity": {
+          "components": {
+            "operational_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [operational]) = 0 MW",
+              "label": "Operational capacity (MW)",
+              "missing": true,
+              "weight": 0.65,
+              "weighted_points": 0.0
+            },
+            "under_construction_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [under_construction]) = 0 MW",
+              "label": "Under-construction capacity (MW)",
+              "missing": true,
+              "weight": 0.35,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Power capacity",
+          "points": 0.0,
+          "weight": 0.3,
+          "weighted_contribution": 0.0
+        },
+        "vertical_integration": {
+          "components": {
+            "datacenter_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 0",
+              "label": "Datacenter layer",
+              "missing": true,
+              "weight": 0.33,
+              "weighted_points": 0.0
+            },
+            "power_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(energy_source_mix|ppa_mw where status in [contracted,under_construction,operational]) = 0 MW",
+              "label": "Power layer",
+              "missing": true,
+              "weight": 0.33,
+              "weighted_points": 0.0
+            },
+            "silicon_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Silicon layer",
+              "missing": true,
+              "weight": 0.34,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Vertical integration",
+          "points": 0.0,
+          "weight": 0.2,
+          "weighted_contribution": 0.0
+        }
+      },
+      "company": "moonshot",
+      "eligible_fact_count": 1,
+      "ineligible_facts": [
+        {
+          "id": "moonshot-2026-07-20-001",
+          "superseded": false,
+          "tier": "C",
+          "verified": false
+        }
+      ],
+      "score": 0.0
+    },
+    {
+      "categories": {
+        "compute_ownership": {
+          "components": {
+            "custom_silicon_programs": {
+              "aggregated_value": 0.0,
+              "aggregation": "count",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Custom silicon programs",
+              "missing": true,
+              "weight": 0.25,
+              "weighted_points": 0.0
+            },
+            "gpu_fleet": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(gpu_count where status in [announced,contracted,under_construction,operational,n/a]) = 0 chips",
+              "label": "Accelerator fleet (chips)",
+              "missing": true,
+              "weight": 0.55,
+              "weighted_points": 0.0
+            },
+            "owned_sites": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 0",
+              "label": "Owned datacenter sites",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Compute ownership",
+          "points": 0.0,
+          "weight": 0.2,
+          "weighted_contribution": 0.0
+        },
+        "energy_security": {
+          "components": {
+            "contracted_ppa_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(ppa_mw where status in [contracted,operational]) = 0 MW",
+              "label": "Contracted power (PPA MW)",
+              "missing": true,
+              "weight": 0.55,
+              "weighted_points": 0.0
+            },
+            "energy_source_diversity": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(energy_source_mix where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Energy-source diversity",
+              "missing": true,
+              "weight": 0.25,
+              "weighted_points": 0.0
+            },
+            "owned_generation": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(ppa_mw where status in [operational]) = 0 MW",
+              "label": "Owned / operational generation",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Energy security",
+          "points": 0.0,
+          "weight": 0.15,
+          "weighted_contribution": 0.0
+        },
+        "expansion_pipeline": {
+          "components": {
+            "capex_announced": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(capex_announced_usd where status in [announced,contracted,under_construction,operational,n/a]) = 0 USD",
+              "label": "Announced capital (USD)",
+              "missing": true,
+              "weight": 0.3,
+              "weighted_points": 0.0
+            },
+            "interconnection_filings": {
+              "aggregated_value": 0.0,
+              "aggregation": "count",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count(interconnection_filing where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Grid interconnection filings",
+              "missing": true,
+              "weight": 0.2,
+              "weighted_points": 0.0
+            },
+            "pipeline_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [announced,contracted]) = 0 MW",
+              "label": "Announced / contracted capacity (MW)",
+              "missing": true,
+              "weight": 0.5,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Expansion pipeline",
+          "points": 0.0,
+          "weight": 0.15,
+          "weighted_contribution": 0.0
+        },
+        "power_capacity": {
+          "components": {
+            "operational_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [operational]) = 0 MW",
+              "label": "Operational capacity (MW)",
+              "missing": true,
+              "weight": 0.65,
+              "weighted_points": 0.0
+            },
+            "under_construction_mw": {
+              "aggregated_value": 0.0,
+              "aggregation": "sum",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "sum(power_capacity_mw where status in [under_construction]) = 0 MW",
+              "label": "Under-construction capacity (MW)",
+              "missing": true,
+              "weight": 0.35,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Power capacity",
+          "points": 0.0,
+          "weight": 0.3,
+          "weighted_contribution": 0.0
+        },
+        "vertical_integration": {
+          "components": {
+            "datacenter_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "count_distinct_site",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "count_distinct_site(owned_facility where status in [under_construction,operational]) = 0",
+              "label": "Datacenter layer",
+              "missing": true,
+              "weight": 0.33,
+              "weighted_points": 0.0
+            },
+            "power_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(energy_source_mix|ppa_mw where status in [contracted,under_construction,operational]) = 0 MW",
+              "label": "Power layer",
+              "missing": true,
+              "weight": 0.33,
+              "weighted_points": 0.0
+            },
+            "silicon_layer": {
+              "aggregated_value": 0.0,
+              "aggregation": "bool_any",
+              "band_points": 0.0,
+              "decayed_fact_ids": [],
+              "fact_ids": [],
+              "input_expression": "bool_any(custom_silicon where status in [announced,contracted,under_construction,operational,n/a]) = 0",
+              "label": "Silicon layer",
+              "missing": true,
+              "weight": 0.34,
+              "weighted_points": 0.0
+            }
+          },
+          "label": "Vertical integration",
+          "points": 0.0,
+          "weight": 0.2,
+          "weighted_contribution": 0.0
+        }
+      },
+      "company": "zhipu",
+      "eligible_fact_count": 4,
+      "ineligible_facts": [
+        {
+          "id": "zhipu-2026-07-20-005",
+          "superseded": false,
+          "tier": "B",
+          "verified": false
+        }
+      ],
+      "score": 0.0
+    }
+  ],
+  "meta": {
+    "companies_scored": 8,
+    "generated_as_of": "2026-07-20",
+    "scoring_version": 1
+  }
+}

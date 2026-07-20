@@ -1,0 +1,33 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml jsonschema pytest
+
+      - name: Validate ledger (schema + hygiene)
+        run: python scripts/validate.py
+
+      - name: Methodology is current (fails if METHODOLOGY.md hand-edited)
+        run: python scripts/gen_methodology.py --check
+
+      - name: Golden scoring test (deterministic output)
+        run: python -m pytest tests/ -q
+
+      - name: index.json is current (reproduces byte-for-byte at its own as-of date)
+        run: |
+          AS_OF=$(python -c 'import json; print(json.load(open("index.json"))["meta"]["generated_as_of"])')
+          python scripts/score.py --as-of "$AS_OF" --check

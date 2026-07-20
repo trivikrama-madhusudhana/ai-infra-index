@@ -1,0 +1,49 @@
+{
+  "company": "globex",
+  "facts": [
+    {
+      "id": "globex-2026-06-01-001",
+      "company": "globex",
+      "metric": "power_capacity_mw",
+      "value": 120,
+      "unit": "MW",
+      "status": "operational",
+      "site": "one-va",
+      "as_of_date": "2026-05-01",
+      "source": {
+        "url": "https://www.datacenterdynamics.com/globex-one",
+        "publisher": "DCD",
+        "date_published": "2026-06-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2026/globex-one"
+      },
+      "excerpt": "Globex's first site draws 120 MW.",
+      "notes": null,
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "confirmed" }
+    },
+    {
+      "id": "globex-2026-06-01-002",
+      "company": "globex",
+      "metric": "power_capacity_mw",
+      "value": 400,
+      "unit": "MW",
+      "status": "announced",
+      "site": "two-va",
+      "as_of_date": "2026-04-01",
+      "source": {
+        "url": "https://www.ft.com/globex-two",
+        "publisher": "FT",
+        "date_published": "2026-06-01",
+        "date_accessed": "2026-07-20",
+        "archive_url": "https://web.archive.org/web/2026/globex-two"
+      },
+      "excerpt": "Globex plans a 400 MW second site.",
+      "notes": null,
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": { "verified": true, "checked_on": "2026-07-20", "verifier_note": "confirmed" }
+    }
+  ]
+}

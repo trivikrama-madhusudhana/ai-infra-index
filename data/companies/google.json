@@ -1,0 +1,577 @@
+{
+  "company": "google",
+  "facts": [
+    {
+      "id": "google-2026-07-20-001",
+      "company": "google",
+      "metric": "custom_silicon",
+      "value": true,
+      "unit": "boolean",
+      "status": "operational",
+      "site": "axion-cpu",
+      "as_of_date": "2024-04-10",
+      "source": {
+        "url": "https://cloud.google.com/blog/products/compute/introducing-googles-new-arm-based-cpu",
+        "publisher": "Google Cloud (blog)",
+        "date_published": "2024-04-10",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Google Axion Processors, our first custom Arm-based CPUs designed for the data center",
+      "notes": "Axion = Google's first in-house Arm-based data center CPU (Arm Neoverse V2); up to 50% better perf and 60% better energy efficiency vs comparable x86.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "STATUS MISMATCH. As of the cited April 10, 2024 page, Axion is NOT operational: 'will be available to Google Cloud customers later this year' and 'available in preview in the coming months.' It was announced/preview at this date, not operational. (Custom silicon = true is correct, but the 'operation"
+      }
+    },
+    {
+      "id": "google-2026-07-20-002",
+      "company": "google",
+      "metric": "ppa_mw",
+      "value": 115,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "fervo-nevada",
+      "as_of_date": "2024-06-11",
+      "source": {
+        "url": "https://blog.google/outreach-initiatives/sustainability/google-clean-energy-partnership/",
+        "publisher": "Google (The Keyword blog)",
+        "date_published": "2024-06-11",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "energy supply agreement that will add 115 MW of new around-the-clock enhanced geothermal power... developed by Fervo Energy and delivered by NV Energy",
+      "notes": "Enhanced geothermal via Fervo (Corsac Station), delivered through NV Energy Clean Transition Tariff for Google's Storey County NV data centers + Las Vegas cloud region. Nevada regulators approved May 2025; expected online 2026.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "google-2026-07-20-003",
+      "company": "google",
+      "metric": "ppa_mw",
+      "value": 500,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "kairos-us-fleet",
+      "as_of_date": "2024-10-14",
+      "source": {
+        "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/google-kairos-power-nuclear-energy-agreement/",
+        "publisher": "Google (blog.google)",
+        "date_published": "2024-10-14",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "this deal will enable up to 500 MW of new 24/7 carbon-free power to U.S. electricity grids",
+      "notes": "Master Plant Development Agreement with Kairos Power for advanced nuclear SMRs; 'up to 500 MW', first SMR by 2030, remainder through 2035. First corporate PPA for new nuclear SMRs. Value is stated ceiling.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Page states 'this deal will enable up to 500 MW of new 24/7 carbon-free power' via the world's first corporate agreement to purchase nuclear energy from Kairos SMRs. Matches 500 MW contracted."
+      }
+    },
+    {
+      "id": "google-2026-07-20-004",
+      "company": "google",
+      "metric": "energy_source_mix",
+      "value": 66,
+      "unit": "text",
+      "status": "operational",
+      "site": "global",
+      "as_of_date": "2025-06-27",
+      "source": {
+        "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/environmental-report-2025/",
+        "publisher": "Google (blog.google)",
+        "date_published": "2025-06-27",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "This record investment pushed our carbon-free energy use from 64% to 66% on an hourly basis",
+      "notes": "Carbon-free energy share across Google data centers+offices on hourly-matching basis (2024 reporting year); 2.5 GW of new clean energy added to serving grids in 2024. Value = 66 (percent).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Page states 'This record investment pushed our carbon-free energy use from 64% to 66% on an hourly basis' — an achieved 2024 figure. Matches 66%, operational/achieved. Note: it is specifically hourly-basis CFE across Google's operations."
+      }
+    },
+    {
+      "id": "google-2026-07-20-005",
+      "company": "google",
+      "metric": "capex_announced_usd",
+      "value": 3000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "pennsylvania-hydro",
+      "as_of_date": "2025-07-15",
+      "source": {
+        "url": "https://www.utilitydive.com/news/google-cloud-blackstone-aws-us-ai-data-center-buildouts/753202/",
+        "publisher": "Utility Dive",
+        "date_published": "2025-07-15",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "an additional $3 billion figure for hydroelectric facility upgrades... $3 billion to modernize two Pennsylvania hydropower plants",
+      "notes": "$3B to modernize/refurbish two PA hydro plants (Holtwood & Safe Harbor) supporting PJM operations; part of the Brookfield hydro framework. utilitydive.com domain flagged.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "google-2026-07-20-006",
+      "company": "google",
+      "metric": "capex_announced_usd",
+      "value": 25000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "pjm",
+      "as_of_date": "2025-07-15",
+      "source": {
+        "url": "https://www.utilitydive.com/news/google-cloud-blackstone-aws-us-ai-data-center-buildouts/753202/",
+        "publisher": "Utility Dive",
+        "date_published": "2025-07-15",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Google announced it would spend more than $25 billion to build out data center and AI infrastructure across the Pennsylvania-based PJM Interconnection power grid in the next two years",
+      "notes": "Two-year buildout across the 13-state PJM grid region, announced at the Pennsylvania Energy & Innovation Summit. utilitydive.com is trade press, not in preferred list — flagged for review.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "google-2026-07-20-007",
+      "company": "google",
+      "metric": "ppa_mw",
+      "value": 3000,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "brookfield-hydro",
+      "as_of_date": "2025-07-15",
+      "source": {
+        "url": "https://bam.brookfield.com/press-releases/brookfield-and-google-sign-hydro-framework-agreement-deliver-3000-mw-homegrown",
+        "publisher": "Brookfield Asset Management",
+        "date_published": "2025-07-15",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Brookfield and Google Sign Hydro Framework Agreement to Deliver up to 3,000 MW of Homegrown Energy in the United States",
+      "notes": "Framework agreement 'up to 3,000 MW' hydro by end of 2032; first two 20-yr PPAs total 670 MW (Holtwood & Safe Harbor, PA, >$3B). Recorded framework ceiling 3000 MW; note first firm contracts = 670 MW.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "google-2026-07-20-008",
+      "company": "google",
+      "metric": "cloud_partnership",
+      "value": "Anthropic to access up to one million Google TPUs, well over 1 GW of capacity online in 2026",
+      "unit": "text",
+      "status": "contracted",
+      "site": "anthropic-tpu",
+      "as_of_date": "2025-10-23",
+      "source": {
+        "url": "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services",
+        "publisher": "Anthropic",
+        "date_published": "2025-10-23",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "up to one million TPUs... well over a gigawatt of capacity online in 2026... worth tens of billions of dollars",
+      "notes": "Google Cloud SELLING/renting TPU capacity to Anthropic (Google is the provider) — recorded as cloud_partnership, NOT Google-owned capacity. Later Nov-2025 expansion (anthropic.com/news/google-broadcom-partnership-compute) adds 'multiple gigawatts' of next-gen TPU capacity from 2027.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "google-2026-07-20-009",
+      "company": "google",
+      "metric": "ppa_mw",
+      "value": 615,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "duane-arnold-ia",
+      "as_of_date": "2025-10-28",
+      "source": {
+        "url": "https://newsroom.nexteraenergy.com/NextEra-Energy-and-Google-Announce-New-Collaboration-to-Accelerate-Nuclear-Energy-Deployment-in-the-U-S?l=12",
+        "publisher": "NextEra Energy (newsroom)",
+        "date_published": "2025-10-28",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Google will purchase power from the 615-MW plant as a 24/7 carbon-free energy source ... a 25-year agreement",
+      "notes": "25-year PPA to restart Iowa's Duane Arnold Energy Center nuclear plant (615 MW), expected online by Q1 2029.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Page states 'Google will purchase power from the 615-MW plant' (Duane Arnold, Iowa) under a 25-year PPA. Matches 615 MW contracted."
+      }
+    },
+    {
+      "id": "google-2026-07-20-010",
+      "company": "google",
+      "metric": "custom_silicon",
+      "value": true,
+      "unit": "boolean",
+      "status": "announced",
+      "site": "tpu-ironwood",
+      "as_of_date": "2025-11-07",
+      "source": {
+        "url": "https://cloud.google.com/blog/products/compute/ironwood-tpus-and-new-axion-based-vms-for-your-ai-workloads",
+        "publisher": "Google Cloud (blog)",
+        "date_published": "2025-11-07",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Ironwood, our seventh generation TPU ... our most powerful and energy-efficient custom silicon to date ... 9,216 chips in a superpod",
+      "notes": "TPU v7 'Ironwood', in-house custom silicon; scales to 9,216 chips/superpod, 1.77 PB shared HBM; GA 'in coming weeks' after Nov 2025. Co-designed/fabbed with Broadcom + TSMC per press reports.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Page announces Ironwood, Google's seventh-generation custom TPU: 'Ironwood... will be generally available in the coming weeks.' Confirms custom silicon, announced (not yet GA) as of 2025-11-07."
+      }
+    },
+    {
+      "id": "google-2026-07-20-011",
+      "company": "google",
+      "metric": "ppa_mw",
+      "value": 49,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "montpelier-oh",
+      "as_of_date": "2025-11-12",
+      "source": {
+        "url": "https://www.solarpowerworldonline.com/2025/11/google-inks-ppa-for-49-mw-solar-project-to-power-ohio-data-center-operations/",
+        "publisher": "Solar Power World",
+        "date_published": "2025-11-12",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Google has signed a 15-year PPA with TotalEnergies for energy from its 49-MW Montpelier solar farm in Ohio.",
+      "notes": "15-yr PPA, ~1.5 TWh total, Montpelier solar farm (Williams County OH), PJM grid, serves Google's Ohio data centers. Domain solarpowerworldonline.com (not allowlisted; totalenergies.com press release corroborates).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Page states 'Google has signed a 15-year PPA with TotalEnergies for energy from its 49-MW Montpelier solar farm in Ohio.' Matches 49 MW contracted, Montpelier OH."
+      }
+    },
+    {
+      "id": "google-2026-07-20-012",
+      "company": "google",
+      "metric": "capex_announced_usd",
+      "value": 40000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "texas",
+      "as_of_date": "2025-11-14",
+      "source": {
+        "url": "https://blog.google/company-news/inside-google/company-announcements/google-american-innovation-texas/",
+        "publisher": "Google (blog.google)",
+        "date_published": "2025-11-14",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Google announces new $40 billion investment in Texas ... new data center campuses ... in Armstrong and Haskell counties, through 2027",
+      "notes": "Largest state investment by Google in the US; funds new data center campuses in Armstrong + Haskell counties through 2027.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Page states 'a new $40 billion investment in the Lone Star State through 2027' — matches value $40B, announced, Texas."
+      }
+    },
+    {
+      "id": "google-2026-07-20-013",
+      "company": "google",
+      "metric": "datacenter_site",
+      "value": "Armstrong County TX 'Goodnight' data center campus (with Crusoe)",
+      "unit": "text",
+      "status": "announced",
+      "site": "goodnight-tx",
+      "as_of_date": "2025-11-14",
+      "source": {
+        "url": "https://blog.google/company-news/inside-google/company-announcements/google-american-innovation-texas/",
+        "publisher": "Google (blog.google)",
+        "date_published": "2025-11-14",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "three new data center campuses in Armstrong and Haskell counties",
+      "notes": "Armstrong County campus ('Goodnight,' near Claude TX) developed with Crusoe Energy. Separately, per press reports (oilandgaswatch.org / distilled.earth, non-allowlisted), Crusoe filed a permit for a 933 MW on-site natural-gas plant to power it — that generation is Crusoe's, not Google's own capacity.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "Page confirms 'new data center campuses in Armstrong and Haskell Counties' (announced), but the words 'Goodnight' and 'Crusoe' do NOT appear anywhere on this page. The specific claim (Goodnight campus / with Crusoe) is not literally stated in the cited source."
+      }
+    },
+    {
+      "id": "google-2026-07-20-014",
+      "company": "google",
+      "metric": "datacenter_site",
+      "value": "Haskell County TX data center campuses (paired with solar + battery)",
+      "unit": "text",
+      "status": "announced",
+      "site": "haskell-tx",
+      "as_of_date": "2025-11-14",
+      "source": {
+        "url": "https://blog.google/company-news/inside-google/company-announcements/google-american-innovation-texas/",
+        "publisher": "Google (blog.google)",
+        "date_published": "2025-11-14",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "One of our new Haskell County data centers will be built alongside a new solar and battery storage plant.",
+      "notes": "Two of the three new Texas campuses are in Haskell County (near Abilene); one paired with on-site solar+battery.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Page states 'One of our new Haskell County data centers will be built alongside a new solar and battery storage plant.' Confirms Haskell County TX data center paired with solar+battery, announced."
+      }
+    },
+    {
+      "id": "google-2026-07-20-015",
+      "company": "google",
+      "metric": "ppa_mw",
+      "value": 6200,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "texas",
+      "as_of_date": "2025-11-14",
+      "source": {
+        "url": "https://blog.google/company-news/inside-google/company-announcements/google-american-innovation-texas/",
+        "publisher": "Google (blog.google)",
+        "date_published": "2025-11-14",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "more than 6,200 megawatts of new energy generation and capacity contracted to date through power purchase agreements",
+      "notes": "Aggregate PPA/generation capacity Google has contracted for its Texas operations; page says 'more than 6,200 MW' — conservative low end recorded.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Page states 'more than 6,200 megawatts of new energy generation and capacity contracted to date through power purchase agreements' — matches 6,200 MW contracted for Texas."
+      }
+    },
+    {
+      "id": "google-2026-07-20-016",
+      "company": "google",
+      "metric": "capex_announced_usd",
+      "value": 4750000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "intersect-power",
+      "as_of_date": "2025-12-22",
+      "source": {
+        "url": "https://www.esgdive.com/news/alphabet-acquires-clean-energy-developer-intersect-portfolio-4-75b-google-data-centers/808756/",
+        "publisher": "ESG Dive",
+        "date_published": "2026-01-05",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Alphabet ... will acquire clean energy and data center infrastructure developer Intersect in a $4.75 billion deal",
+      "notes": "Announced 2025-12-22, closing H1 2026. Portfolio ~10.8 GW clean energy operating/under-construction by late 2028; enables co-located 'energy parks'. Domain esgdive.com (not allowlisted).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Page states Alphabet 'will acquire clean energy and data center infrastructure developer Intersect in a $4.75 billion deal' (expected to close H1 2026). Matches $4.75B, announced."
+      }
+    },
+    {
+      "id": "google-2026-07-20-017",
+      "company": "google",
+      "metric": "gpu_count",
+      "value": 3100000,
+      "unit": "GPUs",
+      "status": "n/a",
+      "site": "fleet",
+      "as_of_date": "2025-12-31",
+      "source": {
+        "url": "https://epoch.ai/blog/introducing-the-ai-chip-owners-explorer",
+        "publisher": "Epoch AI",
+        "date_published": "2026-04-06",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Google's TPU chips ... a total compute capacity of almost 4 million H100-equivalents [confidence interval: 3.1M to 4.5M]",
+      "notes": "Epoch AI estimate (H100-equivalents, not physical GPUs), end-2025. Recorded conservative low end of CI (3.1M); central estimate 'almost 4M', CI 3.1M-4.5M. Google's total incl. GPUs ~5M H100e, ~25% of world total.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "Page attributes to Google 'around 5 million Nvidia H100 GPUs in compute capacity' (headline), or an estimate of 'almost 4 million H100-equivalents [CI: 3.1M to 4.5M]'. The 3,100,000 figure is only the LOWER BOUND of a confidence interval, and it measures H100-equivalent compute capacity, not a physi"
+      }
+    },
+    {
+      "id": "google-2026-07-20-018",
+      "company": "google",
+      "metric": "ppa_mw",
+      "value": 1170,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "clearway-multi",
+      "as_of_date": "2026-01-20",
+      "source": {
+        "url": "https://www.esgdive.com/news/google-inks-ppas-clearway-energy-power-data-centers-with-carbon-free-wv-missouri-tx/810006/",
+        "publisher": "ESG Dive",
+        "date_published": "2026-01-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "1.17 gigawatts of 'carbon-free energy projects' ... 20-year power purchase agreements",
+      "notes": "Trio of 20-yr PPAs with Clearway Energy Group across Missouri, Texas, West Virginia (SPP/ERCOT/MISO); online 2027-2028. Recorded 1.17 GW = 1,170 MW. Domain esgdive.com (not allowlisted).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Page states 'Google has signed a trio of 20-year power purchase agreements with Clearway Energy Group that will provide... 1.17 gigawatts' across Missouri, Texas, West Virginia markets. Matches 1,170 MW contracted."
+      }
+    },
+    {
+      "id": "google-2026-07-20-019",
+      "company": "google",
+      "metric": "ppa_mw",
+      "value": 150,
+      "unit": "MW",
+      "status": "announced",
+      "site": "ormat-nevada",
+      "as_of_date": "2026-02-17",
+      "source": {
+        "url": "https://www.globenewswire.com/news-release/2026/02/17/3239318/26372/en/Ormat-Technologies-Announces-the-Signing-of-Geothermal-Portfolio-PPA-of-Up-to-150-MW-to-Support-Google-s-Data-Center-Operations-Through-NV-Energy.html",
+        "publisher": "Ormat Technologies (GlobeNewswire)",
+        "date_published": "2026-02-17",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Ormat... entered into a long-term geothermal Power Purchase Agreement... of up to 150 MW to Support Google's Data Center Operations Through NV Energy",
+      "notes": "Up to 150 MW geothermal portfolio; Google not a direct party — PPA is Ormat/NV Energy via Clean Transition Tariff, subject to PUCN approval (H2 2026), projects online 2028-2030. globenewswire.com domain flagged; recorded low end 150 (ceiling).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "google-2026-07-20-020",
+      "company": "google",
+      "metric": "capex_announced_usd",
+      "value": 15000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "new-florence-mo",
+      "as_of_date": "2026-05-20",
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/google-deepens-missouri-roots-with-new-data-center-energy-and-community-investments-302778322.html",
+        "publisher": "PR Newswire (Google press release)",
+        "date_published": "2026-05-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "$15 billion investment in building infrastructure in Missouri, including a new data center in New Florence, located in Montgomery County",
+      "notes": "New owned datacenter campus in New Florence, Montgomery County MO. Source domain prnewswire.com (Google-issued release) — not in preferred list, flagged for review.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "google-2026-07-20-021",
+      "company": "google",
+      "metric": "ppa_mw",
+      "value": 500,
+      "unit": "MW",
+      "status": "announced",
+      "site": "ameren-mo",
+      "as_of_date": "2026-05-20",
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/google-deepens-missouri-roots-with-new-data-center-energy-and-community-investments-302778322.html",
+        "publisher": "PR Newswire (Google press release)",
+        "date_published": "2026-05-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "through its partnership with Ameren—Google is supporting the development of more than 500 megawatts (MW) of additional capacity",
+      "notes": "Additional MO capacity via utility Ameren, on top of the 1 GW contracted. 'more than 500 MW'; conservative low end recorded. prnewswire.com domain flagged.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "google-2026-07-20-022",
+      "company": "google",
+      "metric": "ppa_mw",
+      "value": 1000,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "new-florence-mo",
+      "as_of_date": "2026-05-20",
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/google-deepens-missouri-roots-with-new-data-center-energy-and-community-investments-302778322.html",
+        "publisher": "PR Newswire (Google press release)",
+        "date_published": "2026-05-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Google has contracted to bring more than one gigawatt (GW) of new generation capacity to Missouri",
+      "notes": "Source says 'more than 1 GW'; recorded conservative low end 1000 MW. For the Missouri campus. prnewswire.com domain flagged.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    }
+  ]
+}

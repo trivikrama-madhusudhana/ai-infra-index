@@ -1,0 +1,811 @@
+{
+  "company": "meta",
+  "facts": [
+    {
+      "id": "meta-2026-07-20-001",
+      "company": "meta",
+      "metric": "energy_source_mix",
+      "value": "natural gas (primary) via Entergy, plus solar, wind, geothermal and nuclear",
+      "unit": "text",
+      "status": "n/a",
+      "site": "richland-parish-la",
+      "as_of_date": "2024-12-04",
+      "source": {
+        "url": "https://datacenters.atmeta.com/richland-parish-data-center/",
+        "publisher": "Meta",
+        "date_published": "2024-12-04",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Working with Entergy utility company",
+      "notes": "Generation is Entergy-owned (utility), funded by Meta; press (DCD/ENR) report Entergy building multiple gas plants (three turbines ~2.26GW approved, later scaled to ~10 plants >7GW) plus solar/wind/geothermal and nuclear uprates. Qualitative only; MW figures not recorded (source pages not directly fetched).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "Page does NOT name any generation fuel mix. It only mentions working with Entergy ('we pay the full costs for the energy used') and cooling details. No mention of natural gas, solar, wind, geothermal, or nuclear. The stated energy_source_mix is not supported by the cited page."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-002",
+      "company": "meta",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "under_construction",
+      "site": "richland-parish-la",
+      "as_of_date": "2024-12-04",
+      "source": {
+        "url": "https://datacenters.atmeta.com/richland-parish-data-center/",
+        "publisher": "Meta",
+        "date_published": "2024-12-04",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "delivering 5 gigawatts of compute capacity to house Hyperion, our largest multi-gigawatt AI cluster",
+      "notes": "Meta-owned and operated data center campus (Hyperion) in Richland Parish, Louisiana; construction started end of 2024.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Page is Meta's own data-center page for Richland Parish describing a facility Meta is building (7,500+ trade workers at peak construction; named GCs). It is a Meta-owned data center under construction. Ownership structure not spelled out in words but the owned-vs-leased distinction is clearly owned."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-003",
+      "company": "meta",
+      "metric": "power_capacity_mw",
+      "value": 2000,
+      "unit": "MW",
+      "status": "under_construction",
+      "site": "richland-parish-la",
+      "as_of_date": "2024-12-04",
+      "source": {
+        "url": "https://datacenters.atmeta.com/richland-parish-data-center/",
+        "publisher": "Meta",
+        "date_published": "2024-12-04",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "over two gigawatts of compute capacity to train future open-source large language models",
+      "notes": "Conservative low end of the 2GW-to-5GW range; ~2GW targeted online by 2030. Meta-owned campus.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Meta's Richland Parish page states 'over two gigawatts of compute capacity to train future open-source large language models' (and 5GW total). 2000 MW is literally supported; facility is being built (under construction)."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-004",
+      "company": "meta",
+      "metric": "energy_source_mix",
+      "value": "natural gas, 200 MW dedicated plant (Williams/Will-Power owned)",
+      "unit": "text",
+      "status": "under_construction",
+      "site": "prometheus-new-albany-oh",
+      "as_of_date": "2025-06-09",
+      "source": {
+        "url": "https://www.powermag.com/new-200-mw-gas-fired-plant-in-ohio-will-power-meta-data-center/",
+        "publisher": "POWER Magazine",
+        "date_published": "2025-06-10",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "200-MW natural gas-fired power plant ... Will-Power OH, a subsidiary of The Williams Companies ... exclusively to Sidecat ... part of Meta Platforms",
+      "notes": "OPSB-approved (June 9, 2025) off-grid gas plant dedicated to Meta's New Albany campus; owned/operated by Williams (Will-Power), not Meta. Full build-out two 200MW generation sites.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "powermag: 'Will-Power OH, a subsidiary of The Williams Companies, will build and operate the plant' - the Socrates South 200 MW gas-fired project for Meta (Sidecat). 200 MW natural gas, Williams/Will-Power owned, under construction (approved, completion Q3 2026). Supported."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-005",
+      "company": "meta",
+      "metric": "interconnection_filing",
+      "value": "Ohio Power Siting Board approval - 200MW Socrates South gas generation for Meta",
+      "unit": "text",
+      "status": "n/a",
+      "site": "prometheus-new-albany-oh",
+      "as_of_date": "2025-06-09",
+      "source": {
+        "url": "https://www.powermag.com/new-200-mw-gas-fired-plant-in-ohio-will-power-meta-data-center/",
+        "publisher": "POWER Magazine",
+        "date_published": "2025-06-10",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Approval Date: June 9, 2025 ... will supply energy exclusively to Sidecat ... part of Meta Platforms",
+      "notes": "State siting-board (OPSB) approval for behind-the-meter generation dedicated to Meta's New Albany data center. Not a grid interconnection queue filing.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "powermag: 'The Ohio Power Siting Board (OPSB) on June 9 gave the go-ahead for the Socrates South Power Generation Project' - 200 MW gas generation for the Meta (Sidecat) New Albany data center. Supported."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-006",
+      "company": "meta",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "under_construction",
+      "site": "prometheus-new-albany-oh",
+      "as_of_date": "2025-07-14",
+      "source": {
+        "url": "https://www.itpro.com/infrastructure/data-centres/meta-working-on-a-5gw-data-center-to-supercharge-ai-infrastructure-and-mark-zuckerberg-says-one-cluster-alone-covers-a-significant-part-of-the-footprint-of-manhattan",
+        "publisher": "ITPro",
+        "date_published": "2025-07-15",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "The first of these will be named Prometheus, he revealed, and is set to come online in 2026.",
+      "notes": "Meta-owned Prometheus campus at 1500 Beech Road, New Albany, Ohio (Meta subsidiary 'Sidecat', 740-acre campus).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "itpro: Prometheus is a 1GW cluster 'using both Meta's own infrastructure and leased systems.' Meta-owned infrastructure is confirmed (though it is a mixed owned+leased cluster). owned_facility=true supported."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-007",
+      "company": "meta",
+      "metric": "power_capacity_mw",
+      "value": 1000,
+      "unit": "MW",
+      "status": "under_construction",
+      "site": "prometheus-new-albany-oh",
+      "as_of_date": "2025-07-14",
+      "source": {
+        "url": "https://www.itpro.com/infrastructure/data-centres/meta-working-on-a-5gw-data-center-to-supercharge-ai-infrastructure-and-mark-zuckerberg-says-one-cluster-alone-covers-a-significant-part-of-the-footprint-of-manhattan",
+        "publisher": "ITPro",
+        "date_published": "2025-07-15",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "SemiAnalysis reported that Meta would be 'the first lab to bring a 1GW \"supercluster\" online'",
+      "notes": "Prometheus supercluster, New Albany, Ohio; ~1GW; due online 2026 ('The first of these will be named Prometheus... set to come online in 2026'). 1GW figure attributed to SemiAnalysis. Meta-owned campus.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "itpro: 'In New Albany, Ohio, the Prometheus system is a 1GW cluster of data centers.' 1000 MW under construction (comes online 2026) is supported."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-008",
+      "company": "meta",
+      "metric": "power_capacity_mw",
+      "value": 5000,
+      "unit": "MW",
+      "status": "under_construction",
+      "site": "richland-parish-la",
+      "as_of_date": "2025-07-14",
+      "source": {
+        "url": "https://www.itpro.com/infrastructure/data-centres/meta-working-on-a-5gw-data-center-to-supercharge-ai-infrastructure-and-mark-zuckerberg-says-one-cluster-alone-covers-a-significant-part-of-the-footprint-of-manhattan",
+        "publisher": "ITPro",
+        "date_published": "2025-07-15",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "We're also building Hyperion, which will be able to scale up to 5GW over several years.",
+      "notes": "Hyperion = Meta's Richland Parish, Louisiana campus. Range: ~2GW online by 2030, full 5GW ~2032 (near-term 2GW recorded as separate under_construction fact). Corroborated by Meta's own page (datacenters.atmeta.com): 'delivering 5 gigawatts of compute capacity to house Hyperion.'",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "itpro article calls the Louisiana site 'Hyperion' (Richland Parish): 'building Hyperion, which will be able to scale up to 5GW over several years.' Construction began, so under_construction fits. 5000 MW is a scale-up target, not current operational capacity, but the value+status+site are supported."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-009",
+      "company": "meta",
+      "metric": "capex_announced_usd",
+      "value": 1000000000,
+      "unit": "USD",
+      "status": "operational",
+      "site": "kansas-city-mo",
+      "as_of_date": "2025-08-20",
+      "source": {
+        "url": "https://about.fb.com/news/2025/08/metas-kansas-city-data-center/",
+        "publisher": "Meta (about.fb.com)",
+        "date_published": "2025-08-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "$1 billion investment in the state of Missouri",
+      "notes": "Conservative low figure; some third-party sources describe the campus as >$2.5B. Recorded from Meta's own page which cites ~$1B.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "meta-2026-07-20-010",
+      "company": "meta",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "operational",
+      "site": "kansas-city-mo",
+      "as_of_date": "2025-08-20",
+      "source": {
+        "url": "https://about.fb.com/news/2025/08/metas-kansas-city-data-center/",
+        "publisher": "Meta (about.fb.com)",
+        "date_published": "2025-08-20",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Meta's Kansas City data center is now operational and serving traffic; LEED Gold, 100% electricity matched with clean/renewable energy",
+      "notes": "Meta-owned data center in Kansas City, Missouri; first AI-optimized buildings slated to open 2026. Investment cited as ~$1B (some third-party sources say >$2.5B campus). MW capacity not stated on page.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "meta-2026-07-20-011",
+      "company": "meta",
+      "metric": "cloud_partnership",
+      "value": "Google Cloud - more than $10 billion over six years",
+      "unit": "text",
+      "status": "contracted",
+      "site": "google-cloud",
+      "as_of_date": "2025-08-22",
+      "source": {
+        "url": "https://siliconangle.com/2025/08/22/meta-reportedly-inks-10b-cloud-deal-google/",
+        "publisher": "SiliconANGLE",
+        "date_published": "2025-08-22",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Meta Platforms Inc. has reportedly signed a cloud deal with Google LLC that will be worth more than $10 billion over six years.",
+      "notes": "Meta RENTS compute/servers/storage/networking from Google Cloud (owner = Google) - not Meta-owned capacity. Recorded as cloud_partnership per attribution rules.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "siliconangle: 'Meta Platforms Inc. has reportedly signed a cloud deal with Google LLC that will be worth more than $10 billion over six years.' Exactly supported (reported/contracted)."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-012",
+      "company": "meta",
+      "metric": "capex_announced_usd",
+      "value": 50000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "richland-parish-la",
+      "as_of_date": "2025-08-27",
+      "source": {
+        "url": "https://datacenters.atmeta.com/richland-parish-data-center/",
+        "publisher": "Meta",
+        "date_published": "2025-08-27",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "$50 billion+ in Louisiana data center investment total",
+      "notes": "Site-specific investment for the Richland Parish/Hyperion campus; expanded from the initial ~$10 billion commitment announced Dec 2024. Excerpt is Meta's page summary of cumulative Louisiana investment.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Page states '$50B+ Data center investment in Louisiana.' The $50B is a cumulative Louisiana figure rather than Richland-Parish-only, but the $50,000,000,000 announced value is literally present."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-013",
+      "company": "meta",
+      "metric": "interconnection_filing",
+      "value": "FERC docket ER25-3440 - Atem Energy LLC market-based rate application",
+      "unit": "text",
+      "status": "n/a",
+      "site": "atem-energy-ferc",
+      "as_of_date": "2025-09-16",
+      "source": {
+        "url": "https://www.rtoinsider.com/115549-meta-files-ferc-create-own-power-marketer/",
+        "publisher": "RTO Insider",
+        "date_published": "2025-09-18",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Meta has asked FERC to set up a power marketing subsidiary called Atem Energy that will help it manage its growing demand for electricity.",
+      "notes": "FERC Docket ER25-3440-000, filed 2025-09-16, requested effective 2025-11-16; market-based-rate (power marketer) authority to buy/sell wholesale power across CAISO, ISO-NE, MISO, NYISO, PJM, SPP. This is an MBR tariff filing, NOT a grid interconnection queue filing.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "rtoinsider: Meta filed with FERC for a power-marketing subsidiary 'Atem Energy'; keywords include docket 'ER25-3440' and 'market based rates.' Entity, docket, and market-based rate application supported (article body paywalled but preview + metadata confirm)."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-014",
+      "company": "meta",
+      "metric": "capex_announced_usd",
+      "value": 10000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "el-paso-tx",
+      "as_of_date": "2025-10-15",
+      "source": {
+        "url": "https://about.fb.com/news/2025/10/metas-new-ai-optimized-data-center-el-paso/",
+        "publisher": "Meta",
+        "date_published": "2025-10-15",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "increasing our initial $1.5 billion investment to more than $10 billion",
+      "notes": "El Paso, TX site investment raised from initial $1.5B to $10B+.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "At the as_of_date 2025-10-15, the announced investment was $1.5 billion. The 'more than $10 billion' figure on the page is explicitly a March 26, 2026 update, not the Oct 15, 2025 announcement. Value $10B is wrong for this date/status."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-015",
+      "company": "meta",
+      "metric": "energy_source_mix",
+      "value": "100% clean and renewable (matched)",
+      "unit": "text",
+      "status": "n/a",
+      "site": "el-paso-tx",
+      "as_of_date": "2025-10-15",
+      "source": {
+        "url": "https://about.fb.com/news/2025/10/metas-new-ai-optimized-data-center-el-paso/",
+        "publisher": "Meta",
+        "date_published": "2025-10-15",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "electricity use will be matched with 100% clean and renewable energy",
+      "notes": "Meta's stated renewable-matching commitment for the El Paso site.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "El Paso page: 'Our El Paso data center's electricity use will be matched with 100% clean and renewable energy.' Exactly supported."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-016",
+      "company": "meta",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "under_construction",
+      "site": "el-paso-tx",
+      "as_of_date": "2025-10-15",
+      "source": {
+        "url": "https://about.fb.com/news/2025/10/metas-new-ai-optimized-data-center-el-paso/",
+        "publisher": "Meta",
+        "date_published": "2025-10-15",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Breaking ground on a new, cutting-edge AI-focused data center",
+      "notes": "Meta-owned El Paso, Texas AI data center campus.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "El Paso page: Meta 'breaking ground on a new, cutting-edge AI-focused data center' - its 29th data center, Meta-owned and under construction. Supported."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-017",
+      "company": "meta",
+      "metric": "power_capacity_mw",
+      "value": 1000,
+      "unit": "MW",
+      "status": "under_construction",
+      "site": "el-paso-tx",
+      "as_of_date": "2025-10-15",
+      "source": {
+        "url": "https://about.fb.com/news/2025/10/metas-new-ai-optimized-data-center-el-paso/",
+        "publisher": "Meta",
+        "date_published": "2025-10-15",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "can scale to a 1GW data center site",
+      "notes": "Meta AI-optimized data center, El Paso, Texas (ERCOT grid); broke ground Oct 2025; full 1GW targeted ~2028-2029.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "about.fb.com El Paso page: 'can scale to a 1GW data center site' / 'officially grow to 1 gigawatt.' Breaking ground (under construction). 1000 MW supported."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-018",
+      "company": "meta",
+      "metric": "ppa_mw",
+      "value": 600,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "swenson-ranch-tx",
+      "as_of_date": "2025-10-27",
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/engie-and-meta-expand-power-purchase-agreements-to-more-than-1-3-gw-in-us-with-addition-of-new-600-mw-solar-project-302594394.html",
+        "publisher": "ENGIE (via PR Newswire)",
+        "date_published": "2025-10-27",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "We are thrilled to bring an additional 600MW of solar energy to the grid, and expand our partnership with ENGIE to 1.3 GW",
+      "notes": "ENGIE Swenson Ranch Solar, Stonewall County TX, ~$900M, operational 2027, Meta buys 100% output. Total Meta-ENGIE PPAs now >1.3 GW across four Texas projects. Source domain prnewswire.com is not on the allowed press list.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "meta-2026-07-20-019",
+      "company": "meta",
+      "metric": "cloud_partnership",
+      "value": "~$40 billion multi-year third-party cloud capacity arrangements (Oct 2025)",
+      "unit": "text",
+      "status": "contracted",
+      "site": "third-party-cloud-aggregate",
+      "as_of_date": "2025-10-29",
+      "source": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm",
+        "publisher": "Meta (SEC Form 10-Q, Q3 2025)",
+        "date_published": "2025-10-29",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "In October 2025, Meta entered into multi-year third-party cloud capacity arrangements for an aggregate amount of approximately $40 billion.",
+      "notes": "Aggregate rented (third-party) cloud capacity, not Meta-owned. From Meta's Q3 2025 10-Q. NOTE: WebFetch of the sec.gov page returned HTTP 403; the quoted figure was confirmed via search snippet of the SEC filing, not a direct page fetch - verify against the filing. Reported components include Google Cloud (~$10B) and others (e.g., Nebius, CoreWeave).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Meta 10-Q (period ended Sept 30, 2025) states verbatim: 'In October 2025, we entered into multi-year third-party cloud capacity arrangements for an aggregate amount of approximately $40 billion.' Exactly supported."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-020",
+      "company": "meta",
+      "metric": "ppa_mw",
+      "value": 2500,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "nextera-us-2025",
+      "as_of_date": "2025-12-08",
+      "source": {
+        "url": "https://newsroom.nexteraenergy.com/2025-12-08-NextEra-Energy-Resources-and-Meta-Strengthen-American-Energy-Leadership",
+        "publisher": "NextEra Energy Resources",
+        "date_published": "2025-12-08",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "2.5 gigawatts (GW) total clean energy contracts: 11 power purchase agreements (PPAs) and 2 energy storage agreements",
+      "notes": "11 solar PPAs (2.1 GW across ERCOT/SPP/MISO) + 2 storage ESAs + 190 MW solar and 168 MW storage in New Mexico via PNM; online 2026-2028. Source domain nexteraenergy.com is a partner-utility newsroom, not on the allowed press list.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "meta-2026-07-20-021",
+      "company": "meta",
+      "metric": "ppa_mw",
+      "value": 6600,
+      "unit": "MW",
+      "status": "announced",
+      "site": "meta-nuclear-portfolio",
+      "as_of_date": "2026-01-09",
+      "source": {
+        "url": "https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership/",
+        "publisher": "Meta (about.fb.com)",
+        "date_published": "2026-01-09",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Up to 6.6 GW by 2035 (nuclear agreements with Oklo, Vistra and TerraPower)",
+      "notes": "This is the aggregate 'up to' ceiling for Meta's Jan 2026 nuclear portfolio (Vistra ~2.1 GW + 433 MW uprate, Oklo up to 1.2 GW, TerraPower up to 690 MW + 2.1 GW rights). Overlaps the individually-recorded Vistra 2176, TerraPower 690, Oklo 1200 facts. 6600 MW is a ceiling, not a firm contracted number.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "meta-2026-07-20-022",
+      "company": "meta",
+      "metric": "ppa_mw",
+      "value": 1200,
+      "unit": "MW",
+      "status": "announced",
+      "site": "oklo-aurora-oh",
+      "as_of_date": "2026-01-09",
+      "source": {
+        "url": "https://www.powermag.com/meta-locks-in-up-to-6-6-gw-of-nuclear-power-through-deals-with-vistra-oklo-and-terrapower/",
+        "publisher": "POWER Magazine",
+        "date_published": "2026-01-09",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "up to 1.2-GW Aurora powerhouse campus in Pike County, Ohio",
+      "notes": "Oklo Aurora advanced-nuclear development framework; 'up to' 1.2 GW by 2034, first phase as early as 2030. Meta prepay/funding mechanism (development framework, not firm delivered capacity). Meta's aggregate nuclear RFP = up to 6.6 GW by 2035 across Vistra/Oklo/TerraPower.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Article: 'Meta will underpin the development of a 1.2-GW Aurora powerhouse campus in Pike County, Ohio' (Oklo), first phase as early as 2030. 1,200 MW announced. Supported (site is Pike County, OH; Aurora is the Oklo reactor)."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-023",
+      "company": "meta",
+      "metric": "ppa_mw",
+      "value": 690,
+      "unit": "MW",
+      "status": "announced",
+      "site": "terrapower-natrium",
+      "as_of_date": "2026-01-09",
+      "source": {
+        "url": "https://www.powermag.com/meta-locks-in-up-to-6-6-gw-of-nuclear-power-through-deals-with-vistra-oklo-and-terrapower/",
+        "publisher": "POWER Magazine",
+        "date_published": "2026-01-09",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Funding for two new Natrium units-a combined 690 MWe ... delivery as early as 2032",
+      "notes": "Meta funds two TerraPower Natrium sodium-fast reactors (690 MWe combined, ~2032). Plus rights to up to six more Natrium units (2.1 GW) by 2035; up to 2.8 GW total baseload (4 GW peak dispatch).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Article: TerraPower agreement is for 'a combined 690 MWe of firm power' from two new Natrium units, targeted as early as 2032. 690 MW, announced. Supported."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-024",
+      "company": "meta",
+      "metric": "ppa_mw",
+      "value": 2176,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "vistra-pjm-nuclear",
+      "as_of_date": "2026-01-09",
+      "source": {
+        "url": "https://www.powermag.com/meta-locks-in-up-to-6-6-gw-of-nuclear-power-through-deals-with-vistra-oklo-and-terrapower/",
+        "publisher": "POWER Magazine",
+        "date_published": "2026-01-09",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "2,176 MW of nuclear energy and capacity from Vistra's Perry and Davis-Besse plants in Ohio, while also backing 433 MW of incremental capacity from uprates",
+      "notes": "20-year Meta PPAs with Vistra. Conservative low end = 2,176 MW existing nuclear; +433 MW uprates = 2,609 MW total online by 2034. Deliveries begin late 2026.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "powermag nuclear article: 'Meta will buy 2,176 MW of nuclear energy and capacity from Vistra's Perry and Davis-Besse plants in Ohio.' The 2,176 MW contracted PPA figure is literally supported (a further 433 MW of uprates is separate)."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-025",
+      "company": "meta",
+      "metric": "capex_announced_usd",
+      "value": 10000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "lebanon-in",
+      "as_of_date": "2026-02-11",
+      "source": {
+        "url": "https://about.fb.com/news/2026/02/metas-new-data-center-lebanon-indiana-marks-milestone-ai-investment/",
+        "publisher": "Meta (about.fb.com)",
+        "date_published": "2026-02-11",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "This facility represents an investment of over $10 billion in data center infrastructure and the surrounding community",
+      "notes": "'Over $10 billion' - conservative low end recorded.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "meta-2026-07-20-026",
+      "company": "meta",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "under_construction",
+      "site": "lebanon-in",
+      "as_of_date": "2026-02-11",
+      "source": {
+        "url": "https://about.fb.com/news/2026/02/metas-new-data-center-lebanon-indiana-marks-milestone-ai-investment/",
+        "publisher": "Meta (about.fb.com)",
+        "date_published": "2026-02-11",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "This facility represents an investment of over $10 billion ... one of our largest infrastructure investments to date",
+      "notes": "Meta's own campus (not a JV like Hyperion/Blue Owl); framed as 'Meta's new data center.' Ownership inferred from Meta building and investing directly.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "meta-2026-07-20-027",
+      "company": "meta",
+      "metric": "power_capacity_mw",
+      "value": 1000,
+      "unit": "MW",
+      "status": "under_construction",
+      "site": "lebanon-in",
+      "as_of_date": "2026-02-11",
+      "source": {
+        "url": "https://about.fb.com/news/2026/02/metas-new-data-center-lebanon-indiana-marks-milestone-ai-investment/",
+        "publisher": "Meta (about.fb.com)",
+        "date_published": "2026-02-11",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "a state-of-the-art 1GW facility ... designed to deliver 1GW of capacity",
+      "notes": "Lebanon, Indiana (LEAP District, Boone County); Meta's second Indiana site / 27th US data center; 4M sq ft on 1,500 acres; groundbreaking Feb 2026, online late 2027-early 2028.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "meta-2026-07-20-028",
+      "company": "meta",
+      "metric": "custom_silicon",
+      "value": true,
+      "unit": "boolean",
+      "status": "operational",
+      "site": "company-wide",
+      "as_of_date": "2026-03-11",
+      "source": {
+        "url": "https://about.fb.com/news/2026/03/expanding-metas-custom-silicon-to-power-our-ai-workloads/",
+        "publisher": "Meta",
+        "date_published": "2026-03-11",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "MTIA 300 will be used for ranking and recommendations training, and is already in production.",
+      "notes": "Meta Training and Inference Accelerator (MTIA) family. MTIA 300 in production; MTIA 400/450/500 for GenAI inference, mass deployment through 2027. Four new generations within two years.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Custom silicon page: 'We deploy hundreds of thousands of MTIA chips for inference workloads' and MTIA 300 is 'already in production.' Custom silicon is operational/in production. Supported."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-029",
+      "company": "meta",
+      "metric": "custom_silicon",
+      "value": true,
+      "unit": "boolean",
+      "status": "under_construction",
+      "site": "broadcom-mtia",
+      "as_of_date": "2026-04-14",
+      "source": {
+        "url": "https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/",
+        "publisher": "Meta (about.fb.com)",
+        "date_published": "2026-04-14",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "As we roll out more than 1GW of our custom silicon to start and then multiple gigawatts over time (Zuckerberg)",
+      "notes": "Expanded Broadcom partnership to co-develop multiple generations of MTIA (industry-first 2nm accelerator per Broadcom); initial deployment >1GW, multi-gigawatt rollout planned; four new MTIA generations within two years. Distinct from the generic company-wide custom_silicon fact already recorded.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "meta-2026-07-20-030",
+      "company": "meta",
+      "metric": "capex_announced_usd",
+      "value": 125000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "company-wide",
+      "as_of_date": "2026-04-29",
+      "source": {
+        "url": "https://fortune.com/2026/04/29/meta-zuckerberg-145-billion-ai-spending-roi/",
+        "publisher": "Fortune",
+        "date_published": "2026-04-29",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "raised its full-year 2026 capital expenditure guidance to $125 billion to $145 billion",
+      "notes": "2026 company-wide capex guidance; conservative low end = $125B (range $125-145B), raised from prior $115-135B guidance given at Q3 2025. Announced with Q1 2026 earnings 2026-04-29.",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Fortune: Meta 'raised its full-year 2026 capital expenditure guidance to $125 billion to $145 billion.' $125B is the lower bound of the announced 2026 capex guidance range. Supported."
+      }
+    },
+    {
+      "id": "meta-2026-07-20-031",
+      "company": "meta",
+      "metric": "capex_announced_usd",
+      "value": 72200000000,
+      "unit": "USD",
+      "status": "n/a",
+      "site": "company-wide",
+      "as_of_date": "2026-04-29",
+      "source": {
+        "url": "https://fortune.com/2026/04/29/meta-zuckerberg-145-billion-ai-spending-roi/",
+        "publisher": "Fortune",
+        "date_published": "2026-04-29",
+        "date_accessed": "2026-07-20",
+        "archive_url": null
+      },
+      "excerpt": "Last year, Meta spent $72.2 billion on capex, up roughly $30 billion from the year before.",
+      "notes": "2025 actual company-wide capex ($72.2B), which exceeded the original 2025 guidance of $60-65B set in Q4 2024. Reported figure (actual spend, not a forward announcement).",
+      "added": "2026-07-20",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-20",
+        "verifier_note": "Fortune: 'Last year, Meta spent $72.2 billion on capex, up roughly $30 billion from the year before.' $72.2B is Meta's 2025 actual capex. Supported."
+      }
+    }
+  ]
+}
