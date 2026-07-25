@@ -280,7 +280,7 @@
       "excerpt": "multiple gigawatts of next-generation TPU capacity... we expect to come online starting in 2027.",
       "notes": "Google/Broadcom-provided TPU capacity (rented) — cloud_partnership. No specific GW figure disclosed ('multiple gigawatts'). date_published per page as read; publication month should be re-verified.",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "anthropic-2026-07-25-002",
       "verification": {
         "verified": true,
         "checked_on": "2026-07-20",
@@ -467,6 +467,162 @@
         "verified": true,
         "checked_on": "2026-07-20",
         "verifier_note": "TeraWulf press release (Jul 6, 2026) states Justified Data campus in Hawesville, Kentucky, 'approximately 401 MW of critical IT load', with Anthropic having 'executed a 20-year lease agreement'. Location, ~401 MW, contracted status, and date all confirmed."
+      }
+    },
+    {
+      "id": "anthropic-2026-07-25-001",
+      "company": "anthropic",
+      "metric": "cloud_partnership",
+      "value": "AMD — first 1,000 MW (of up to 2,000 MW) Instinct MI450 Series GPUs in AMD Helios rackscale",
+      "unit": "text",
+      "status": "contracted",
+      "site": "amd-mi450-fleet",
+      "as_of_date": "2026-07-22",
+      "source": {
+        "url": "https://newsroom.amd.com/news/amd-anthropic-strategic-partnership/",
+        "publisher": "AMD (newsroom.amd.com)",
+        "date_published": "2026-07-22",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260722173642/https://newsroom.amd.com/news/amd-anthropic-strategic-partnership/"
+      },
+      "excerpt": "Anthropic to deploy up to 2 gigawatts of MI450 Series GPUs in AMD Helios rackscale solutions, with deployment of the first gigawatt beginning in the first half of 2027.",
+      "notes": "NEW partner not previously in the ledger (first AMD compute commitment; prior GPU/accelerator partners were AWS Trainium, Google/Broadcom TPU, NVIDIA). Range in source is 'up to 2 gigawatts' (= up to 2,000 MW ceiling); conservative low end recorded is the firm first tranche the release names, 1,000 MW ('the first gigawatt'), beginning H1 2027. AMD-supplied GPUs deployed in partner/third-party facilities, not an Anthropic-owned site, so cloud_partnership rather than power_capacity_mw per DECISIONS.md. Merchant AMD GPUs, NOT custom silicon and not Anthropic-designed. Same release states 'AMD has committed to make a strategic equity investment of up to $5 billion in Anthropic' — that is inbound equity into Anthropic, not Anthropic infrastructure capex, so it is deliberately NOT recorded as capex_announced_usd. Hardware named: Instinct MI455X GPUs, EPYC 'Venice' CPUs, Pensando networking, ROCm; builds on existing use of MI355X. Recorded as text at merge: the value is descriptive prose, not a single numeric MW figure.",
+      "added": "2026-07-25",
+      "superseded_by": "anthropic-2026-07-25-006",
+      "verification": {
+        "verified": false,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Excerpt and 1 GW/2 GW figures are verbatim, but the release only 'announced a strategic partnership to deploy'; no contract or definitive agreement is disclosed (only equity is 'committed') - status mismatch."
+      }
+    },
+    {
+      "id": "anthropic-2026-07-25-002",
+      "company": "anthropic",
+      "metric": "cloud_partnership",
+      "value": "Google + Broadcom — approximately 3,500 MW (3.5 GW) next-generation TPU capacity from 2027",
+      "unit": "text",
+      "status": "contracted",
+      "site": "google-broadcom-tpu",
+      "as_of_date": "2026-04-06",
+      "source": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526144028/d87999d8k.htm",
+        "publisher": "Broadcom Inc. Form 8-K (SEC EDGAR)",
+        "date_published": "2026-04-06",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260709023812/https://www.sec.gov/Archives/edgar/data/1730168/000119312526144028/d87999d8k.htm"
+      },
+      "excerpt": "Anthropic, beginning in 2027, will access through Broadcom approximately 3.5 gigawatts as part of the multiple gigawatts of next generation TPU-based AI compute capacity committed by Anthropic.",
+      "notes": "WATCHLIST PROGRESSION, not a new site. Supersedes anthropic-2026-07-20-011, which recorded the same site from Anthropic's own blog with only the unquantified phrase 'multiple gigawatts' (unit=text, status=announced). Broadcom's Item 8.01 Form 8-K of the same date quantifies it at approximately 3.5 gigawatts = 3,500 MW and describes it as capacity 'committed by Anthropic' under an expanded strategic collaboration, hence status contracted rather than announced. Single stated figure, no range. Contingency stated verbatim in the filing: 'The consumption of such expanded AI compute capacity by Anthropic is dependent on Anthropic's continued commercial success' — a verifier may reasonably argue this back down to announced. Google/Broadcom-owned TPU capacity accessed by Anthropic, so cloud_partnership not power_capacity_mw per DECISIONS.md; chips are Google/Broadcom-designed, not Anthropic-designed. Recorded as text at merge: the value is descriptive prose, not a single numeric MW figure.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Broadcom 8-K dated April 6, 2026 (Item 8.01) carries the excerpt verbatim, incl. 'approximately 3.5 gigawatts ... committed by Anthropic'; TPU capacity accessed through Broadcom, so cloud_partnership."
+      }
+    },
+    {
+      "id": "anthropic-2026-07-25-003",
+      "company": "anthropic",
+      "metric": "cloud_partnership",
+      "value": 35000000000,
+      "unit": "USD",
+      "status": "contracted",
+      "site": "broadcom-xpv-platform",
+      "as_of_date": "2026-06-09",
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/broadcom-apollo-and-blackstone-establish-landmark-strategic-platform-to-accelerate-more-than-20-gigawatts-of-global-ai-deployments-302795286.html",
+        "publisher": "PR Newswire (Broadcom Inc.)",
+        "date_published": "2026-06-09",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260628084857/https://www.prnewswire.com/news-releases/broadcom-apollo-and-blackstone-establish-landmark-strategic-platform-to-accelerate-more-than-20-gigawatts-of-global-ai-deployments-302795286.html"
+      },
+      "excerpt": "Platform launches today with an initial tranche of $35 billion led by Apollo, in partnership with Blackstone, to facilitate Anthropic's previously-announced capacity expansion of more than 1 gigawatt",
+      "notes": "Third-party financing, NOT Anthropic capex: the $35B initial tranche of Broadcom's AI XPV Platform is raised by Apollo (lead) with Blackstone's Credit & Insurance Business as anchor investors; the compute is deployed at Fluidstack-operated sites, so nothing here is owned by Anthropic (recorded as cloud_partnership per DECISIONS.md #1). Same-day DCD coverage (https://www.datacenterdynamics.com/en/news/broadcom-apollo-and-blackstone-launch-20gw-xpu-platform/, 2026-06-09, snapshot http://web.archive.org/web/20260610013855/) states: 'The XPV platform launches with an initial tranche of $35 billion led by Apollo, in partnership with Blackstone, to facilitate 1GW of compute infrastructure Anthropic is expected to deploy in Fluidstack-based sites, starting in mid-2026.' Bloomberg (2026-06-05 / 2026-06-09) reportedly describes the vehicle as an SPV that buys Google TPUs and leases them to Anthropic with Broadcom residual-value support and Google lease backstops; those mechanics are NOT recorded because Bloomberg 403s and has no readable Wayback capture. Platform-level '20 gigawatts through 2028' is Broadcom/OpenAI+Anthropic-wide, not Anthropic-specific, so not recorded.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "PR Newswire release (Jun 09, 2026) states the excerpt verbatim; the $35B is an Apollo-led/Blackstone tranche financing the XPV Platform, recorded as cloud_partnership not capex, as notes state."
+      }
+    },
+    {
+      "id": "anthropic-2026-07-25-004",
+      "company": "anthropic",
+      "metric": "cloud_partnership",
+      "value": 1000,
+      "unit": "MW",
+      "status": "announced",
+      "site": "fluidstack-xpv-sites",
+      "as_of_date": "2026-06-09",
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/broadcom-apollo-and-blackstone-establish-landmark-strategic-platform-to-accelerate-more-than-20-gigawatts-of-global-ai-deployments-302795286.html",
+        "publisher": "PR Newswire (Broadcom Inc.)",
+        "date_published": "2026-06-09",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260628084857/https://www.prnewswire.com/news-releases/broadcom-apollo-and-blackstone-establish-landmark-strategic-platform-to-accelerate-more-than-20-gigawatts-of-global-ai-deployments-302795286.html"
+      },
+      "excerpt": "to facilitate Anthropic's previously-announced capacity expansion of more than 1 gigawatt of compute infrastructure expected to deploy in Fluidstack-based sites starting in mid-2026.",
+      "notes": "Conservative low end of 'more than 1 gigawatt' = 1000 MW; DCD's same-day write-up says '1GW'. Capacity sits in Fluidstack-operated sites financed by the Broadcom/Apollo/Blackstone AI XPV Platform, so it is partner-owned capacity (cloud_partnership, not power_capacity_mw/owned_facility) per DECISIONS.md #1. Status 'announced' because the release itself calls it a 'previously-announced capacity expansion' 'expected to deploy ... starting in mid-2026'. Likely the same buildout as the existing $50B Fluidstack facts (anthropic-2026-07-20-005/006), which carry no MW figure; treat as a quantification of that program, not additive to it. No supersede asserted because neither existing fact states MW.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Same release, verbatim: 'previously-announced capacity expansion of more than 1 gigawatt of compute infrastructure expected to deploy in Fluidstack-based sites starting in mid-2026'; low end 1,000 MW, announced."
+      }
+    },
+    {
+      "id": "anthropic-2026-07-25-005",
+      "company": "anthropic",
+      "metric": "cloud_partnership",
+      "value": 1000,
+      "unit": "MW",
+      "status": "announced",
+      "site": "direct-lease-lois-us",
+      "as_of_date": "2026-06-12",
+      "source": {
+        "url": "https://www.datacenterdynamics.com/en/news/anthropic-signs-more-than-a-dozen-letters-of-intent-for-data-center-leases-report/",
+        "publisher": "Data Center Dynamics (DCD)",
+        "date_published": "2026-06-12",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260628012125/https://www.datacenterdynamics.com/en/news/anthropic-signs-more-than-a-dozen-letters-of-intent-for-data-center-leases-report/"
+      },
+      "excerpt": "The letters of intent represent a total of more than 1GW of IT capacity, say the sources. They are non-binding, and will enable the company to perform due diligence on the providers and their sites.",
+      "notes": "Weakest possible commitment: 'more than a dozen' NON-BINDING letters of intent with unnamed US data center developers; counterparties and locations undisclosed, hence the generic site slug. Conservative low end of 'more than 1GW of IT capacity' = 1000 MW. Status capped at 'announced' - LOIs are not contracted capacity. Leased space (Anthropic would run its own servers in third-party-owned buildings), so cloud_partnership, never power_capacity_mw/owned_facility, per DECISIONS.md #1. DCD is secondary, citing The Information's 2026-06-11/12 report (https://www.theinformation.com/articles/anthropic-pursues-first-data-center-leases-seeks-financial-backing-google, paywalled; Wayback capture shows headline only). DCD byline is June 12, 2026, not late June. Do NOT add to the Fluidstack XPV 1 GW fact above - different programs, but overlap cannot be ruled out from public sources.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "DCD (June 12, 2026) states verbatim that the LOIs 'represent a total of more than 1GW of IT capacity' and 'are non-binding'; leased third-party sites, so cloud_partnership and status announced."
+      }
+    },
+    {
+      "id": "anthropic-2026-07-25-006",
+      "company": "anthropic",
+      "metric": "cloud_partnership",
+      "value": "AMD — first 1,000 MW (of up to 2,000 MW) Instinct MI450 Series GPUs in AMD Helios rackscale",
+      "unit": "text",
+      "status": "announced",
+      "site": "amd-mi450-fleet",
+      "as_of_date": "2026-07-22",
+      "source": {
+        "url": "https://newsroom.amd.com/news/amd-anthropic-strategic-partnership/",
+        "publisher": "AMD (newsroom.amd.com)",
+        "date_published": "2026-07-22",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260722173642/https://newsroom.amd.com/news/amd-anthropic-strategic-partnership/"
+      },
+      "excerpt": "AMD (NASDAQ: AMD) and Anthropic today announced a strategic partnership to deploy up to 2 gigawatts of AMD Instinct MI450 Series GPUs in AMD Helios rackscale solutions",
+      "notes": "Status corrected from 'contracted' to 'announced' on verification: the AMD release discloses no contract, definitive agreement or binding commitment for the capacity - it says the companies 'today announced a strategic partnership to deploy up to 2 gigawatts', and the AMD cautionary statement lists 'the deployment of up to two gigawatts ... and timing thereof' as a forward-looking statement. The only 'committed' language in the release concerns AMD's inbound equity ('AMD has committed to make a strategic equity investment of up to $5 billion in Anthropic in the future'), which is NOT recorded as capex_announced_usd. Range in source is 'up to 2 gigawatts' (ceiling 2,000 MW); conservative low end recorded is the named first tranche, 1,000 MW ('the first gigawatt'), beginning H1 2027. NEW partner not previously in the ledger (prior accelerator partners were AWS Trainium, Google/Broadcom TPU, NVIDIA). AMD-supplied merchant GPUs deployed in partner/third-party facilities, not an Anthropic-owned site, so cloud_partnership rather than power_capacity_mw per DECISIONS.md #1; not custom silicon and not Anthropic-designed. Hardware named: Instinct MI455X GPUs, EPYC 'Venice' CPUs, Pensando networking, ROCm; builds on existing use of MI355X. Recorded as text: the value is descriptive prose, not a single numeric MW figure. Excerpt truncated at merge to a verbatim prefix to meet the 200-char limit; the sentence continues '…, with deployment of the first gigawatt beginning in the first half of 2027.'",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "correction appended by the verification pass 2026-07-25; pending blind verification"
       }
     }
   ]

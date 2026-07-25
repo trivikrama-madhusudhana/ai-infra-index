@@ -249,7 +249,7 @@
         "publisher": "Office of Governor Tate Reeves (Mississippi)",
         "date_published": "2026-01-08",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260716180556/https://governorreeves.ms.gov/tech-leader-xai-investing-more-than-20-billion-in-southaven/"
       },
       "excerpt": "Power Capacity: \"nearly 2 gigawatts\"",
       "notes": "CAVEAT: source says 'nearly 2 gigawatts' (Musk's Jan 2026 announcement of a third building / MACROHARDRR expanding total training capacity toward ~2 GW); true value is slightly UNDER 2000 MW, so 2000 is an upper bound not conservative low end. Corroborated by Tom's Hardware and DCD headlines ('almost 2GW'). Flag as approximate.",
@@ -462,7 +462,7 @@
       "excerpt": "the state's environmental authority has scheduled a board meeting for Tuesday — Election Day for the 2026 primaries — to decide whether to grant the company key permits.",
       "notes": "Regulator = Mississippi Department of Environmental Quality (MDEQ) permit board, NOT ERCOT/FERC. NAACP filed notice of intent to sue over alleged Clean Air Act violations. Recorded as the nearest interconnection/permit metric.",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "xai-2026-07-25-004",
       "verification": {
         "verified": true,
         "checked_on": "2026-07-20",
@@ -639,7 +639,7 @@
         "publisher": "Epoch AI",
         "date_published": "2026-07-01",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260722132856/https://epoch.ai/data/ai-data-centers/directory/colossus-2"
       },
       "excerpt": "Capital Cost: \"$35.8 B\"",
       "notes": "Epoch AI ESTIMATE of Colossus 2 capital cost. Distinct from existing $20B MACROHARDRR, $7.7B cluster, $55B TeraFab capex records.",
@@ -665,12 +665,12 @@
         "publisher": "Epoch AI",
         "date_published": "2026-07-01",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260722132856/https://epoch.ai/data/ai-data-centers/directory/colossus-2"
       },
       "excerpt": "\"1,112k H100-equivalents of compute\" with \"440k\" total GPU count (110k B200s + 330k B300s)",
       "notes": "Third-party tracker Epoch AI. 440,000 physical GPUs = 110k Nvidia B200 + 330k B300; Epoch also states 1,112,000 H100-equivalents. Buildout: ~110k GB200 online Oct 2025 (210 MW), +110k GB300 Apr 2026 (220 MW), +220k GB300 Jul 2026 (400+ MW). Existing record had only 110,000 (under_construction).",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "xai-2026-07-25-002",
       "verification": {
         "verified": false,
         "checked_on": null,
@@ -691,16 +691,120 @@
         "publisher": "Epoch AI",
         "date_published": "2026-07-01",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260722132856/https://epoch.ai/data/ai-data-centers/directory/colossus-2"
       },
       "excerpt": "\"946 MW of IT power\" (current and projected)",
       "notes": "Epoch AI ESTIMATE of IT power for Colossus 2 (owned by SpaceXAI, geolocated by Epoch to Memphis TN; turbines physically in Southaven MS). Not a company-stated figure.",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "xai-2026-07-25-001",
       "verification": {
         "verified": false,
         "checked_on": null,
         "verifier_note": "from gap-review pass; pending blind verification"
+      }
+    },
+    {
+      "id": "xai-2026-07-25-001",
+      "company": "xai",
+      "metric": "power_capacity_mw",
+      "value": 946,
+      "unit": "MW",
+      "status": "operational",
+      "site": "colossus-2",
+      "as_of_date": "2026-07-25",
+      "source": {
+        "url": "https://epoch.ai/data/ai-data-centers/directory/colossus-2",
+        "publisher": "Epoch AI",
+        "date_published": "2026-07-25",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260722132856/https://epoch.ai/data/ai-data-centers/directory/colossus-2"
+      },
+      "excerpt": "It hosts an estimated 1,112k H100-equivalents of compute, supported by 946 MW of IT power at a capital cost of $35.8 B.",
+      "notes": "STATUS PROGRESSION. Epoch AI's Colossus 2 directory page (header 'Updated Jul. 25, 2026') now carries 'STATUS | Operational' and the lead sentence 'Colossus 2 is an operational AI data center with AI chips owned by SpaceXAI and used by Anthropic, Cursor, and SpaceXAI.' The ledger previously held the same 946 MW figure at status under_construction (xai-2026-07-20-027). Value unchanged; only the status advances. 946 MW is Epoch's 'IT power' estimate (CURRENT IT POWER 946 MW; PROJECTED IT POWER 946 MW), attributed to Epoch AI, derived by them from satellite imagery, a cooling-equipment power model, company disclosures and drone imagery. Epoch lists the owner as SpaceXAI, so capacity is credited to the site owner. The 2026-07-22 Wayback snapshot linked as archive_url already shows 'Operational' and 946 MW, so the flip occurred on or before 2026-07-22.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Epoch live page checked today (Updated Jul. 25, 2026) reads 'STATUS Operational', 'CURRENT IT POWER 946 MW', and the excerpt sentence verbatim for Colossus 2, owner SpaceXAI. [independently re-verified in an isolated fetch]"
+      }
+    },
+    {
+      "id": "xai-2026-07-25-002",
+      "company": "xai",
+      "metric": "gpu_count",
+      "value": 440000,
+      "unit": "GPUs",
+      "status": "operational",
+      "site": "colossus-2",
+      "as_of_date": "2026-07-25",
+      "source": {
+        "url": "https://epoch.ai/data/ai-data-centers/directory/colossus-2",
+        "publisher": "Epoch AI",
+        "date_published": "2026-07-25",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260722132856/https://epoch.ai/data/ai-data-centers/directory/colossus-2"
+      },
+      "excerpt": "Chip Manufacturer Count H100-eq 8-bit OP/s B200 Nvidia 110k 278k 5.50e20 B300 Nvidia 330k 834k 1.65e21 Total 440k 1,112k 2.20e21",
+      "notes": "STATUS PROGRESSION. Chip count unchanged from xai-2026-07-20-026 (440k total, printed in the 'Full breakdown' hardware table); what changes is status, since the same page now states 'STATUS | Operational' and 'Colossus 2 is an operational AI data center'. Epoch prints the total as '440k'; recorded as 440000. Estimate is Epoch AI's, not ours. Compute is separately shown as 1,112k H100-equivalents, which we do not record as a GPU count.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Epoch live page full-breakdown table reads 'B200 Nvidia 110k ... B300 Nvidia 330k ... Total 440k 1,112k 2.20e21' with STATUS Operational for Colossus 2. [independently re-verified in an isolated fetch]"
+      }
+    },
+    {
+      "id": "xai-2026-07-25-003",
+      "company": "xai",
+      "metric": "cloud_partnership",
+      "value": "Google, Anthropic and Reflection AI rent excess compute at Colossus and Colossus II under deals worth up to $2.32 billion per month",
+      "unit": "text",
+      "status": "contracted",
+      "site": "colossus-cluster-memphis",
+      "as_of_date": "2026-07-16",
+      "source": {
+        "url": "https://www.cnbc.com/2026/07/16/elon-musk-memphis-ai-colossus-data-center.html",
+        "publisher": "CNBC",
+        "date_published": "2026-07-16",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260723180845/https://www.cnbc.com/2026/07/16/elon-musk-memphis-ai-colossus-data-center.html"
+      },
+      "excerpt": "Google, Anthropic and Reflection AI have all inked agreements with SpaceX to rent excess computing capacity at Colossus and Colossus II, deals worth up to $2.32 billion per month.",
+      "notes": "NEW. Aggregate third-party compute-rental figure for the Memphis/Southaven cluster, published in-window. Direction of the rental is outbound: xAI/SpaceX is the seller and owner of the sites, so per DECISIONS.md the underlying capacity stays credited to xAI and this fact is logged for transparency only. Reflection AI is a counterparty not previously in the ledger; Google ($920M/month, xai-2026-07-20-024) and Anthropic (xai-2026-07-20-020) already are, so the $2.32B/month is an aggregate across all three and must not be added to those. No MW or GPU figure is attached to the $2.32B/month in the source; none imputed. Article also notes 'Colossus I data center was completed in just 122 days'.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "CNBC Jul 16 2026 (archive) verbatim: 'Google, Anthropic and Reflection AI have all inked agreements with SpaceX to rent excess computing capacity at Colossus and Colossus II ... up to $2.32 billion per month.'"
+      }
+    },
+    {
+      "id": "xai-2026-07-25-004",
+      "company": "xai",
+      "metric": "interconnection_filing",
+      "value": 1200,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "macrohardrr-southaven-ms",
+      "as_of_date": "2026-03-11",
+      "source": {
+        "url": "https://www.datacenterdynamics.com/en/news/musks-xai-gets-go-ahead-for-41-natural-gas-turbines-in-mississippi-to-power-colossus-data-centers/",
+        "publisher": "DatacenterDynamics",
+        "date_published": "2026-03-11",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260507115508/https://www.datacenterdynamics.com/en/news/musks-xai-gets-go-ahead-for-41-natural-gas-turbines-in-mississippi-to-power-colossus-data-centers/"
+      },
+      "excerpt": "xAI has received permission to install 41 natural gas turbines at a site in Mississippi that will generate 1.2GW to power its data centers in the area.",
+      "notes": "STATUS PROGRESSION. Supersedes xai-2026-07-20-018, which recorded only that an MDEQ permit hearing was scheduled (status announced, as_of 2026-03-09). The permit was granted: 'was granted a Clean Air Act permit by the Mississippi Department of Environmental Quality (MDEQ) at a meeting on Tuesday.' xAI's own statement quoted in the article: 'thrilled that MDEQ approved our permanent construction permit unlocking 1.2GW of self-generating power capacity.' 1.2GW recorded as 1200 MW per the MW-only rule. This is behind-the-meter self-generation at the former Duke Energy plant site in Southaven that xAI owns, not a grid interconnection and not IT load; it must not be summed with power_capacity_mw facts for Colossus 1/2. Source predates the 2026-07-20 baseline sweep and appears to have been missed by it. Page fetched via the 2026-05-07 Wayback snapshot; datacenterdynamics.com returns HTTP 403 to direct fetches.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "DCD 11 Mar 2026 (archive): permit GRANTED, not scheduled - 'was granted a Clean Air Act permit by MDEQ'; excerpt on 41 turbines generating 1.2GW verbatim. Caveat: air permit for self-generation, not a grid queue filing. [independently re-verified in an isolated fetch]"
       }
     }
   ]

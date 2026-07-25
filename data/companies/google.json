@@ -301,7 +301,7 @@
         "publisher": "Google (blog.google)",
         "date_published": "2025-11-14",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260715094515/https://blog.google/company-news/inside-google/company-announcements/google-american-innovation-texas/"
       },
       "excerpt": "Google announces new $40 billion investment in Texas ... new data center campuses ... in Armstrong and Haskell counties, through 2027",
       "notes": "Largest state investment by Google in the US; funds new data center campuses in Armstrong + Haskell counties through 2027.",
@@ -327,7 +327,7 @@
         "publisher": "Google (blog.google)",
         "date_published": "2025-11-14",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260715094515/https://blog.google/company-news/inside-google/company-announcements/google-american-innovation-texas/"
       },
       "excerpt": "three new data center campuses in Armstrong and Haskell counties",
       "notes": "Armstrong County campus ('Goodnight,' near Claude TX) developed with Crusoe Energy. Separately, per press reports (oilandgaswatch.org / distilled.earth, non-allowlisted), Crusoe filed a permit for a 933 MW on-site natural-gas plant to power it — that generation is Crusoe's, not Google's own capacity.",
@@ -353,12 +353,12 @@
         "publisher": "Google (blog.google)",
         "date_published": "2025-11-14",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260715094515/https://blog.google/company-news/inside-google/company-announcements/google-american-innovation-texas/"
       },
       "excerpt": "One of our new Haskell County data centers will be built alongside a new solar and battery storage plant.",
       "notes": "Two of the three new Texas campuses are in Haskell County (near Abilene); one paired with on-site solar+battery.",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "google-2026-07-25-004",
       "verification": {
         "verified": true,
         "checked_on": "2026-07-20",
@@ -379,12 +379,12 @@
         "publisher": "Google (blog.google)",
         "date_published": "2025-11-14",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260715094515/https://blog.google/company-news/inside-google/company-announcements/google-american-innovation-texas/"
       },
       "excerpt": "more than 6,200 megawatts of new energy generation and capacity contracted to date through power purchase agreements",
       "notes": "Aggregate PPA/generation capacity Google has contracted for its Texas operations; page says 'more than 6,200 MW' — conservative low end recorded.",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "google-2026-07-25-003",
       "verification": {
         "verified": true,
         "checked_on": "2026-07-20",
@@ -587,7 +587,7 @@
         "publisher": "Utility Dive",
         "date_published": "2024-06-21",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260714175123/https://www.utilitydive.com/news/google-fervo-nv-energy-nevada-puc-clean-energy-tariff/719472/"
       },
       "excerpt": "NV Energy would buy electricity from Fervo Energy's 115-MW Corsac Station Enhanced Geothermal Project, which is under development",
       "notes": "Enhanced geothermal (Fervo). Structured as a Clean Transition Tariff: NV Energy buys from Fervo's Corsac Station and sells 24/7 carbon-free power to Google (anchor offtaker) in Nevada. Project under development (under construction).",
@@ -613,7 +613,7 @@
         "publisher": "The Register",
         "date_published": "2025-10-30",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260115221644/https://www.theregister.com/2025/10/30/alphabet_capex/"
       },
       "excerpt": "We now expect capex to be in the range of $91 billion to $93 billion in 2025, up from our previous estimate of $85 billion",
       "notes": "Raised full-year 2025 guidance (Q3 2025 earnings). Range $91B-$93B; conservative low end $91B recorded. Prior estimate $85B (itself raised from initial $75B). Covers calendar year 2025.",
@@ -639,7 +639,7 @@
         "publisher": "POWER Magazine",
         "date_published": "2025-12-22",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260721120126/https://www.powermag.com/alphabet-buying-clean-energy-developer-to-support-data-centers/"
       },
       "excerpt": "Alphabet, the parent of technology giant Google, has announced a definitive agreement to acquire Intersect, which provides data center and energy infrastructure solutions, for $4.75 billion in cash, p",
       "notes": "Alphabet/Google acquisition of clean-energy developer Intersect Power to support data centers; deal 'includes ... multiple gigawatts of energy and data center projects in development, or under construction.' No specific MW disclosed on this page (GW only, not recordable). Related earlier partnership targets ~$20B of co-located solar+storage. Acquisition, not a PPA.",
@@ -665,12 +665,12 @@
         "publisher": "Google (blog.google)",
         "date_published": "2026-06-03",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260718091337/https://blog.google/alphabet/investor-presentation-june-2026/"
       },
       "excerpt": "This year, we expect that number to be six times larger than 2022 and double last year's at $180-190 billion",
       "notes": "Raised full-year 2026 capex guidance to $180B-$190B (up from $175B-$185B; raise first stated at Q1 2026 earnings Apr 29 2026, restated in June 2026 investor presentation). Conservative low end $180B recorded; high end $190B. ~6x 2022 (~$31B), ~double 2025. Covers calendar year 2026.",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "google-2026-07-25-002",
       "verification": {
         "verified": true,
         "checked_on": "2026-07-20",
@@ -691,7 +691,7 @@
         "publisher": "Google (datacenters.google)",
         "date_published": "2026-07-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260725120817/https://datacenters.google/locations/iowa/"
       },
       "excerpt": "\"the recent $7 billion investment to expand our footprint in Council Bluffs\" ... \"Google has invested more than $20 billion in Iowa since building our data center in Council Bluffs in 2007\"",
       "notes": "$7B recent Council Bluffs expansion; $20B cumulative Iowa investment (statewide). No explicit publish date on live official page.",
@@ -717,7 +717,7 @@
         "publisher": "Google (datacenters.google)",
         "date_published": "2026-07-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260725120855/https://datacenters.google/locations/south-carolina/"
       },
       "excerpt": "\"Google has invested more than $13 billion in the state\" (South Carolina, since 2007)",
       "notes": "Cumulative South Carolina investment across Berkeley/Dorchester campuses. No explicit publish date on live official page.",
@@ -743,7 +743,7 @@
         "publisher": "Google (datacenters.google)",
         "date_published": "2026-07-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260720225904/https://datacenters.google/locations/oregon/"
       },
       "excerpt": "\"Google has invested more than $7 billion in Oregon since building our data center in The Dalles in 2006.\"",
       "notes": "Cumulative Oregon investment (statewide, centered on The Dalles). No explicit publish date on live official page.",
@@ -769,7 +769,7 @@
         "publisher": "Google (datacenters.google)",
         "date_published": "2026-07-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260725120855/https://datacenters.google/locations/south-carolina/"
       },
       "excerpt": "\"Google has invested more than $13 billion in the state\" ... Google data center in Berkeley County (Moncks Corner), part of Google's South Carolina cloud region",
       "notes": "Google-owned data center campus in Berkeley County, SC. No explicit publish date on live official page.",
@@ -795,7 +795,7 @@
         "publisher": "Google (datacenters.google)",
         "date_published": "2026-07-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260725120817/https://datacenters.google/locations/iowa/"
       },
       "excerpt": "\"Google has invested more than $20 billion in Iowa since building our data center in Council Bluffs in 2007\" ... references \"our existing facility in Council Bluffs\"",
       "notes": "Google-owned/built data center; confirmed via Google's own possessive language on official page. No explicit publish date on live page.",
@@ -821,7 +821,7 @@
         "publisher": "Google (datacenters.google)",
         "date_published": "2026-07-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260720225904/https://datacenters.google/locations/oregon/"
       },
       "excerpt": "\"Google has invested more than $7 billion in Oregon since building our data center in The Dalles in 2006.\"",
       "notes": "Google-owned/built data center at The Dalles, operational since 2006. No explicit publish date on live official page.",
@@ -847,7 +847,7 @@
         "publisher": "Interconnection.fyi",
         "date_published": "2026-07-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260725120709/https://www.interconnection.fyi/data-center/project/google-council-bluffs-east-d8c434a9"
       },
       "excerpt": "\"100-250 MW\" capacity range for this operational hyperscaler facility ... \"MidAmerican Energy\" serves as the grid operator ... \"Google Cloud\" operates and owns the facility (10410 Bunge Ave, Council B",
       "notes": "interconnection.fyi tracker range bucket 100-250 MW derived from interconnection filings; conservative low end (100) recorded, full range 100-250 MW. Non-preferred domain (interconnection.fyi); live tracker, no explicit publish date. Operator/owner: Google Cloud; utility MidAmerican Energy.",
@@ -873,7 +873,7 @@
         "publisher": "Interconnection.fyi",
         "date_published": "2026-07-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260725120730/https://www.interconnection.fyi/data-center/project/google-new-albany-7310a596"
       },
       "excerpt": "Power Capacity: \"250+ MW\" ... Grid Operator: \"American Electric Power\" ... Status: \"Operational\" ... Address: \"1101 Beech Rd SW, New Albany, OH 43054\" ... operated by Google Cloud",
       "notes": "interconnection.fyi tracker bucket \"250+ MW\"; recorded 250 as conservative low end (open-ended range). Non-preferred domain (interconnection.fyi); live tracker no explicit publish date. Utility: American Electric Power.",
@@ -899,7 +899,7 @@
         "publisher": "Interconnection.fyi",
         "date_published": "2026-07-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260725120755/https://www.interconnection.fyi/data-center/project/google-pryor-north-be7b42dd"
       },
       "excerpt": "Capacity: \"50-100 MW\" ... Status: \"Operational\" ... Address: \"4581 Webb St, Pryor, OK 74361\" ... Operator: Google Cloud ... Mayes County, Oklahoma",
       "notes": "interconnection.fyi tracker range bucket 50-100 MW; conservative low end (50) recorded, full range 50-100 MW. Non-preferred domain (interconnection.fyi); live tracker no explicit publish date. Pryor (North) campus, Mayes County.",
@@ -925,7 +925,7 @@
         "publisher": "Google (datacenters.google)",
         "date_published": "2026-07-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260725120855/https://datacenters.google/locations/south-carolina/"
       },
       "excerpt": "\"Google signs 225-megawatt renewable energy deal\" (2023 milestone)",
       "notes": "225 MW renewable energy PPA associated with Google's South Carolina operations (2023 milestone listed on official page). No explicit publish date on live page.",
@@ -935,6 +935,188 @@
         "verified": true,
         "checked_on": "2026-07-20",
         "verifier_note": "Page lists 2023 milestone: 'Google signs 225-megawatt renewable energy deal.' Matches 225 MW, contracted status, Berkeley County SC."
+      }
+    },
+    {
+      "id": "google-2026-07-25-001",
+      "company": "google",
+      "metric": "ppa_mw",
+      "value": 1600,
+      "unit": "MW",
+      "status": "under_construction",
+      "site": "steel-river-ar",
+      "as_of_date": "2026-07-15",
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/cypress-creek-and-google-break-ground-on-americas-largest-solar-project-302825797.html",
+        "publisher": "PR Newswire (Cypress Creek Energy)",
+        "date_published": "2026-07-15",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260723125154/https://www.prnewswire.com/news-releases/cypress-creek-and-google-break-ground-on-americas-largest-solar-project-302825797.html"
+      },
+      "excerpt": "1.6 GWdc of new solar generation and 1.9 GWh of new battery storage",
+      "notes": "NEW site, not previously in ledger. Steel River Energy Center, Mississippi County (Town of Wilson), Arkansas. The page states only that Google 'has secured energy from the first two phases' under a power purchase agreement; project owner/operator is Cypress Creek Energy, so this is recorded as ppa_mw, not power_capacity_mw, per DECISIONS.md owner-attribution. (The page does not describe the PPA as virtual, nor Google as an anchor investor; both descriptors were removed at verification.) Value is the phases 1-2 figure stated as 1.6 GWdc, expressed in MW (1600) for the MW-only ledger; range is 1600 MW (phases 1-2, construction started) up to 2500 MW at full buildout ('2.5 GWdc of solar and 2.9 GWh of battery storage', phase 3, fully operational 2029) - conservative low end recorded. Groundbreaking on phases 1 and 2 occurred 2026-07-15, hence under_construction. Corroborated by Google's own post at https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/steel-river-arkansas/ (2026-07-14, same 1.6 GWdc / 2.5 GWdc figures).",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Archived PRN release (Jul 15 2026) states phases 1-2 'will deliver 1.6 GWdc of new solar generation and 1.9 GWh of new battery storage'; owner/operator is Cypress Creek, Google is PPA offtaker. [independently re-verified in an isolated fetch]"
+      }
+    },
+    {
+      "id": "google-2026-07-25-002",
+      "company": "google",
+      "metric": "capex_announced_usd",
+      "value": 195000000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "n/a",
+      "as_of_date": "2026-07-22",
+      "source": {
+        "url": "https://siliconangle.com/2026/07/22/alphabets-stock-sinks-bumps-ai-infrastructure-spending-yet/",
+        "publisher": "SiliconANGLE",
+        "date_published": "2026-07-22",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260724061335/https://siliconangle.com/2026/07/22/alphabets-stock-sinks-bumps-ai-infrastructure-spending-yet/"
+      },
+      "excerpt": "The company now expects capex for the year of $195 billion to $205 billion, up from the $180 billion to $190 billion forecast provided last quarter.",
+      "notes": "Alphabet Q2 2026 earnings, 2026-07-22. Raised full-year 2026 capex guidance to a $195bn-$205bn range from the prior $180bn-$190bn range; conservative low end ($195bn) recorded. Supersedes the $180bn figure in google-2026-07-20-026 (blog.google investor presentation, June 2026). Alphabet's own IR release (abc.xyz) and its SEC filing were not fetchable (403), and cnbc.com and datacenterdynamics.com both returned 403 this run; SiliconANGLE is the allowlisted source actually fetched. Same $195bn-$205bn range independently reported by CNBC and DCD headlines.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "SiliconANGLE 2026-07-22 states verbatim: 'The company now expects capex for the year of $195 billion to $205 billion, up from the $180 billion to $190 billion forecast provided last quarter.' [independently re-verified in an isolated fetch]"
+      }
+    },
+    {
+      "id": "google-2026-07-25-003",
+      "company": "google",
+      "metric": "ppa_mw",
+      "value": 7800,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "texas",
+      "as_of_date": "2026-02-24",
+      "source": {
+        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/data-center-wilbarger-county/",
+        "publisher": "Google (The Keyword)",
+        "date_published": "2026-02-24",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260723084517/https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/data-center-wilbarger-county/"
+      },
+      "excerpt": "To date, we've contracted to add more than 7,800 megawatts (MW) of net-new energy generation and capacity to the Texas electricity grid.",
+      "notes": "WATCHLIST PROGRESSION: materially larger disclosed figure for the existing 'texas' slug, raising Google's cumulative contracted Texas generation/capacity from 6,200 MW (google-2026-07-20-015, 2025-11-14) to more than 7,800 MW. Source says 'more than 7,800', so 7800 is the conservative floor. Published 2026-02-24, i.e. OUTSIDE the 2026-07-04..2026-07-25 novelty window, but recorded under sweep B (watchlist) because it supersedes an existing ledger fact. Checked for a more recent Texas total through 2026-07-25; 7,800 MW remains the latest disclosed figure. Cumulative portfolio total across many PPAs, not a single site.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "blog.google Wilbarger post (2026-02-24) states verbatim: 'To date, we've contracted to add more than 7,800 megawatts (MW) of net-new energy generation and capacity to the Texas electricity grid.' [independently re-verified in an isolated fetch]"
+      }
+    },
+    {
+      "id": "google-2026-07-25-004",
+      "company": "google",
+      "metric": "datacenter_site",
+      "value": "Haskell County TX Google data center, co-located with the Quantum Clean Energy Project, has broken ground",
+      "unit": "text",
+      "status": "under_construction",
+      "site": "haskell-tx",
+      "as_of_date": "2026-06-04",
+      "source": {
+        "url": "https://www.powermag.com/google-launches-1-gw-plus-co-located-data-center-and-generation-complex-in-texas-panhandle/",
+        "publisher": "POWER Magazine",
+        "date_published": "2026-06-04",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260723230938/https://www.powermag.com/google-launches-1-gw-plus-co-located-data-center-and-generation-complex-in-texas-panhandle/"
+      },
+      "excerpt": "the co-located Google data center broke ground recently, Google said",
+      "notes": "WATCHLIST PROGRESSION: haskell-tx advances announced (google-2026-07-20-014, 2025-11-14) to under_construction. Same article states verbatim: 'The first project, the Quantum Clean Energy Project in Haskell County, Texas, comprises two solar and battery storage facilities-Quantum I and II-which represent a combined 640 MW of solar PV and 1.3 GWh of battery energy storage', and that 'the Quantum generation project is scheduled to start operations this month'. The 640 MW is co-located generation (developed by Intersect, a Google subsidiary since March 2026), not the data center's power draw, so it is noted here rather than logged as power_capacity_mw. No MW figure for the data center itself was disclosed. Published 2026-06-04, outside the novelty window, recorded under sweep B as a status change.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "POWER (2026-06-04) states verbatim 'the co-located Google data center broke ground recently, Google said' for Haskell County; genuine same-site advance from announced fact 014."
+      }
+    },
+    {
+      "id": "google-2026-07-25-005",
+      "company": "google",
+      "metric": "datacenter_site",
+      "value": "Meitner Energy Center, co-located data center and generation complex, Gray and Roberts Counties, Texas",
+      "unit": "text",
+      "status": "under_construction",
+      "site": "meitner-tx",
+      "as_of_date": "2026-06-04",
+      "source": {
+        "url": "https://www.powermag.com/google-launches-1-gw-plus-co-located-data-center-and-generation-complex-in-texas-panhandle/",
+        "publisher": "POWER Magazine",
+        "date_published": "2026-06-04",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260723230938/https://www.powermag.com/google-launches-1-gw-plus-co-located-data-center-and-generation-complex-in-texas-panhandle/"
+      },
+      "excerpt": "have launched construction on the Meitner Energy Center, a co-located data center and generation complex in the Texas Panhandle",
+      "notes": "NEW site absent from the ledger. FLAG FOR PARENT: published 2026-06-04, OUTSIDE the 2026-07-04..2026-07-25 novelty window - included because the site is missing from the ledger entirely; drop if strict windowing is required. Google-owned data center; generation developed by Intersect, the clean energy developer Google acquired in March 2026. Article states the complex 'will integrate more than 1 GW of wind, solar, and battery storage with on-site gas-fired generation for reliability firming' - deliberately NOT logged as an MW fact because that figure blends generation and storage and no data center power draw was disclosed. Google's own announcement (https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/meitner-energy-center/, 2026-06-04) discloses no MW or dollar figures.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "POWER (2026-06-04): Google and Intersect 'have launched construction on the Meitner Energy Center, a co-located data center and generation complex in the Texas Panhandle', in Gray and Roberts Counties."
+      }
+    },
+    {
+      "id": "google-2026-07-25-006",
+      "company": "google",
+      "metric": "power_capacity_mw",
+      "value": 2700,
+      "unit": "MW",
+      "status": "announced",
+      "site": "cheyenne-wy",
+      "as_of_date": "2026-07-14",
+      "source": {
+        "url": "https://www.datacenterdynamics.com/en/news/google-is-customer-behind-27gw-data-center-campus-near-cheyenne-wyoming/",
+        "publisher": "DataCenterDynamics",
+        "date_published": "2026-07-14",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260715130613/https://www.datacenterdynamics.com/en/news/google-is-customer-behind-27gw-data-center-campus-near-cheyenne-wyoming/"
+      },
+      "excerpt": "Google has been revealed as the company behind the Project Jade 2.7GW data center campus near Cheyenne, Wyoming.",
+      "notes": "NEW site. Project Tembo (formerly Project Jade), 716-acre parcel eight miles south of Cheyenne in the Switchgrass Industrial Park, Laramie County WY. 2.7GW stated by source, recorded as 2700 MW for the MW-only ledger. Judgment call: recorded as power_capacity_mw (Google-owned) rather than cloud_partnership. The headline calls Google the 'customer', but the body states verbatim that 'the campus is now being developed by Google's subsidiary Jupiter Star Holdings, LLC, replacing Crusoe' and refers to 'Google's application', which is ownership/development by a wholly-owned Google subsidiary rather than tenancy. The opposite reading (Google as offtaker only) is defensible and would make this a cloud_partnership - flagging for the verification pass. Second ambiguity: the 2.7GW figure may describe the co-located Tallgrass gas generation hub rather than the campus IT load; POWER Magazine (2026-01-08) describes '2.7 GW of natural gas-fired generation capacity' at the same development and does not name Google. Generation is NOT Google's: Tallgrass Energy delivers a bring-your-own-power hub, plus grid supply from Black Hills Energy. Status kept at 'announced': Laramie County approved the campus in January 2026 and Crusoe paused work in June 'at the request of our customer', so the fetched page does not establish that construction is currently underway; it says only that construction is 'slated to be completed by 2031'. Earlier scope was 1.8GW scaling to 10GW under Crusoe. Source page was unfetchable directly (HTTP 403 to both WebFetch and curl); read via the web.archive.org snapshot in archive_url, original URL cited.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "DCD archive: excerpt verbatim; 2.7GW modifies 'data center campus' (no GW given for Tallgrass); body says campus 'is now being developed by Google's subsidiary Jupiter Star Holdings, LLC'; no construction underway stated. [independently re-verified in an isolated fetch]"
+      }
+    },
+    {
+      "id": "google-2026-07-25-007",
+      "company": "google",
+      "metric": "custom_silicon",
+      "value": true,
+      "unit": "boolean",
+      "status": "announced",
+      "site": "tpu-8th-gen",
+      "as_of_date": "2026-04-22",
+      "source": {
+        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/eighth-generation-tpu-agentic-era/",
+        "publisher": "Google (The Keyword)",
+        "date_published": "2026-04-22",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260724004247/https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/eighth-generation-tpu-agentic-era/"
+      },
+      "excerpt": "The culmination of a decade of development, TPU 8t and TPU 8i are custom-engineered to power the next generation of supercomputing with efficiency and scale.",
+      "notes": "LEDGER GAP-FILL, not a windowing artifact: published 2026-04-22 at Google Cloud Next '26, outside the 2026-07-04..2026-07-25 novelty window, but the ledger's newest silicon fact is Ironwood (google-2026-07-20-010, 2025-11-07), so the eighth generation was missing entirely. First time Google has split the TPU line into two chips: TPU 8t for training, TPU 8i for inference. Source states verbatim: 'TPU 8t shines at massive, compute-intensive training workloads designed with larger compute throughput and more scale-up bandwidth. TPU 8i is designed with more memory bandwidth to serve the most latency-sensitive inference workloads.' Does NOT supersede the Ironwood fact - a distinct, later generation that coexists in the fleet. Performance and fabrication details (TSMC N3, HBM3E, 9,600-TPU training superpods, 1,152-TPU inference pods) appear in secondary coverage and Google Cloud's technical deep dive; not recorded here as no MW/USD/count metric applies. Date confirmed from the page's datePublished metadata (2026-04-22T12:00:00+00:00).",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "blog.google states verbatim 'TPU 8t and TPU 8i are custom-engineered to power the next generation of supercomputing'; page datePublished metadata = 2026-04-22T12:00:00+00:00. [independently re-verified in an isolated fetch]"
       }
     }
   ]

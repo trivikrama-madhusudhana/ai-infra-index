@@ -52,6 +52,110 @@
         "checked_on": null,
         "verifier_note": "from gap-review pass; pending blind verification"
       }
+    },
+    {
+      "id": "minimax-2026-07-25-001",
+      "company": "minimax",
+      "metric": "capex_announced_usd",
+      "value": "July 2026 raise of HK$16 billion (US$2 billion) via share placement plus zero-coupon convertible bonds; company states 80% of proceeds go to expanding AI infrastructure and model research, including deploying new-generation AI accelerators and high-bandwidth networks.",
+      "unit": "text",
+      "status": "announced",
+      "site": "ai-infrastructure-program-2026",
+      "as_of_date": "2026-07-10",
+      "source": {
+        "url": "https://www.caixinglobal.com/2026-07-10/chinese-ai-developer-minimax-raises-hk16-billion-from-equity-convertible-bond-sale-102462841.html",
+        "publisher": "Caixin Global",
+        "date_published": "2026-07-10",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260725121753/https://www.caixinglobal.com/2026-07-10/chinese-ai-developer-minimax-raises-hk16-billion-from-equity-convertible-bond-sale-102462841.html"
+      },
+      "excerpt": "The company said on Friday that it plans to use 80% of the proceeds to expand its AI infrastructure and model research, including deploying new-generation AI accelerators and high-bandwidth networks.",
+      "notes": "Recorded as text, not a USD number, deliberately. The only USD figure literally in the source is the gross raise: the article separately states 'MiniMax Group Inc. has raised HK$16 billion ($2 billion)'. That $2bn is proceeds raised, NOT a disclosed infrastructure capex figure, and the 80% share is stated for 'AI infrastructure and model research' jointly. No arithmetic performed on the 80%. First public MiniMax statement found that points at deploying its own accelerators/networking rather than pure cloud rental; the source does not say the accelerators would be owned or self-hosted, so no owned_facility or power_capacity_mw fact is proposed. No Wayback snapshot available at time of access.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Caixin snapshot has excerpt verbatim; page says HK$16bn ($2bn) raised via placement + zero-coupon converts, 80% of proceeds for AI infrastructure and model research. No capex figure disclosed; value states none."
+      }
+    },
+    {
+      "id": "minimax-2026-07-25-002",
+      "company": "minimax",
+      "metric": "cloud_partnership",
+      "value": 38000000,
+      "unit": "USD",
+      "status": "operational",
+      "site": "multi-cloud-suppliers",
+      "as_of_date": "2025-09-30",
+      "source": {
+        "url": "https://epoch.ai/data-insights/company-spending-breakdown",
+        "publisher": "Epoch AI",
+        "date_published": "2026-02-04",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260627211614/https://epoch.ai/data-insights/company-spending-breakdown"
+      },
+      "excerpt": "Minimax (2025 Q1-Q3) | Revenues: 53 | Expenses: 314 | R&D compute: 142 | Inference compute: 38",
+      "notes": "Inference compute spend, USD 38 million, for Q1-Q3 2025. Excerpt is the Minimax row of the on-page data table; the page carries the explicit unit caption 'All figures in millions of USD'. Attributed to Epoch AI, which derived it from MiniMax's HK IPO disclosures; we do not estimate compute spend ourselves. Filed as cloud_partnership because MiniMax owns no compute, so all inference compute is rented capacity. NOTE for the maintainer: the same Epoch table gives R&D compute = 142, which corroborates that the existing ledger fact minimax-2026-07-20-001 (USD 142m, site=alibaba-cloud) is MiniMax's TOTAL training compute spend across all cloud suppliers, not an Alibaba Cloud-specific figure; the site slug on that fact may be wrong.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Epoch table Minimax (2025 Q1-Q3) column: Revenues 53, Expenses 314, R&D compute 142, Inference compute 38, caption 'All figures in millions of USD'. Excerpt is a pipe rendering of that column."
+      }
+    },
+    {
+      "id": "minimax-2026-07-25-003",
+      "company": "minimax",
+      "metric": "cloud_partnership",
+      "value": "70% of MiniMax's R&D spending goes to computing power, and its contracted annual procurement limit with Alibaba Cloud rises year by year.",
+      "unit": "text",
+      "status": "contracted",
+      "site": "alibaba-cloud",
+      "as_of_date": "2026-06-23",
+      "source": {
+        "url": "https://eu.36kr.com/en/p/3864466789743489",
+        "publisher": "36Kr",
+        "date_published": "2026-06-23",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260725121833/https://eu.36kr.com/en/p/3864466789743489"
+      },
+      "excerpt": "MiniMax also spends 70% of its R & D on computing power, losing about 9.2 billion yuan in three and a half years, and its annual procurement limit with Alibaba Cloud is still increasing year by year.",
+      "notes": "From 36Kr's English edition, which is machine-translated from Chinese; translated secondary coverage, figure not independently confirmed in an English primary source. The Alibaba Cloud annual procurement caps are described only qualitatively here ('increasing year by year'); the specific cap amounts in the HK prospectus could not be found on any allowlisted publisher, so no cap number is recorded. Does NOT supersede minimax-2026-07-20-001: that fact is a realised spend figure, this is a forward contracted-cap characterisation. The 9.2bn yuan is a cumulative net loss, not an infrastructure figure, and is not recorded. No Wayback snapshot available at time of access.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "36Kr EN page (2026-06-23) carries excerpt verbatim incl. spaced 'R & D': MiniMax spends 70% of R&D on computing power, Alibaba Cloud annual procurement limit 'still increasing year by year'. No cap amount."
+      }
+    },
+    {
+      "id": "minimax-2026-07-25-004",
+      "company": "minimax",
+      "metric": "cloud_partnership",
+      "value": "FY2025 R&D expenses of US$252.8 million, up from US$189.0 million in 2024, with the increase mainly attributed to higher cloud services expenses for model training.",
+      "unit": "text",
+      "status": "operational",
+      "site": "multi-cloud-suppliers",
+      "as_of_date": "2025-12-31",
+      "source": {
+        "url": "https://www.minimax.io/news/minimax-global-announces-full-year-2025-financial-results",
+        "publisher": "MiniMax",
+        "date_published": "2026-03-02",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260713081800/https://www.minimax.io/news/minimax-global-announces-full-year-2025-financial-results"
+      },
+      "excerpt": "Research and development expenses increased by 33.8% from US$189.0 million in 2024 to US$252.8 million in 2025, mainly attributed to an increase in cloud services expenses related to training",
+      "notes": "First-party MiniMax full-year 2025 results, English original, no translation involved. Recorded as text because US$252.8m is total R&D expense, not a cloud or compute line item; the company only says the increase was mainly driven by cloud services expenses for training. No standalone cloud-spend number is disclosed in this release, so none is recorded and no arithmetic was done. This is the first Tier A MiniMax disclosure in the ledger; it corroborates the rented-compute picture in minimax-2026-07-20-002.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "MiniMax IR release (Mar 2, 2026) states verbatim R&D expenses rose 33.8% from US$189.0m (2024) to US$252.8m (2025), 'mainly attributed to an increase in cloud services expenses related to training activities'."
+      }
     }
   ]
 }

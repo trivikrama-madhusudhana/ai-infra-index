@@ -15,12 +15,12 @@
         "publisher": "TechCrunch",
         "date_published": "2024-02-21",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260529120029/https://techcrunch.com/2024/02/21/moonshot-ai-funding-china/"
       },
       "excerpt": "China's Moonshot AI zooms to $2.5B valuation, raising $1B for an LLM focused on long context",
       "notes": "Equity investment, not a datacenter/power commitment; recorded as cloud_partnership because Alibaba is Moonshot's named cloud/compute provider. TechCrunch says Alibaba co-led the ~$1B round (with HongShan) at a $2.5B valuation. Separate reporting (Alibaba SEC 20-F / Wikipedia, en.wikipedia.org) puts Alibaba's stake at ~36% and investment at ~$0.8B USD; that specific stake figure was NOT in the TechCrunch page fetched, so treat as secondary/unverified. No MW, GPU count, or capex disclosed.",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "moonshot-2026-07-25-002",
       "verification": {
         "verified": false,
         "checked_on": null,
@@ -51,6 +51,110 @@
         "verified": true,
         "checked_on": "2026-07-20",
         "verifier_note": "Page (dated April 8, 2025) directly documents Alibaba Cloud providing compute infrastructure for Moonshot AI/Kimi data preprocessing and training. Explicitly cites ACK (Container Service for Kubernetes), ACS (Container Compute Service), OSS, and Ray+Spark frameworks for terabyte-scale data processin"
+      }
+    },
+    {
+      "id": "moonshot-2026-07-25-001",
+      "company": "moonshot",
+      "metric": "gpu_count",
+      "value": "Kimi K2 Thinking trained on Nvidia H800 GPUs; Moonshot says it is 'outnumbered' by US rivals in high-end GPUs",
+      "unit": "text",
+      "status": "operational",
+      "site": "moonshot-h800-cluster",
+      "as_of_date": "2025-11-11",
+      "source": {
+        "url": "https://www.scmp.com/tech/tech-trends/article/3332364/chinas-moonshot-claims-build-models-fewer-high-end-ai-chips-us-rivals-use",
+        "publisher": "South China Morning Post",
+        "date_published": "2025-11-11",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260706170753/https://www.scmp.com/tech/tech-trends/article/3332364/chinas-moonshot-claims-build-models-fewer-high-end-ai-chips-us-rivals-use"
+      },
+      "excerpt": "Kimi K2 Thinking, a new reasoning variant of its open-source Kimi K2 model, was trained on Nvidia's older H800 GPUs, which were banned for export to China in late 2023.",
+      "notes": "Chip-type disclosure only: NO GPU count, cluster size, site or owner is given. Sourced to a Moonshot AI representative (handle 'ppwwyyxx', the moniker used by co-founder Wu Yuxin) in a Reddit AMA on 10 Nov 2025, reported by SCMP; SCMP also quotes the company saying it was 'outnumbered' by rival US firms in terms of 'high-end GPUs'. English-language secondary coverage of an AMA statement, not a first-party Moonshot publication. Whether these H800s are Moonshot-owned or rented from a cloud partner is not stated anywhere in the source, so no ownership is implied.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "SCMP snapshot carries excerpt verbatim: Kimi K2 Thinking 'trained on Nvidia's older H800 GPUs'; rep 'ppwwyyxx' says firm 'outnumbered' in high-end GPUs. No count, site or owner on page."
+      }
+    },
+    {
+      "id": "moonshot-2026-07-25-002",
+      "company": "moonshot",
+      "metric": "cloud_partnership",
+      "value": "Alibaba disclosed ~US$0.8 billion invested for an ~36% equity interest in Moonshot AI (FY2024 annual report)",
+      "unit": "text",
+      "status": "n/a",
+      "site": "moonshot-alibaba",
+      "as_of_date": "2024-05-25",
+      "source": {
+        "url": "https://www.scmp.com/tech/big-tech/article/3264017/alibaba-emerges-major-backer-high-flying-chinese-start-moonshot-ai-36-stake",
+        "publisher": "South China Morning Post",
+        "date_published": "2024-05-25",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260529120038/https://www.scmp.com/tech/big-tech/article/3264017/alibaba-emerges-major-backer-high-flying-chinese-start-moonshot-ai-36-stake"
+      },
+      "excerpt": "Alibaba has \"invested a total of approximately US$0.8 billion (about RMB5.9 billion) for an approximately 36 per cent equity interest\" in Moonshot AI in the past fiscal year 2024",
+      "notes": "Correction/upgrade of moonshot-2026-07-20-001, whose 36% / $0.8B detail was flagged there as secondary and unverified. SCMP quotes Alibaba's own FY2024 annual report filed with the Hong Kong stock exchange. Equity only: the source states NO compute commitment, no cloud credits, no MW, no GPU count. Alibaba discloses only the USD figure I record (USD stated by the source itself; no FX math performed). Alibaba owns SCMP, so the publisher is not independent of the investor. Recorded as cloud_partnership (not capacity) per DECISIONS.md, because Alibaba Cloud is Moonshot's named compute provider (see moonshot-2026-07-20-002); nothing here is Moonshot-owned infrastructure.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "SCMP snapshot states verbatim Alibaba 'invested a total of approximately US$0.8 billion (about RMB5.9 billion) for an approximately 36 per cent equity interest' per FY2024 annual report. Equity only, no compute."
+      }
+    },
+    {
+      "id": "moonshot-2026-07-25-003",
+      "company": "moonshot",
+      "metric": "gpu_count",
+      "value": "US official alleges Moonshot acquired GB300-equipped servers and accessed Nvidia GB300s in Thailand, likely to train its models",
+      "unit": "text",
+      "status": "n/a",
+      "site": "moonshot-offshore-gb300",
+      "as_of_date": "2026-07-23",
+      "source": {
+        "url": "https://www.cnbc.com/2026/07/23/moonshot-kimi-nvidia-ai-chips-export-ban.html",
+        "publisher": "CNBC",
+        "date_published": "2026-07-23",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260724203052/https://www.cnbc.com/2026/07/23/moonshot-kimi-nvidia-ai-chips-export-ban.html"
+      },
+      "excerpt": "The Chinese company \"acquired GB300-equipped servers and has accessed GB300s in Thailand, likely to train its AI models,\" Michael Kratsios,",
+      "notes": "ALLEGATION, NOT CONFIRMED PROCUREMENT. Claim made by Michael Kratsios, director of the White House Office of Science and Technology Policy, in a post on X on 22 Jul 2026, reported by CNBC. No quantity of GPUs, no site, no operator, no contract and no dates are given, so this supports no fleet number whatsoever. CNBC states that Nvidia, Moonshot AI, the White House and the Chinese embassy 'have been approached for comment'; the article contains no Moonshot confirmation or denial of the chip claim (Moonshot staff publicly rebutted only the separate model-distillation allegation, per SCMP). Article page fetched via its web.archive.org snapshot (cnbc.com returned 403 to direct fetch); text identical to the live headline/summary. Retain only as a sourced allegation; a verifier should consider dropping it if the ledger excludes unconfirmed government claims.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "CNBC snapshot states verbatim the GB300/Thailand quote attributed to Kratsios (White House OSTP) on X; page frames it as an accusation, value says 'alleges'. No quantity or site given."
+      }
+    },
+    {
+      "id": "moonshot-2026-07-25-004",
+      "company": "moonshot",
+      "metric": "gpu_count",
+      "value": "Moonshot paused new Kimi K3 retail subscriptions citing a computing-power shortage; existing computing clusters near their limits while capacity is expanded",
+      "unit": "text",
+      "status": "operational",
+      "site": "kimi-inference-cluster",
+      "as_of_date": "2026-07-20",
+      "source": {
+        "url": "https://www.caixinglobal.com/2026-07-20/tech-brief-jul-20-moonshot-ai-pauses-new-kimi-subscriptions-102466148.html",
+        "publisher": "Caixin Global",
+        "date_published": "2026-07-20",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260725023738/https://www.caixinglobal.com/2026-07-20/tech-brief-jul-20-moonshot-ai-pauses-new-kimi-subscriptions-102466148.html"
+      },
+      "excerpt": "User requests over the past 48 hours far exceeded projections, nearing the limits of the company's existing computing clusters, the Chinese AI startup said.",
+      "notes": "Qualitative capacity-status datapoint from Moonshot's own announcement (20 Jul 2026) as reported by Caixin Global: NO GPU count, no MW, no cluster location, no chip type and no owner are disclosed. Caixin also reports the company 'will dedicate all current computing power to existing subscribers while expanding capacity' and 'planned to gradually reopen subscriptions as new computing power becomes available'. Logged under gpu_count purely because the schema has no qualitative-compute metric; it asserts no count. Ownership of these clusters is not stated, so no owned-capacity claim is implied. Reviewer may drop as non-quantitative.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Caixin snapshot has excerpt verbatim and states Moonshot paused new retail Kimi K3 subscriptions on computing-power shortage, dedicating current power to existing users while expanding capacity."
       }
     }
   ]

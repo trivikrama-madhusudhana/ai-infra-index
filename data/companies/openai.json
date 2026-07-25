@@ -15,7 +15,7 @@
         "publisher": "OpenAI",
         "date_published": "2025-01-21",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260723141025/https://openai.com/index/announcing-the-stargate-project/"
       },
       "excerpt": "The Stargate Project intends to invest $500 billion over the next four years building new AI infrastructure for OpenAI in the United States, with $100 billion being deployed immediately.",
       "notes": "Stargate JV: SoftBank, OpenAI, Oracle, MGX; 10 GW U.S. buildout announced 2025-01-21. OpenAI is a JV partner, not sole owner. openai.com returned 403 to direct fetch; text confirmed via WebSearch result quoting the OpenAI page.",
@@ -275,12 +275,12 @@
         "publisher": "Lancium",
         "date_published": "2025-09-01",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260215175319/https://lancium.com/2025/03/18/crusoe-expands-ai-data-center-campus-in-abilene-to-1-2-gigawatts/"
       },
       "excerpt": "Phase 1 - two buildings delivering over 200 MW of critical IT capacity - became operational in September 2025.",
       "notes": "Phase 1 energized Sep 2025 for Oracle Cloud Infrastructure (OCI) serving OpenAI. Operated by Crusoe, not OpenAI-owned. Domain lancium.com (not in scoreable-domain list); Epoch AI corroborates 'four of the eight buildings already operational' at ~0.3 GW current.",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "openai-2026-07-25-003",
       "verification": {
         "verified": false,
         "checked_on": null,
@@ -384,7 +384,7 @@
       "excerpt": "brings Stargate to nearly 7 gigawatts of planned capacity",
       "notes": "Aggregate planned Stargate capacity across Abilene + five new sites + CoreWeave. Partner-operated (Crusoe/Vantage/STACK/SB Energy/Oracle), OpenAI is customer via Stargate JV, so recorded as cloud_partnership not owned capacity. 'nearly 7 GW' recorded at conservative 7000 MW.",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "openai-2026-07-25-004",
       "verification": {
         "verified": true,
         "checked_on": "2026-07-20",
@@ -753,6 +753,136 @@
         "verified": true,
         "checked_on": "2026-07-20",
         "verifier_note": "techcrunch (Jun 2026): OpenAI 'unveiled its first custom-built inference processor... Named Jalapeno,' built with Broadcom. Matches custom_silicon=true, Jalapeno chip, announced."
+      }
+    },
+    {
+      "id": "openai-2026-07-25-001",
+      "company": "openai",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "announced",
+      "site": "effingham-county-ga",
+      "as_of_date": "2026-07-22",
+      "source": {
+        "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+        "publisher": "OpenAI",
+        "date_published": "2026-07-22",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260723190109/https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/"
+      },
+      "excerpt": "Project Camellia is a long-term datacenter project that OpenAI is designing and developing in Effingham County, Georgia.",
+      "notes": "New site, not previously in the ledger. Named 'Project Camellia', located in the Savannah Gateway Industrial Hub, Effingham County, Georgia (near Savannah). Ownership reasoning: unlike Abilene (Crusoe/Oracle), Milam County (SB Energy), Port Washington (Vantage) or Saline Township (Related Digital), OpenAI states it is itself designing and developing this project and is itself the counterparty contracting for power, so it is recorded as an owned facility rather than cloud_partnership. Caveat from the same source: 'Significant work remains on infrastructure, project phasing, design, financing, and operating model' - the operating model is not yet final, so ownership should be re-checked on the next cycle. Source also states the project 'would be entirely privately funded'. OpenAI tags the post 'Stargate'.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Archive of OpenAI post (Jul 22 2026) carries the excerpt verbatim; OpenAI is designing/developing Project Camellia, pays full infrastructure cost, no partner owner named. [independently re-verified in an isolated fetch]"
+      }
+    },
+    {
+      "id": "openai-2026-07-25-002",
+      "company": "openai",
+      "metric": "power_capacity_mw",
+      "value": 3200,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "effingham-county-ga",
+      "as_of_date": "2026-07-22",
+      "source": {
+        "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+        "publisher": "OpenAI",
+        "date_published": "2026-07-22",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260723190109/https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/"
+      },
+      "excerpt": "To support the data center, we are contracting with Georgia Power Company for 3.2 gigawatts of power which will be delivered in phases between 2028 and 2032.",
+      "notes": "Source states 3.2 gigawatts; recorded as 3200 MW per the MW-only rule. No range given. Status is 'contracted' rather than under_construction or operational: the electric-service contract is with Georgia Power Company and delivery is phased between 2028 and 2032, so zero MW is energized today. Independently corroborated by Data Center Dynamics, 22 Jul 2026: 'The AI lab has revealed it is set to build a data center in Effingham County, Georgia, for which it is contracting 3.2GW of power from the Georgia Power Company' (https://www.datacenterdynamics.com/en/news/openai-reveals-32gw-data-center-project-in-effingham-county-georgia/). Recorded as OpenAI's own capacity because OpenAI is the developer and the contracting party (see the paired owned_facility fact). Capex not recorded: OpenAI published no dollar figure, and press figures conflict and are hedged (DCD relays Bloomberg that OpenAI 'could spend more than $30 billion'; other outlets reported a $20 billion initial figure).",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Excerpt verbatim: 'we are contracting with Georgia Power Company for 3.2 gigawatts ... delivered in phases between 2028 and 2032'; single figure, no range, OpenAI is the contracting party. [independently re-verified in an isolated fetch]"
+      }
+    },
+    {
+      "id": "openai-2026-07-25-003",
+      "company": "openai",
+      "metric": "cloud_partnership",
+      "value": 421,
+      "unit": "MW",
+      "status": "operational",
+      "site": "abilene-tx",
+      "as_of_date": "2026-07-25",
+      "source": {
+        "url": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-abilene",
+        "publisher": "Epoch AI",
+        "date_published": "2026-07-25",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260725121512/https://epoch.ai/data/ai-data-centers/directory/openai-stargate-abilene"
+      },
+      "excerpt": "OpenAI Stargate Abilene is an operational AI data center with AI chips owned by Oracle and used by OpenAI. It hosts an estimated 509k H100-equivalents of compute, supported by 421 MW of IT power",
+      "notes": "Watchlist progression: supersedes openai-2026-07-20-011 (200 MW operational at abilene-tx, as of 2025-09-01). Figure is Epoch AI's tracked IT power for the site, page header 'Updated Jul. 25, 2026'; Epoch states the timeline 'is based on satellite imagery, our cooling equipment power model, company disclosures, regulatory filings, and drone imagery', so this is Epoch's published figure and is attributed to them, not computed here. Comparable basis to the superseded fact: Epoch's April 2026 note describes the earlier 200 MW as IT power too. Recorded as cloud_partnership, not power_capacity_mw: the page lists OWNER = Oracle, USER = OpenAI, and 'AI chips owned by Oracle and used by OpenAI', so per DECISIONS.md this is rented/partner-operated capacity. Epoch also projects 843 MW IT power in Q4 2026 (projection, not recorded). Epoch's current chip count for the site (201.6k Nvidia B200/B300) is lower than the 250,000 GPUs in openai-2026-07-20-028 and appears only in a table; no gpu_count fact proposed pending a clearer source. No web.archive.org snapshot of this URL exists (a save request was attempted and had not completed).",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Epoch page (Updated Jul. 25, 2026) states the excerpt verbatim and lists OWNER Oracle / STATUS Operational / USER OpenAI, CURRENT IT POWER 421 MW - partner-owned, so cloud_partnership is right."
+      }
+    },
+    {
+      "id": "openai-2026-07-25-004",
+      "company": "openai",
+      "metric": "cloud_partnership",
+      "value": 10000,
+      "unit": "MW",
+      "status": "contracted",
+      "site": "stargate-program",
+      "as_of_date": "2026-07-23",
+      "source": {
+        "url": "https://www.datacenterdynamics.com/en/news/openai-data-center-in-sydney-australia-abandons-plans-for-recycled-water-cooling-system-report/",
+        "publisher": "Data Center Dynamics",
+        "date_published": "2026-07-23",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260724163833/https://www.datacenterdynamics.com/en/news/openai-data-center-in-sydney-australia-abandons-plans-for-recycled-water-cooling-system-report/"
+      },
+      "excerpt": "OpenAI has secured more than 10GW of contracted AI data center infrastructure capacity across multiple sites globally.",
+      "notes": "Watchlist progression at the programme level: supersedes openai-2026-07-20-015 (7000 MW announced for stargate-program, as of 2025-09-23). Source says 'more than 10GW'; the conservative low end 10 GW is recorded, as 10000 MW, per the MW-only rule. Scope is broader than Stargate alone - the same paragraph says the total 'comprises predominantly its Stargate data center portfolio, which includes a flagship site in Abilene, Texas, along with locations in Shackelford County, Texas; Milam County, Texas; Dona Ana County, New Mexico; and Lordstown, Ohio', plus planned international sites. Recorded as cloud_partnership, not power_capacity_mw, because these sites are built and operated by partners (Crusoe/Oracle, SB Energy, Vantage, Related Digital) and OpenAI is the offtaker. Publisher assertion, not an OpenAI disclosure.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "DCD article (July 23, 2026) states verbatim 'OpenAI has secured more than 10GW of contracted AI data center infrastructure capacity across multiple sites globally'; low end 10,000 MW recorded."
+      }
+    },
+    {
+      "id": "openai-2026-07-25-005",
+      "company": "openai",
+      "metric": "cloud_partnership",
+      "value": true,
+      "unit": "boolean",
+      "status": "announced",
+      "site": "sydney-nextdc-s7",
+      "as_of_date": "2026-07-23",
+      "source": {
+        "url": "https://www.datacenterdynamics.com/en/news/openai-data-center-in-sydney-australia-abandons-plans-for-recycled-water-cooling-system-report/",
+        "publisher": "Data Center Dynamics",
+        "date_published": "2026-07-23",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260724163833/https://www.datacenterdynamics.com/en/news/openai-data-center-in-sydney-australia-abandons-plans-for-recycled-water-cooling-system-report/"
+      },
+      "excerpt": "OpenAI and NextDC announced that they had signed a Memorandum of Understanding that would see the ChatGPT-maker use some of the data center’s capacity, with the option to scale over time.",
+      "notes": "New site, not previously in the ledger. NextDC S7, Eastern Creek, Sydney, Australia. Ownership reasoning: the same article states 'NextDC is the primary developer of the 612MW facility' and calls NextDC 'the developer', so the site is NextDC's, not OpenAI's - recorded as cloud_partnership. Deliberately recorded as boolean rather than MW: the 612 MW is the whole NextDC facility, and OpenAI's share is only described as 'some of the data center's capacity', so no MW figure can be attributed to OpenAI without imputation. The underlying MoU dates to December 2025; it surfaces here in a 22-25 July 2026 article. That article's own news is a cooling change: OpenAI dropped recycled-water cooling for a closed-loop liquid system after NextDC failed to secure planning permission for a pipeline. Status 'announced' because an MoU is non-binding.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Same DCD article: MoU excerpt verbatim; page says 'NextDC is the primary developer of the 612MW facility', OpenAI only uses 'some of the data center's capacity' - boolean cloud_partnership correct."
       }
     }
   ]

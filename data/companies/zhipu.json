@@ -130,6 +130,214 @@
         "checked_on": null,
         "verifier_note": "SCMP (Jul 9, 2026) reports Zhipu was only 'in early talks with domestic chip-design companies about tailored AI processors' per The Information. This is exploratory/preliminary talks, NOT an 'announced' custom-silicon program. Status mismatch: fact claims status='announced' but the page supports at "
       }
+    },
+    {
+      "id": "zhipu-2026-07-25-001",
+      "company": "zhipu",
+      "metric": "power_capacity_mw",
+      "value": 1000,
+      "unit": "MW",
+      "status": "operational",
+      "site": "zai-1gw-domestic-chip-datacenter",
+      "as_of_date": "2026-07-21",
+      "source": {
+        "url": "https://technode.com/2026/07/21/z-ai-completes-construction-of-a-1gw-class-ai-data-center-using-chinese-chips/",
+        "publisher": "TechNode",
+        "date_published": "2026-07-21",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260723015000/https://technode.com/2026/07/21/z-ai-completes-construction-of-a-1gw-class-ai-data-center-using-chinese-chips/"
+      },
+      "excerpt": "Z.ai, the developer of the GLM family of AI models, has completed construction of a 1GW-class AI data center using only Chinese-made AI chips, with part of the facility already operating.",
+      "notes": "FIRST owned-capacity fact for Zhipu; ledger previously held only cloud_partnership/custom_silicon. Source states '1GW-class' / '1-gigawatt'; recorded as 1,000 MW per MW-only rule (no other arithmetic). IMPORTANT CAVEAT for the verifier: construction is complete but only PART of the facility is operating as of 2026-07-21, so 'operational' should not be read as 1,000 MW fully energised; no source gives an MW figure for the live portion. Ultimate reporting is Bloomberg (2026-07-20) citing a person familiar with the matter; TechNode credits Bloomberg. SCMP (2026-07-21) independently reports 'it had built a giant 1-gigawatt (GW) AI computing centre' per people familiar. Location, cost and construction timeline are NOT disclosed by any source (Tom's Hardware: 'The source didn't disclose the data center's location, its cost, or its construction timeline.'). Site slug is descriptive, not a place name.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": "2026-07-25",
+        "verifier_note": "TechNode says '1GW-class' with 'part of the facility already operating' and gives no MW figure for the live portion; 1,000 MW at status operational is unsupported (class/design capacity, partial energisation)."
+      }
+    },
+    {
+      "id": "zhipu-2026-07-25-002",
+      "company": "zhipu",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "operational",
+      "site": "zai-1gw-domestic-chip-datacenter",
+      "as_of_date": "2026-07-21",
+      "source": {
+        "url": "https://www.scmp.com/tech/big-tech/article/3361374/zai-shares-surge-37-firm-builds-giant-data-centre-powered-chinese-chips",
+        "publisher": "South China Morning Post",
+        "date_published": "2026-07-21",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260722185453/https://www.scmp.com/tech/big-tech/article/3361374/zai-shares-surge-37-firm-builds-giant-data-centre-powered-chinese-chips"
+      },
+      "excerpt": "it had built a giant 1-gigawatt (GW) AI computing centre – a facility that will be used to train and deploy its GLM models",
+      "notes": "Ownership basis: SCMP and TechNode both attribute the build to Z.ai itself ('has completed construction', 'it had built'), i.e. self-built rather than rented cloud capacity, which is why this is owned_facility rather than cloud_partnership per DECISIONS.md §1. Caveat: no source states a legal ownership/lease structure, a site operator, or a landlord; the claim rests on 'people familiar with the matter' (SCMP) / a person familiar (Bloomberg via TechNode and Tom's Hardware). Same SCMP piece reports Z.ai completed the acquisition of Chinese heterogeneous-computing software developer XCore Sigma (中科加禾), spun off from the Chinese Academy of Sciences — a vertical-integration move with no matching metric in the schema enum, recorded here for context only.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Excerpt verbatim; SCMP attributes the build to Z.ai itself ('the company recently completed', 'it had built'), per people familiar. Caveat: use of the site is future tense ('will be used')."
+      }
+    },
+    {
+      "id": "zhipu-2026-07-25-003",
+      "company": "zhipu",
+      "metric": "datacenter_site",
+      "value": "1GW-class AI computing centre built by Z.ai and populated exclusively with Chinese-made AI chips, to train and deploy the GLM model family; location undisclosed",
+      "unit": "text",
+      "status": "operational",
+      "site": "zai-1gw-domestic-chip-datacenter",
+      "as_of_date": "2026-07-21",
+      "source": {
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/z-ai-powers-up-1gw-ai-data-center-built-entirely-on-chinese-chips",
+        "publisher": "Tom's Hardware",
+        "date_published": "2026-07-21",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260722044307/https://www.tomshardware.com/tech-industry/artificial-intelligence/z-ai-powers-up-1gw-ai-data-center-built-entirely-on-chinese-chips"
+      },
+      "excerpt": "Chinese AI developer Z.ai (formerly Zhipu) has finished building a 1GW data center stocked exclusively with domestically made chips and has switched part of it on, Bloomberg reported Monday",
+      "notes": "Site-record companion to the power_capacity_mw fact. Only part of the site is switched on as of 2026-07-21. Chip vendor is NOT named by the source: 'The source didn't name the chip supplier, but Z.ai's recent training history points to Huawei.' Tom's Hardware is relaying Bloomberg's 2026-07-20 report; treat as secondary. Same article notes the site is 'among the largest built by any Chinese model developer'.",
+      "added": "2026-07-25",
+      "superseded_by": "zhipu-2026-07-25-008",
+      "verification": {
+        "verified": false,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Excerpt verbatim; page supports built by Z.ai, exclusively domestic chips, part switched on, location/cost/timeline undisclosed, but says the facility 'will train' the GLM family, not 'deploy'."
+      }
+    },
+    {
+      "id": "zhipu-2026-07-25-004",
+      "company": "zhipu",
+      "metric": "gpu_count",
+      "value": 10000,
+      "unit": "GPUs",
+      "status": "operational",
+      "site": "zai-domestic-chip-clusters",
+      "as_of_date": "2026-07-21",
+      "source": {
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/z-ai-powers-up-1gw-ai-data-center-built-entirely-on-chinese-chips",
+        "publisher": "Tom's Hardware",
+        "date_published": "2026-07-21",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260722044307/https://www.tomshardware.com/tech-industry/artificial-intelligence/z-ai-powers-up-1gw-ai-data-center-built-entirely-on-chinese-chips"
+      },
+      "excerpt": "the source told Bloomberg that Z.ai has now built or operates several computing clusters holding more than 10,000 chips apiece",
+      "notes": "Conservative low end: source says 'more than 10,000 chips apiece' across 'several' clusters, so 10,000 is the floor for a SINGLE cluster, not the fleet total; no total is stated and none is computed here. Chips are Chinese-made accelerators, vendor unnamed. 'built or operates' leaves owned-vs-rented ambiguous — do NOT read this as a confirmed owned fleet. Attribution: Bloomberg (2026-07-20) via Tom's Hardware; TechNode carries the same Bloomberg line ('Z.ai also operates several computing clusters containing more than 10,000 chips each').",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Excerpt verbatim: 'several computing clusters holding more than 10,000 chips apiece' — 10,000 is a floor for ONE cluster, not a fleet total, as the notes state. 'built or operates' leaves owned-vs-rented open."
+      }
+    },
+    {
+      "id": "zhipu-2026-07-25-005",
+      "company": "zhipu",
+      "metric": "gpu_count",
+      "value": 100000,
+      "unit": "GPUs",
+      "status": "operational",
+      "site": "huawei-ascend",
+      "as_of_date": "2026-06-30",
+      "source": {
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/z-ai-free-glm-5-2-tops-the-open-weight-ai-rankings-on-all-huawei-silicon",
+        "publisher": "Tom's Hardware",
+        "date_published": "2026-06-30",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260711113928/https://www.tomshardware.com/tech-industry/artificial-intelligence/z-ai-free-glm-5-2-tops-the-open-weight-ai-rankings-on-all-huawei-silicon"
+      },
+      "excerpt": "it says the GLM-5 family was trained on roughly 100,000 Huawei Ascend 910B processors using the MindSpore framework, with no Nvidia silicon at any stage",
+      "notes": "Company self-claim relayed by Tom's Hardware ('it says' = Z.ai), NOT independently confirmed and NOT an Epoch AI / SemiAnalysis estimate. The 100,000 Ascend 910B figure is the chip count used to TRAIN the GLM-5 family; the source does not say whether Z.ai owns these accelerators or accessed them via a partner/cloud, so this must not be treated as a confirmed owned fleet — site slug reuses the existing 'huawei-ascend' slug already in the ledger. Source word is 'roughly'; recorded as stated with no rounding of our own. Same article: Z.ai on the US Entity List since January 2025, cutting off Nvidia H100/H200/B200.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Page frames it as Z.ai's own claim ('it says', 'purportedly'): GLM-5 family trained on 'roughly' 100,000 Ascend 910B. No statement Z.ai owns or operates them; a training-run count, not an operational fleet."
+      }
+    },
+    {
+      "id": "zhipu-2026-07-25-006",
+      "company": "zhipu",
+      "metric": "cloud_partnership",
+      "value": "Prospectus disclosure: by 2025 all five of Zhipu's largest suppliers were cloud computing providers, and every cloud supplier on its disclosed list is Chinese",
+      "unit": "text",
+      "status": "n/a",
+      "site": "chinese-cloud-suppliers",
+      "as_of_date": "2026-01-19",
+      "source": {
+        "url": "https://www.chinatalk.media/p/zhipu-and-minimax-ipo",
+        "publisher": "ChinaTalk",
+        "date_published": "2026-01-19",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260606080946/https://www.chinatalk.media/p/zhipu-and-minimax-ipo"
+      },
+      "excerpt": "By 2025, however, all of its top-five suppliers were cloud computing providers.",
+      "notes": "Read of Zhipu's HKEX IPO prospectus by ChinaTalk (Irene Zhang); figures are the analyst's rendering of the prospectus, not a first-party Zhipu statement, and the prospectus itself was not fetched. Establishes that as of 2025 Zhipu's compute was predominantly RENTED from Chinese cloud providers → cloud_partnership, not owned capacity, per DECISIONS.md §1. Same piece: 'In 2022 and 2023, some of the company's largest purchases were sourced from suppliers of \"computing hardware\" rather than \"computer services\" ... implying some degree of local compute.' Individual supplier names are anonymised in the prospectus. Zhipu listed on HKEX 2026-01-08.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Excerpt verbatim; page also states 'All of the cloud suppliers on Zhipu's disclosed list are Chinese.' Analyst read of the HKEX prospectus, as the notes already flag."
+      }
+    },
+    {
+      "id": "zhipu-2026-07-25-007",
+      "company": "zhipu",
+      "metric": "cloud_partnership",
+      "value": "Public open call to domestic and international inference-compute providers to supply capacity for GLM models in exchange for revenue share",
+      "unit": "text",
+      "status": "announced",
+      "site": "inference-compute-partners",
+      "as_of_date": "2026-02-23",
+      "source": {
+        "url": "https://www.scmp.com/tech/tech-trends/article/3344344/chinese-ai-firm-zhipus-shares-tumble-nearly-23-computing-woes-user-complaints",
+        "publisher": "South China Morning Post",
+        "date_published": "2026-02-23",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260703040417/https://www.scmp.com/tech/tech-trends/article/3344344/chinese-ai-firm-zhipus-shares-tumble-nearly-23-computing-woes-user-complaints"
+      },
+      "excerpt": "Zhipu last week issued appeals to both domestic and international inference-compute providers to offer support for its GLM model, offering to share revenue.",
+      "notes": "Evidence of a serving-capacity shortfall five months before the 1GW site was reported complete: SCMP says it was 'the first time a Chinese AI firm issued a public call seeking computing resources' and that shares fell ~23% (>HK$70 billion / US$9 billion of market cap) on computing-constraint concerns. Status 'announced' because it is a solicitation — no counterparty, capacity or contract is named in the source. Useful trend context alongside SCMP 3341000 (2026-01), which reported computing constraints forcing Zhipu to restrict sign-ups for its AI coding service.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Excerpt verbatim on SCMP 2026-02-23; page adds it was 'the first time a Chinese AI firm issued a public call seeking computing resources'. No counterparty or capacity named, consistent with 'announced'."
+      }
+    },
+    {
+      "id": "zhipu-2026-07-25-008",
+      "company": "zhipu",
+      "metric": "datacenter_site",
+      "value": "1GW data center built by Z.ai and stocked exclusively with domestically made chips, to train the GLM model family; only part switched on; location, cost and construction timeline undisclosed",
+      "unit": "text",
+      "status": "operational",
+      "site": "zai-1gw-domestic-chip-datacenter",
+      "as_of_date": "2026-07-21",
+      "source": {
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/z-ai-powers-up-1gw-ai-data-center-built-entirely-on-chinese-chips",
+        "publisher": "Tom's Hardware",
+        "date_published": "2026-07-21",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260722044307/https://www.tomshardware.com/tech-industry/artificial-intelligence/z-ai-powers-up-1gw-ai-data-center-built-entirely-on-chinese-chips"
+      },
+      "excerpt": "Chinese AI developer Z.ai (formerly Zhipu) has finished building a 1GW data center stocked exclusively with domestically made chips and has switched part of it on, Bloomberg reported Monday",
+      "notes": "Amended from zhipu-2026-07-25-003: original value said the site would 'train and deploy' the GLM family, but this source states only 'The facility will train the company's GLM model family' (future tense); 'deploy' comes from a different source (SCMP) and is removed here. Partial energisation made explicit: 'has switched part of it on'. Chip vendor NOT named by the source: 'The source didn't name the chip supplier, but Z.ai's recent training history points to Huawei.' Location/cost/timeline undisclosed per 'The source didn't disclose the data center's location, its cost, or its construction timeline.' Tom's Hardware is relaying Bloomberg (2026-07-20) 'citing a person familiar with the matter'; secondary sourcing. Same article: site is 'among the largest ever stood up by a Chinese AI lab'.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": false,
+        "checked_on": null,
+        "verifier_note": "correction appended by the verification pass 2026-07-25; pending blind verification"
+      }
     }
   ]
 }
