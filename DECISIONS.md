@@ -68,8 +68,7 @@ H100e company total, both from the same Epoch report. OpenAI's September 2025
 "over $400 billion" is cumulative Stargate investment, not new money on top of
 the January 2025 $500 billion programme.
 
-## 6. Capital is additive across distinct periods and distinct projects, never
-within one
+## 6. Capital is additive across distinct periods and projects, never within one
 
 Two capex facts sum only if they cover different periods **and** different
 programmes. Two statements of the same fiscal year, or two statements of the same
