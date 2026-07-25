@@ -150,7 +150,7 @@
       "excerpt": "enough to power roughly 110k GB200 NVL72",
       "notes": "SemiAnalysis estimate for Colossus 2 capacity: ~110,000 GB200 (in NVL72 racks). Article date approximate (~Aug 2025).",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "xai-2026-07-25-002",
       "verification": {
         "verified": true,
         "checked_on": "2026-07-20",
@@ -176,7 +176,7 @@
       "excerpt": "seven 35MW turbines in operations",
       "notes": "On-site Solaris/xAI gas-turbine generation at Colossus 2 (Southaven). 7 x 35 MW = 245 MW operational; SemiAnalysis also states '~460MW are currently installed and in operations/under construction'. Article date approximate (SemiAnalysis newsletter, ~Aug 2025). Owned generation (behind-the-meter JV), not a PPA.",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "xai-2026-07-25-001",
       "verification": {
         "verified": true,
         "checked_on": "2026-07-20",

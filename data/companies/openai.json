@@ -359,6 +359,7 @@
       "notes": "Five new sites announced with Oracle and SoftBank. openai.com direct fetch 403; quote captured via WebSearch of the OpenAI page. 'over $400 billion' recorded at conservative floor of 400000000000.",
       "added": "2026-07-20",
       "superseded_by": null,
+      "covered_by": "openai-2026-07-20-001",
       "verification": {
         "verified": true,
         "checked_on": "2026-07-20",

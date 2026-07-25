@@ -47,6 +47,7 @@
       "notes": "Third-party SemiAnalysis estimate: 'just under a million' Trainium2 accelerators in the largest AWS campus; >1.3 GW IT capacity across three AWS campuses in final construction. Value kept as text since only a 'just under a million' range is given (conservative, not rounded up).",
       "added": "2026-07-20",
       "superseded_by": null,
+      "covered_by": "anthropic-2026-07-20-009",
       "verification": {
         "verified": false,
         "checked_on": null,
@@ -255,6 +256,7 @@
       "notes": "Third-party estimate by Epoch AI. Units are H100-equivalents (H100e), not literal GPUs — measures Trainium2 fleet in the AWS Project Rainier campus at end of 2025.",
       "added": "2026-07-20",
       "superseded_by": null,
+      "covered_by": "anthropic-2026-07-20-009",
       "verification": {
         "verified": true,
         "checked_on": "2026-07-20",

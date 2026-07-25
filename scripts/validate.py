@@ -157,14 +157,25 @@ def main() -> int:
                 if not fact.get("site"):
                     err(f"{fid}: power fact must carry a site")
 
-    # superseded_by pointers must resolve within the same company
+    # superseded_by / covered_by pointers must resolve within the same company
     for fid, fact in all_facts.items():
-        target = fact.get("superseded_by")
-        if target:
-            if target not in all_facts:
-                err(f"{fid}: superseded_by points to unknown fact {target}")
+        for field in ("superseded_by", "covered_by"):
+            target = fact.get(field)
+            if not target:
+                continue
+            if target == fid:
+                err(f"{fid}: {field} points at itself")
+            elif target not in all_facts:
+                err(f"{fid}: {field} points to unknown fact {target}")
             elif all_facts[target].get("company") != fact.get("company"):
-                err(f"{fid}: superseded_by {target} is a different company")
+                err(f"{fid}: {field} {target} is a different company")
+            elif field == "covered_by":
+                # A covering fact must measure the same thing, or the exclusion is
+                # hiding a real number rather than removing a duplicate.
+                if all_facts[target].get("metric") != fact.get("metric"):
+                    err(f"{fid}: covered_by {target} measures a different metric")
+                if all_facts[target].get("covered_by"):
+                    err(f"{fid}: covered_by {target} is itself covered; point at the broadest fact")
 
     for w in warnings:
         print(f"WARN  {w}")

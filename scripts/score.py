@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Deterministic scoring engine for the AI Infrastructure Index.
 
-Pure function of (ledger, config/scoring.v1.yaml, config/sources.yaml, --as-of).
+Pure function of (ledger, the newest config/scoring.v*.yaml, config/sources.yaml, --as-of).
 No LLM, no network, no randomness, no wall-clock reads. Given the same inputs it
 must reproduce index.json byte for byte.
 
@@ -22,7 +22,21 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-SCORING_PATH = ROOT / "config" / "scoring.v1.yaml"
+CONFIG_DIR = ROOT / "config"
+
+
+def latest_rubric(config_dir: Path = None) -> Path:
+    """The highest-numbered scoring.v*.yaml. Old rubrics stay on disk so any
+    published score can be reproduced against the rubric that produced it."""
+    d = config_dir or CONFIG_DIR
+    versions = sorted(d.glob("scoring.v*.yaml"),
+                      key=lambda p: int(p.stem.split(".v")[1]))
+    if not versions:
+        raise SystemExit("no config/scoring.v*.yaml found")
+    return versions[-1]
+
+
+SCORING_PATH = latest_rubric()
 SOURCES_PATH = ROOT / "config" / "sources.yaml"
 COMPANIES_DIR = ROOT / "data" / "companies"
 INDEX_PATH = ROOT / "index.json"
@@ -77,6 +91,8 @@ def months_between(older: date, newer: date) -> int:
 
 def is_eligible(fact: dict, elig: dict, tier: str) -> bool:
     if elig.get("exclude_superseded", True) and fact.get("superseded_by"):
+        return False
+    if elig.get("exclude_covered", True) and fact.get("covered_by"):
         return False
     if elig.get("require_verified", True) and not fact.get("verification", {}).get("verified"):
         return False
@@ -211,7 +227,8 @@ def score_company(company: str, facts: list, cfg: dict, dom_to_tier: dict, as_of
             annotated.append(f)
         else:
             ineligible.append({"id": f["id"], "tier": tier, "verified": f["verification"]["verified"],
-                               "superseded": bool(f.get("superseded_by"))})
+                               "superseded": bool(f.get("superseded_by")),
+                               "covered": bool(f.get("covered_by"))})
 
     categories = {}
     total = 0.0
