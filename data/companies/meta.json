@@ -72,7 +72,7 @@
       "excerpt": "over two gigawatts of compute capacity to train future open-source large language models",
       "notes": "Conservative low end of the 2GW-to-5GW range; ~2GW targeted online by 2030. Meta-owned campus.",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "meta-2026-07-20-008",
       "verification": {
         "verified": true,
         "checked_on": "2026-07-20",
@@ -223,7 +223,7 @@
         "publisher": "Meta (about.fb.com)",
         "date_published": "2025-08-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260629223842/https://about.fb.com/news/2025/08/metas-kansas-city-data-center/"
       },
       "excerpt": "$1 billion investment in the state of Missouri",
       "notes": "Conservative low figure; some third-party sources describe the campus as >$2.5B. Recorded from Meta's own page which cites ~$1B.",
@@ -249,7 +249,7 @@
         "publisher": "Meta (about.fb.com)",
         "date_published": "2025-08-20",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260629223842/https://about.fb.com/news/2025/08/metas-kansas-city-data-center/"
       },
       "excerpt": "Meta's Kansas City data center is now operational and serving traffic; LEED Gold, 100% electricity matched with clean/renewable energy",
       "notes": "Meta-owned data center in Kansas City, Missouri; first AI-optimized buildings slated to open 2026. Investment cited as ~$1B (some third-party sources say >$2.5B campus). MW capacity not stated on page.",
@@ -483,7 +483,7 @@
         "publisher": "Meta (SEC Form 10-Q, Q3 2025)",
         "date_published": "2025-10-29",
         "date_accessed": "2026-07-20",
-        "archive_url": null
+        "archive_url": "https://web.archive.org/web/20260724112853/https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm"
       },
       "excerpt": "In October 2025, Meta entered into multi-year third-party cloud capacity arrangements for an aggregate amount of approximately $40 billion.",
       "notes": "Aggregate rented (third-party) cloud capacity, not Meta-owned. From Meta's Q3 2025 10-Q. NOTE: WebFetch of the sec.gov page returned HTTP 403; the quoted figure was confirmed via search snippet of the SEC filing, not a direct page fetch - verify against the filing. Reported components include Google Cloud (~$10B) and others (e.g., Nebius, CoreWeave).",
@@ -805,6 +805,162 @@
         "verified": true,
         "checked_on": "2026-07-20",
         "verifier_note": "Fortune: 'Last year, Meta spent $72.2 billion on capex, up roughly $30 billion from the year before.' $72.2B is Meta's 2025 actual capex. Supported."
+      }
+    },
+    {
+      "id": "meta-2026-07-25-001",
+      "company": "meta",
+      "metric": "power_capacity_mw",
+      "value": 1000,
+      "unit": "MW",
+      "status": "under_construction",
+      "site": "sturgeon-county-ab",
+      "as_of_date": "2026-07-08",
+      "source": {
+        "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
+        "publisher": "Meta Newsroom",
+        "date_published": "2026-07-08",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260719013027/https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/"
+      },
+      "excerpt": "We're breaking ground on a new 1GW data center in Sturgeon County, Alberta — our first data center in Canada and 33rd in our global fleet.",
+      "notes": "New site not previously in the ledger: Meta's first Canadian data center, Sturgeon County, Alberta. Source states 1GW; recorded as the conservative 1000 MW. DataCenterDynamics (2026-07-09) reports the project \"could be scaled up to 1.8GW of capacity\" — that larger figure is NOT recorded because it is conditional. Status under_construction on the strength of \"breaking ground\". Meta says its electricity use is matched with clean energy; separately, Alberta's 970MW Project Greenlight gas plant (Pembina/Morgan Stanley/Kineticor-owned, not Meta-owned) supplies generation and is therefore NOT credited to Meta per DECISIONS.md owner-attribution.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Meta Newsroom (live, Jul 8 2026) states verbatim: 'breaking ground on a new 1GW data center in Sturgeon County, Alberta - our first data center in Canada and 33rd in our global fleet.' [independently re-verified in an isolated fetch]"
+      }
+    },
+    {
+      "id": "meta-2026-07-25-002",
+      "company": "meta",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "under_construction",
+      "site": "sturgeon-county-ab",
+      "as_of_date": "2026-07-08",
+      "source": {
+        "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
+        "publisher": "Meta Newsroom",
+        "date_published": "2026-07-08",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260719013027/https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/"
+      },
+      "excerpt": "We're breaking ground on a new 1GW, AI-optimized data center in Alberta, Canada that will help power our AI innovations and core products.",
+      "notes": "Meta-owned and Meta-operated site (Meta's own newsroom describes it as \"our\" data center and its 33rd globally), so it qualifies as owned_facility under DECISIONS.md rather than a cloud_partnership.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Same page's Takeaways carry the excerpt verbatim; Meta calls it 'our Sturgeon County data center' and its 33rd globally, supporting Meta-owned, under construction. [independently re-verified in an isolated fetch]"
+      }
+    },
+    {
+      "id": "meta-2026-07-25-003",
+      "company": "meta",
+      "metric": "capex_announced_usd",
+      "value": 9170000000,
+      "unit": "USD",
+      "status": "announced",
+      "site": "sturgeon-county-ab",
+      "as_of_date": "2026-07-09",
+      "source": {
+        "url": "https://www.datacenterdynamics.com/en/news/meta-plans-917bn-gigawatt-scale-data-center-in-alberta-canada/",
+        "publisher": "DataCenterDynamics",
+        "date_published": "2026-07-09",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260710060124/https://www.datacenterdynamics.com/en/news/meta-plans-917bn-gigawatt-scale-data-center-in-alberta-canada/"
+      },
+      "excerpt": "The social media giant is expecting to invest CA$13 billion (US$9.17bn) in the project, which could be scaled up to 1.8GW of capacity.",
+      "notes": "USD figure taken because Meta's own newsroom states the investment only in Canadian dollars (\"more than CAD $13 billion\"); the US$9.17bn conversion is literally present in the DataCenterDynamics page and is not arithmetic performed by the researcher. Page was 403 to direct fetch; read via the web.archive.org snapshot listed in archive_url, original URL cited.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "DCD 9 Jul 2026 (via archive) prints literally: 'expecting to invest CA$13 billion (US$9.17bn) in the project, which could be scaled up to 1.8GW'; USD figure is on-page, not converted. [independently re-verified in an isolated fetch]"
+      }
+    },
+    {
+      "id": "meta-2026-07-25-004",
+      "company": "meta",
+      "metric": "energy_source_mix",
+      "value": "electricity use matched with 100% clean and renewable energy",
+      "unit": "text",
+      "status": "n/a",
+      "site": "sturgeon-county-ab",
+      "as_of_date": "2026-07-08",
+      "source": {
+        "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
+        "publisher": "Meta Newsroom",
+        "date_published": "2026-07-08",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260719013027/https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/"
+      },
+      "excerpt": "As with all of our data centers, this data center's electricity use will be matched with 100% clean and renewable energy.",
+      "notes": "\"Matched\" is a market-based accounting claim, not a statement that the site is physically served by clean generation. Alberta grid supply for the campus involves the 970MW gas-fired Project Greenlight (Pembina Pipeline / Morgan Stanley Infrastructure Partners / Kineticor), per DataCenterDynamics 2026-07-09.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Meta Newsroom states verbatim: 'As with all of our data centers, this data center's electricity use will be matched with 100% clean and renewable energy.' [independently re-verified in an isolated fetch]"
+      }
+    },
+    {
+      "id": "meta-2026-07-25-005",
+      "company": "meta",
+      "metric": "owned_facility",
+      "value": true,
+      "unit": "boolean",
+      "status": "operational",
+      "site": "temple-tx",
+      "as_of_date": "2026-07-22",
+      "source": {
+        "url": "https://www.datacenterdynamics.com/en/news/meta-starts-operations-at-data-center-in-temple-texas/",
+        "publisher": "DataCenterDynamics",
+        "date_published": "2026-07-23",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260724165610/https://www.datacenterdynamics.com/en/news/meta-starts-operations-at-data-center-in-temple-texas/"
+      },
+      "excerpt": "Meta's data center in Temple, Texas, is now serving traffic. The company revealed yesterday, July 22, that the site had officially commenced operations",
+      "notes": "New site not previously in the ledger. Meta-owned; DCD reports it is the first facility to go live with Meta's AI-optimized data center design and Meta's second Texas facility. No MW figure appears in this source, so no power_capacity_mw fact is proposed (a ~198 MW figure circulates only in off-allowlist outlets). Page was 403 to direct fetch; read via the web.archive.org snapshot listed in archive_url, original URL cited.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "DCD 23 Jul 2026 (archive): 'Meta's data center in Temple, Texas, is now serving traffic. The company revealed yesterday, July 22, that the site had officially commenced operations'. [independently re-verified in an isolated fetch]"
+      }
+    },
+    {
+      "id": "meta-2026-07-25-006",
+      "company": "meta",
+      "metric": "capex_announced_usd",
+      "value": 1200000000,
+      "unit": "USD",
+      "status": "operational",
+      "site": "temple-tx",
+      "as_of_date": "2026-07-23",
+      "source": {
+        "url": "https://www.datacenterdynamics.com/en/news/meta-starts-operations-at-data-center-in-temple-texas/",
+        "publisher": "DataCenterDynamics",
+        "date_published": "2026-07-23",
+        "date_accessed": "2026-07-25",
+        "archive_url": "https://web.archive.org/web/20260724165610/https://www.datacenterdynamics.com/en/news/meta-starts-operations-at-data-center-in-temple-texas/"
+      },
+      "excerpt": "In total, Meta says it has invested some $1.2 billion in the data center, which is its second facility in Texas.",
+      "notes": "Cumulative spend to date on the Temple campus as stated by Meta and reported by DCD, not a forward commitment. Page was 403 to direct fetch; read via the web.archive.org snapshot listed in archive_url, original URL cited.",
+      "added": "2026-07-25",
+      "superseded_by": null,
+      "verification": {
+        "verified": true,
+        "checked_on": "2026-07-25",
+        "verifier_note": "Same DCD page: 'In total, Meta says it has invested some $1.2 billion in the data center, which is its second facility in Texas'; subhead 'the result of $1.2bn in investment'. [independently re-verified in an isolated fetch]"
       }
     }
   ]
