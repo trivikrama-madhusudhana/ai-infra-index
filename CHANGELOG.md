@@ -130,8 +130,45 @@ hardware was counted more than once:
   capacity reads 8,000 MW rather than 10,000. Meta's score does not move: both figures sit in the
   same band.
 
-Still open, and deliberately not decided here, because each needs an owner ruling rather than a
-contributor's judgment:
+**All four of the overlaps below were then ruled on the same day (see `DECISIONS.md` 4-7) and are
+now fixed. Scoring goes to v2.** The rubric gains one eligibility rule: a fact whose value is
+already inside a broader fact carries a new `covered_by` pointer, stays on the record and on the
+page, and does not score. `config/scoring.v1.yaml` stays on disk so any published score can be
+reproduced against the rubric that produced it.
+
+Every corrected figure stayed inside its band, so **no score and no rank moved**. What changed is
+what the site says is true:
+
+| | before | after |
+|---|---|---|
+| Anthropic fleet | 1,500,000 H100e | 1,000,000 |
+| OpenAI announced capital | $900bn | $500bn |
+| xAI fleet | 780,000 chips | 670,000 |
+| xAI operational power | 1,543 MW | 1,298 MW |
+
+- **Anthropic counted one fleet twice.** `new-carlisle-in` (500,000 H100e) is inside
+  `anthropic-total-fleet` (1,000,000), both from the same Epoch report. The site fact, and the
+  unverified SemiAnalysis reading of the same site, are now `covered_by` the total. Ruled that
+  where a total and its parts coexist, the total scores: it is the source's own complete figure,
+  the ledger will rarely hold every part, and preferring it never invents capacity.
+- **OpenAI's Stargate capital was added to itself.** September 2025's "over $400 billion" is
+  cumulative programme investment — the source says it *brings Stargate to* that figure — not new
+  money on top of January's $500 billion. It is now `covered_by` the programme fact.
+- **Multi-year capex guidance keeps summing, deliberately.** Google's FY2025 and FY2026 guidance
+  and its Intersect Power acquisition are three distinct commitments, as are Meta's 2025 actual
+  and 2026 guidance. The component measures capital committed across the window the ledger covers,
+  so dropping a real prior-year commitment would understate whoever front-loaded spending. Stated
+  with its cost: the figure is cumulative, is not comparable to any single year's guidance, and
+  mixes company-wide with AI-specific capex wherever a lab discloses only the former.
+- **`colossus-2` and `colossus-2-southaven-ms` are one facility**, confirmed against DCD,
+  SemiAnalysis and Mississippi local press, and already half-recorded in the ledger's own note that
+  Epoch geolocates the site to Memphis while its turbines stand in Southaven. The earlier readings
+  — 110,000 GB200 and 245 MW of on-site turbines — are progress at that campus, not capacity on
+  top of Epoch's 440,000 chips and 946 MW, and are superseded. `macrohardrr-southaven-ms` stays
+  separate: the sources call MACROHARDRR a third building bought next to Colossus 2, not the same
+  structure.
+
+The audit that found them, as originally filed:
 
 - **Anthropic counts one fleet twice.** `anthropic-total-fleet` (1,000,000 H100e, Epoch) and
   `new-carlisle-in` (500,000 H100e, same Epoch report) overlap — the site is part of the total —

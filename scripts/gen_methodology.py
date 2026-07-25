@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render config/scoring.v1.yaml -> METHODOLOGY.md. Never hand-edit METHODOLOGY.md.
+"""Render the newest config/scoring.v*.yaml -> METHODOLOGY.md. Never hand-edit METHODOLOGY.md.
 
     python scripts/gen_methodology.py           # write METHODOLOGY.md
     python scripts/gen_methodology.py --check    # CI: fail if stale
@@ -13,7 +13,8 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-SCORING_PATH = ROOT / "config" / "scoring.v1.yaml"
+SCORING_PATH = sorted((ROOT / "config").glob("scoring.v*.yaml"),
+                     key=lambda p: int(p.stem.split(".v")[1]))[-1]
 OUT_PATH = ROOT / "METHODOLOGY.md"
 
 
@@ -35,7 +36,7 @@ def render(cfg: dict) -> str:
 
     A(f"# {cfg['title']}: Methodology")
     A("")
-    A("<!-- GENERATED FROM config/scoring.v1.yaml BY scripts/gen_methodology.py. DO NOT EDIT BY HAND. -->")
+    A(f"<!-- GENERATED FROM config/{SCORING_PATH.name} BY scripts/gen_methodology.py. DO NOT EDIT BY HAND. -->")
     A("")
     A(f"**Scoring version:** {cfg['version']}")
     A("")
@@ -63,8 +64,13 @@ def render(cfg: dict) -> str:
     A(f"- **Verified:** `verification.verified` is `true`. Required: `{str(elig['require_verified']).lower()}`.")
     A(f"- **Tier:** the source domain resolves to Tier {' or '.join(elig['require_tiers'])} (see `config/sources.yaml`).")
     A(f"- **Not superseded:** the fact has no `superseded_by` pointer. Excluded when superseded: `{str(elig['exclude_superseded']).lower()}`.")
+    if "exclude_covered" in elig:
+        A(f"- **Not already counted:** the fact has no `covered_by` pointer. Excluded when covered: `{str(elig['exclude_covered']).lower()}`.")
     A("")
     A("> " + " ".join(elig["note"].split()))
+    if elig.get("covered_note"):
+        A("")
+        A("> " + " ".join(elig["covered_note"].split()))
     A("")
 
     A("## Staleness decay")

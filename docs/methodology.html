@@ -27,7 +27,7 @@
 </header>
 <main id="main">
 <div class="prose"><h1>AI Infrastructure Index: Methodology</h1>
-<p><strong>Scoring version:</strong> 1</p>
+<p><strong>Scoring version:</strong> 2</p>
 <p>A deterministic scorecard of the physical AI race: power capacity, compute ownership, vertical integration, expansion pipeline, and energy security. Every input is a verified fact from a Tier A/B public source; nothing is estimated or imputed. Missing data scores zero and displays as unknown.</p>
 <h2>Reproducing the score</h2>
 <p>The score is a pure function of the fact ledger, this rubric, and a scoring date. On a clean clone:</p>
@@ -35,8 +35,9 @@
 <p>reproduces the committed <code>index.json</code> byte for byte. No network, no model, no randomness.</p>
 <h2>Eligibility</h2>
 <p>A fact contributes to the score only if all of the following hold; otherwise it contributes zero and is listed as ineligible in the per-company breakdown.</p>
-<ul><li><strong>Verified:</strong> <code>verification.verified</code> is <code>true</code>. Required: <code>true</code>.</li><li><strong>Tier:</strong> the source domain resolves to Tier A or B (see <code>config/sources.yaml</code>).</li><li><strong>Not superseded:</strong> the fact has no <code>superseded_by</code> pointer. Excluded when superseded: <code>true</code>.</li></ul>
+<ul><li><strong>Verified:</strong> <code>verification.verified</code> is <code>true</code>. Required: <code>true</code>.</li><li><strong>Tier:</strong> the source domain resolves to Tier A or B (see <code>config/sources.yaml</code>).</li><li><strong>Not superseded:</strong> the fact has no <code>superseded_by</code> pointer. Excluded when superseded: <code>true</code>.</li><li><strong>Not already counted:</strong> the fact has no <code>covered_by</code> pointer. Excluded when covered: <code>true</code>.</li></ul>
 <blockquote>A fact that fails any eligibility rule contributes nothing and is listed as ineligible in the per-company breakdown, never silently dropped.</blockquote>
+<blockquote>New in v2. Components aggregate with <code>sum</code>, which counts each qualifying fact once. That is right for separate assets and wrong when one fact&#x27;s value is already inside another&#x27;s: a site fleet inside a company-wide fleet total, a tranche inside a programme&#x27;s headline commitment. Such a fact carries a <code>covered_by</code> pointer to the broader fact. It stays on the record and stays on the page, and only the broader fact scores. Progress at a single site is a different relationship and keeps using <code>superseded_by</code>.</blockquote>
 <h2>Staleness decay</h2>
 <blockquote>An <code>announced</code> fact at least 24 months older than the scoring date, with no later eligible fact at the same (company, site) in a follow_up_status, has its numeric value multiplied by 0.5 before sum/max aggregation. Decay never removes a fact from count or presence (bool_any) aggregations.</blockquote>
 <ul><li>Applies to status: <code>announced</code></li><li>Age threshold: <strong>24 months</strong>, measured from <code>as_of_date</code> to the scoring date</li><li>Multiplier when stale and un-followed-up: <strong>0.5×</strong></li><li>Follow-up statuses that cancel decay: <code>contracted</code>, <code>under_construction</code>, <code>operational</code></li></ul>

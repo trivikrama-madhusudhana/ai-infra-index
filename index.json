@@ -19,16 +19,15 @@
               "weighted_points": 15.0
             },
             "gpu_fleet": {
-              "aggregated_value": 780000.0,
+              "aggregated_value": 670000.0,
               "aggregation": "sum",
               "band_points": 90.0,
               "decayed_fact_ids": [],
               "fact_ids": [
                 "xai-2026-07-20-004",
-                "xai-2026-07-20-006",
                 "xai-2026-07-25-002"
               ],
-              "input_expression": "sum(gpu_count where status in [announced,contracted,under_construction,operational,n/a]) = 780000 chips",
+              "input_expression": "sum(gpu_count where status in [announced,contracted,under_construction,operational,n/a]) = 670000 chips",
               "label": "Accelerator fleet (chips)",
               "missing": false,
               "weight": 0.55,
@@ -159,16 +158,15 @@
         "power_capacity": {
           "components": {
             "operational_mw": {
-              "aggregated_value": 1543.352,
+              "aggregated_value": 1298.352,
               "aggregation": "sum",
               "band_points": 80.0,
               "decayed_fact_ids": [],
               "fact_ids": [
                 "xai-2026-07-20-005",
-                "xai-2026-07-20-007",
                 "xai-2026-07-25-001"
               ],
-              "input_expression": "sum(power_capacity_mw where status in [operational]) = 1543.35 MW",
+              "input_expression": "sum(power_capacity_mw where status in [operational]) = 1298.35 MW",
               "label": "Operational capacity (MW)",
               "missing": false,
               "weight": 0.65,
@@ -246,63 +244,87 @@
         }
       },
       "company": "xai",
-      "eligible_fact_count": 21,
+      "eligible_fact_count": 19,
       "ineligible_facts": [
         {
+          "covered": false,
           "id": "xai-2026-07-20-001",
           "superseded": true,
           "tier": "B",
           "verified": true
         },
         {
+          "covered": false,
           "id": "xai-2026-07-20-002",
           "superseded": true,
           "tier": "B",
           "verified": true
         },
         {
+          "covered": false,
+          "id": "xai-2026-07-20-006",
+          "superseded": true,
+          "tier": "B",
+          "verified": true
+        },
+        {
+          "covered": false,
+          "id": "xai-2026-07-20-007",
+          "superseded": true,
+          "tier": "B",
+          "verified": true
+        },
+        {
+          "covered": false,
           "id": "xai-2026-07-20-009",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "xai-2026-07-20-010",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "xai-2026-07-20-018",
           "superseded": true,
           "tier": "B",
           "verified": true
         },
         {
+          "covered": false,
           "id": "xai-2026-07-20-020",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "xai-2026-07-20-023",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "xai-2026-07-20-025",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "xai-2026-07-20-026",
           "superseded": true,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "xai-2026-07-20-027",
           "superseded": true,
           "tier": "B",
@@ -569,120 +591,140 @@
       "eligible_fact_count": 23,
       "ineligible_facts": [
         {
+          "covered": false,
           "id": "google-2026-07-20-001",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-002",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-005",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-006",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-007",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-008",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-013",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-014",
           "superseded": true,
           "tier": "A",
           "verified": true
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-015",
           "superseded": true,
           "tier": "A",
           "verified": true
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-017",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-019",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-020",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-021",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-022",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-023",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-026",
           "superseded": true,
           "tier": "A",
           "verified": true
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-028",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-029",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-033",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "google-2026-07-20-035",
           "superseded": false,
           "tier": "B",
@@ -945,72 +987,84 @@
       "eligible_fact_count": 25,
       "ineligible_facts": [
         {
+          "covered": false,
           "id": "meta-2026-07-20-001",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "meta-2026-07-20-003",
           "superseded": true,
           "tier": "A",
           "verified": true
         },
         {
+          "covered": false,
           "id": "meta-2026-07-20-009",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "meta-2026-07-20-010",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "meta-2026-07-20-014",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "meta-2026-07-20-018",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "meta-2026-07-20-020",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "meta-2026-07-20-021",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "meta-2026-07-20-025",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "meta-2026-07-20-026",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "meta-2026-07-20-027",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "meta-2026-07-20-029",
           "superseded": false,
           "tier": "A",
@@ -1116,15 +1170,14 @@
         "expansion_pipeline": {
           "components": {
             "capex_announced": {
-              "aggregated_value": 900000000000.0,
+              "aggregated_value": 500000000000.0,
               "aggregation": "sum",
               "band_points": 100.0,
               "decayed_fact_ids": [],
               "fact_ids": [
-                "openai-2026-07-20-001",
-                "openai-2026-07-20-014"
+                "openai-2026-07-20-001"
               ],
-              "input_expression": "sum(capex_announced_usd where status in [announced,contracted,under_construction,operational,n/a]) = 900000000000 USD",
+              "input_expression": "sum(capex_announced_usd where status in [announced,contracted,under_construction,operational,n/a]) = 500000000000 USD",
               "label": "Announced capital (USD)",
               "missing": false,
               "weight": 0.3,
@@ -1244,69 +1297,87 @@
         }
       },
       "company": "openai",
-      "eligible_fact_count": 23,
+      "eligible_fact_count": 22,
       "ineligible_facts": [
         {
+          "covered": false,
           "id": "openai-2026-07-20-006",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "openai-2026-07-20-007",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "openai-2026-07-20-009",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "openai-2026-07-20-010",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "openai-2026-07-20-011",
           "superseded": true,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": true,
+          "id": "openai-2026-07-20-014",
+          "superseded": false,
+          "tier": "A",
+          "verified": true
+        },
+        {
+          "covered": false,
           "id": "openai-2026-07-20-015",
           "superseded": true,
           "tier": "A",
           "verified": true
         },
         {
+          "covered": false,
           "id": "openai-2026-07-20-016",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "openai-2026-07-20-018",
           "superseded": false,
           "tier": "C",
           "verified": true
         },
         {
+          "covered": false,
           "id": "openai-2026-07-20-019",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "openai-2026-07-20-021",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "openai-2026-07-20-029",
           "superseded": false,
           "tier": "C",
@@ -1332,15 +1403,14 @@
               "weighted_points": 0.0
             },
             "gpu_fleet": {
-              "aggregated_value": 1500000.0,
+              "aggregated_value": 1000000.0,
               "aggregation": "sum",
               "band_points": 100.0,
               "decayed_fact_ids": [],
               "fact_ids": [
-                "anthropic-2026-07-20-009",
-                "anthropic-2026-07-20-010"
+                "anthropic-2026-07-20-009"
               ],
-              "input_expression": "sum(gpu_count where status in [announced,contracted,under_construction,operational,n/a]) = 1500000 chips",
+              "input_expression": "sum(gpu_count where status in [announced,contracted,under_construction,operational,n/a]) = 1000000 chips",
               "label": "Accelerator fleet (chips)",
               "missing": false,
               "weight": 0.55,
@@ -1532,51 +1602,66 @@
         }
       },
       "company": "anthropic",
-      "eligible_fact_count": 16,
+      "eligible_fact_count": 15,
       "ineligible_facts": [
         {
+          "covered": false,
           "id": "anthropic-2026-07-20-001",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": true,
           "id": "anthropic-2026-07-20-002",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "anthropic-2026-07-20-007",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "anthropic-2026-07-20-008",
           "superseded": false,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": true,
+          "id": "anthropic-2026-07-20-010",
+          "superseded": false,
+          "tier": "B",
+          "verified": true
+        },
+        {
+          "covered": false,
           "id": "anthropic-2026-07-20-011",
           "superseded": true,
           "tier": "A",
           "verified": true
         },
         {
+          "covered": false,
           "id": "anthropic-2026-07-20-017",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "anthropic-2026-07-25-001",
           "superseded": true,
           "tier": "A",
           "verified": false
         },
         {
+          "covered": false,
           "id": "anthropic-2026-07-25-006",
           "superseded": false,
           "tier": "A",
@@ -1806,30 +1891,35 @@
       "eligible_fact_count": 8,
       "ineligible_facts": [
         {
+          "covered": false,
           "id": "zhipu-2026-07-20-005",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "zhipu-2026-07-25-001",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "zhipu-2026-07-25-003",
           "superseded": true,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "zhipu-2026-07-25-005",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "zhipu-2026-07-25-008",
           "superseded": false,
           "tier": "B",
@@ -2055,12 +2145,14 @@
       "eligible_fact_count": 4,
       "ineligible_facts": [
         {
+          "covered": false,
           "id": "minimax-2026-07-20-001",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "minimax-2026-07-20-002",
           "superseded": false,
           "tier": "B",
@@ -2288,6 +2380,7 @@
       "eligible_fact_count": 5,
       "ineligible_facts": [
         {
+          "covered": false,
           "id": "moonshot-2026-07-20-001",
           "superseded": true,
           "tier": "C",
@@ -2300,6 +2393,6 @@
   "meta": {
     "companies_scored": 8,
     "generated_as_of": "2026-07-25",
-    "scoring_version": 1
+    "scoring_version": 2
   }
 }

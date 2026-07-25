@@ -245,18 +245,21 @@
       "eligible_fact_count": 11,
       "ineligible_facts": [
         {
+          "covered": false,
           "id": "acme-2023-06-01-002",
           "superseded": true,
           "tier": "A",
           "verified": true
         },
         {
+          "covered": false,
           "id": "acme-2026-06-01-013",
           "superseded": false,
           "tier": "B",
           "verified": false
         },
         {
+          "covered": false,
           "id": "acme-2026-06-01-014",
           "superseded": false,
           "tier": "D",
@@ -489,6 +492,6 @@
   "meta": {
     "companies_scored": 2,
     "generated_as_of": "2026-07-20",
-    "scoring_version": 1
+    "scoring_version": 2
   }
 }

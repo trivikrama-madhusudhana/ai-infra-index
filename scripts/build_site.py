@@ -28,7 +28,9 @@ COMPANIES_DIR = ROOT / "data" / "companies"
 REPO_URL = "https://github.com/trivikrama-madhusudhana/ai-infra-index"
 SITE_URL = "https://trivikrama-madhusudhana.github.io/ai-infra-index"
 
-SCORING = yaml.safe_load((ROOT / "config" / "scoring.v1.yaml").read_text())
+SCORING_PATH = sorted((ROOT / "config").glob("scoring.v*.yaml"),
+                     key=lambda p: int(p.stem.split(".v")[1]))[-1]
+SCORING = yaml.safe_load(SCORING_PATH.read_text())
 SOURCES = yaml.safe_load((ROOT / "config" / "sources.yaml").read_text())
 SCOREABLE_TIERS = set(SOURCES.get("scoreable_tiers", ["A", "B"]))
 
@@ -102,6 +104,7 @@ def scores(fact: dict) -> bool:
     from claiming something the score breakdown below them contradicts."""
     return (
         not fact.get("superseded_by")
+        and not fact.get("covered_by")
         and fact["verification"]["verified"]
         and tier_for(fact["source"]["url"]) in SCOREABLE_TIERS
     )
@@ -110,6 +113,8 @@ def scores(fact: dict) -> bool:
 def why_not_scored(fact: dict) -> str:
     if fact.get("superseded_by"):
         return "superseded by a newer fact"
+    if fact.get("covered_by"):
+        return "its value is already inside a broader fact that scores"
     if not fact["verification"]["verified"]:
         return "not yet confirmed against its source"
     t = tier_for(fact["source"]["url"])
@@ -209,6 +214,12 @@ def scored_badge(f: dict, labels: dict | None = None) -> str:
         label = (labels or {}).get(sid, sid[-3:])
         return (f'<span class="badge off" title="A later fact replaced this one; it no longer '
                 f'scores">superseded by <a href="#f-{esc(sid)}">{esc(label)}</a></span>')
+    if f.get("covered_by"):
+        cid = f["covered_by"]
+        label = (labels or {}).get(cid, cid[-3:])
+        return (f'<span class="badge off" title="This value is already inside a broader fact, so '
+                f'counting it again would double count">counted in '
+                f'<a href="#f-{esc(cid)}">{esc(label)}</a></span>')
     reason = why_not_scored(f)
     if not reason:
         return ""

@@ -1,8 +1,8 @@
 # AI Infrastructure Index: Methodology
 
-<!-- GENERATED FROM config/scoring.v1.yaml BY scripts/gen_methodology.py. DO NOT EDIT BY HAND. -->
+<!-- GENERATED FROM config/scoring.v2.yaml BY scripts/gen_methodology.py. DO NOT EDIT BY HAND. -->
 
-**Scoring version:** 1
+**Scoring version:** 2
 
 A deterministic scorecard of the physical AI race: power capacity, compute ownership, vertical integration, expansion pipeline, and energy security. Every input is a verified fact from a Tier A/B public source; nothing is estimated or imputed. Missing data scores zero and displays as unknown.
 
@@ -25,8 +25,11 @@ contributes zero and is listed as ineligible in the per-company breakdown.
 - **Verified:** `verification.verified` is `true`. Required: `true`.
 - **Tier:** the source domain resolves to Tier A or B (see `config/sources.yaml`).
 - **Not superseded:** the fact has no `superseded_by` pointer. Excluded when superseded: `true`.
+- **Not already counted:** the fact has no `covered_by` pointer. Excluded when covered: `true`.
 
 > A fact that fails any eligibility rule contributes nothing and is listed as ineligible in the per-company breakdown, never silently dropped.
+
+> New in v2. Components aggregate with `sum`, which counts each qualifying fact once. That is right for separate assets and wrong when one fact's value is already inside another's: a site fleet inside a company-wide fleet total, a tranche inside a programme's headline commitment. Such a fact carries a `covered_by` pointer to the broader fact. It stays on the record and stays on the page, and only the broader fact scores. Progress at a single site is a different relationship and keeps using `superseded_by`.
 
 ## Staleness decay
 
