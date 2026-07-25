@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Owner decisions – AI Infrastructure Index</title>
+<meta name="description" content="A deterministic, source-linked scorecard of the physical AI buildout: megawatts, datacenters, chips and capital the frontier labs actually own.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Owner decisions – AI Infrastructure Index">
+<meta property="og:description" content="A deterministic, source-linked scorecard of the physical AI buildout: megawatts, datacenters, chips and capital the frontier labs actually own.">
+<meta property="og:image" content="https://trivikrama-madhusudhana.github.io/ai-infra-index/preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232f6fbf'/%3E%3Cg fill='white'%3E%3Crect x='7' y='17' width='4' height='9' rx='1'/%3E%3Crect x='14' y='11' width='4' height='15' rx='1'/%3E%3Crect x='21' y='6' width='4' height='20' rx='1'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <a class="wordmark" href="index.html">AI Infrastructure Index</a>
+  <nav>
+    <a href="index.html">Ranking</a>
+    <a href="methodology.html">Methodology</a>
+    <a href="decisions.html" class="current" aria-current="page">Decisions</a>
+    <a href="changelog.html">Changelog</a>
+    <a href="https://github.com/trivikrama-madhusudhana/ai-infra-index">Source</a>
+  </nav>
+</header>
+<main id="main">
+<div class="prose"><h1>Owner decisions</h1>
+<p>Recorded 2026-07-20, extended 2026-07-25. These bind all research and scoring.</p>
+<h2>1. Attribution of partner-owned capacity: attribute to the owner</h2>
+<p>Datacenter capacity is counted under whoever <strong>physically owns</strong> the site, not the lab that rents it. Concretely, for the 8 tracked labs:</p>
+<ul><li><code>power_capacity_mw</code> and <code>owned_facility</code> facts are recorded <strong>only for sites the lab itself owns/operates.</strong> Capacity a lab merely rents from Microsoft, AWS, Oracle, CoreWeave, or Google Cloud is <strong>not</strong> the lab&#x27;s physical capacity and is <strong>not</strong> logged as <code>power_capacity_mw</code>/<code>owned_facility</code>.</li><li>Such cloud/partner arrangements are still recorded, as a <code>cloud_partnership</code> fact, for transparency and display, with the owner and the nature of the deal in <code>excerpt</code>/<code>notes</code>. <code>cloud_partnership</code> does not feed the physical-capacity score (by design: renting is not owning).</li><li>Consequence, stated plainly: labs that run entirely on rented cloud capacity score near zero on Power capacity and Vertical integration. That is the intended meaning of an *infrastructure* index.</li></ul>
+<h2>2. Chinese-lab Tier B publishers: expanded</h2>
+<p>SCMP, TechNode, Pandaily, Caixin Global, and Yicai Global are promoted to Tier B (scoreable) for the Chinese labs. Every fact sourced from translated/secondary coverage must flag the translation uncertainty in <code>notes</code>.</p>
+<h2>3. Working title: &quot;AI Infrastructure Index&quot; (unchanged).</h2>
+<p>---</p>
+<p>Recorded 2026-07-25, after an audit found the engine summing the same asset more than once in six places. The index&#x27;s promise is that every number traces to a source; a number that counts one thing twice breaks that promise even when every underlying fact is true.</p>
+<h2>4. Count each asset and each committed dollar exactly once</h2>
+<p>No metric may include the same physical asset or the same commitment twice. Three relationships cause it, and each has one mechanism:</p>
+<ul><li><strong>Progress at a site</strong> — the same asset, later. The old fact gets <code>superseded_by</code>. This was already the rule; it is now enforced by review.</li><li><strong>One asset under two site slugs</strong> — the earlier or narrower reading gets <code>superseded_by</code> pointing at the fact that describes the site most completely. The equivalence is recorded in the superseding fact&#x27;s <code>notes</code> when it is written, or here in this file when the correction comes later; facts are never edited after they merge, and a <code>site</code> slug is never rewritten.</li><li><strong>A figure contained inside a broader figure</strong> — a site&#x27;s fleet inside a company-wide fleet, a tranche inside a programme total. The narrower fact gets <strong><code>covered_by</code></strong> (new in scoring v2), stays on the record, stays on the page, and does not score.</li></ul>
+<p>Aggregating is the engine&#x27;s job, so the fix belongs in the ledger and the rubric, never in what a page chooses to display. A summary tile may not print a different number from the breakdown below it.</p>
+<h2>5. When a total and its parts are both on record, the total scores</h2>
+<p>If a whole-company or whole-programme figure and its constituent parts cover the same metric and the same period, the broader figure scores and the parts carry <code>covered_by</code>. The total is the source&#x27;s own complete statement; the parts are a breakdown of it, and the ledger will rarely hold every part. Preferring the total also fails conservatively: it never invents capacity the parts do not evidence.</p>
+<p>Applied: Anthropic&#x27;s New Carlisle fleet (500,000 H100e) is inside its 1,000,000 H100e company total, both from the same Epoch report. OpenAI&#x27;s September 2025 &quot;over $400 billion&quot; is cumulative Stargate investment, not new money on top of the January 2025 $500 billion programme.</p>
+<h2>6. Capital is additive across distinct periods and projects, never within one</h2>
+<p>Two capex facts sum only if they cover different periods <strong>and</strong> different programmes. Two statements of the same fiscal year, or two statements of the same programme&#x27;s total, describe one commitment: the later one supersedes, or the narrower one is <code>covered_by</code> the broader.</p>
+<p>Consecutive years therefore do sum. Google&#x27;s FY2025 ($91bn) and FY2026 ($195bn) guidance and its Intersect Power acquisition ($4.75bn) stand as three separate commitments, as do Meta&#x27;s 2025 actual ($72.2bn) and 2026 guidance ($125bn). The component measures capital committed to the buildout across the window the ledger covers, not a single year&#x27;s run rate, and dropping a real prior-year commitment would understate labs that front-loaded their spending. This is a deliberate choice with a cost: the figure is cumulative and is not comparable to any single year&#x27;s guidance, and it mixes company-wide capex with AI-specific capex wherever a lab only discloses the former.</p>
+<h2>7. Colossus 2 and Southaven are one xAI facility; MACROHARDRR is not</h2>
+<p><code>colossus-2</code> and <code>colossus-2-southaven-ms</code> name the same campus in Southaven, DeSoto County, Mississippi. Epoch AI geolocates it to Memphis, TN and SemiAnalysis to Southaven, MS, and the ledger&#x27;s own notes on <code>xai-2026-07-20-027</code> already record that split. Its earlier partial readings — 110,000 GB200 and 245 MW of on-site turbines — are progress at that site, not capacity on top of Epoch&#x27;s 440,000 chips and 946 MW, and are now superseded. <code>colossus-2</code> is the canonical slug because the current facts carry it.</p>
+<p><code>macrohardrr-southaven-ms</code> stays a separate site: the sources describe MACROHARDRR as a third building xAI bought adjacent to Colossus 2, not the same structure. It is the same campus, so its own capacity figures must be checked against Colossus 2 before they are ever summed with them.</p></div>
+</main>
+<footer>
+  <p>Every number links to a public source. Unknown means unknown. We never estimate.</p>
+  <p><strong>This is an open work in progress and we want your input.</strong> Challenge a number, send a
+  better source, or propose a smarter way to score. <a href="https://github.com/trivikrama-madhusudhana/ai-infra-index/issues">Open an issue or a pull request</a>.</p>
+  <p class="muted">Scores come from a deterministic engine anyone can rerun:
+  <code>python scripts/score.py --as-of 2026-07-25</code></p>
+</footer>
+</body>
+</html>

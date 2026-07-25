@@ -45,6 +45,7 @@ def test_site_builds(site):
     names = {p.relative_to(site).as_posix() for p in html_files(site)}
     assert "index.html" in names
     assert "methodology.html" in names
+    assert "decisions.html" in names
     assert "changelog.html" in names
     assert sum(1 for n in names if n.startswith("company/")) >= 8
 

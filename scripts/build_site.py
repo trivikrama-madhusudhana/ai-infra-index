@@ -274,6 +274,7 @@ PAGE = """<!doctype html>
   <nav>
     <a href="{home}"{cur_home}>Ranking</a>
     <a href="{methodology}"{cur_meth}>Methodology</a>
+    <a href="{decisions}"{cur_dec}>Decisions</a>
     <a href="{changelog}"{cur_chg}>Changelog</a>
     <a href="{repo}">Source</a>
   </nav>
@@ -302,10 +303,12 @@ def page(title, body, depth=0, asof="", desc=DEFAULT_DESC, current=""):
     return PAGE.format(
         title=esc(title), desc=esc(desc), body=body, css=up + "style.css", home=up + "index.html",
         methodology=up + "methodology.html", changelog=up + "changelog.html",
+        decisions=up + "decisions.html",
         repo=REPO_URL, asof=esc(asof), favicon=FAVICON, site_url=SITE_URL,
         cur_home=mark if current == "home" else "",
         cur_meth=mark if current == "methodology" else "",
         cur_chg=mark if current == "changelog" else "",
+        cur_dec=mark if current == "decisions" else "",
     )
 
 
@@ -492,7 +495,9 @@ score:</p>
 </table></div>
 <p class="muted">Scoring version {index['meta']['scoring_version']}. The
 <a href="methodology.html">methodology</a> has the full rubric and the command to reproduce every
-number.</p>
+number, and the <a href="decisions.html">judgment calls</a> that shape it — who gets credited for
+rented capacity, how an asset recorded twice is counted once — are written down rather than left
+implicit.</p>
 
 <h2>Help make it better</h2>
 <p>This index is early and it gets sharper the more people push on it. We are actively looking for
@@ -777,9 +782,10 @@ def main():
     for rank, c in enumerate(index["companies"], 1):
         build_company(c, ledger.get(c["company"], []), asof, rank, total)
     build_doc("METHODOLOGY.md", "methodology.html", "Methodology – AI Infrastructure Index", asof, "methodology")
+    build_doc("DECISIONS.md", "decisions.html", "Owner decisions – AI Infrastructure Index", asof, "decisions")
     build_doc("CHANGELOG.md", "changelog.html", "Changelog – AI Infrastructure Index", asof, "changelog")
     (SITE / ".nojekyll").write_text("")
-    print(f"built docs/ : home + {total} company pages + methodology + changelog")
+    print(f"built docs/ : home + {total} company pages + methodology + decisions + changelog")
 
 
 CSS = """
