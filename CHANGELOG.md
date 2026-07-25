@@ -18,7 +18,7 @@ Scores (scoring v1, as-of 2026-07-25):
 
 | Lab | 2026-07-20 | 2026-07-25 | Change |
 |---|---|---|---|
-| xAI | 60.06 | 67.01 | +6.95 |
+| xAI | 60.06 | 65.91 | +5.85 |
 | Google | 47.25 | 56.00 | +8.75 |
 | Meta | 53.55 | 54.30 | +0.75 |
 | OpenAI | 22.73 | 29.48 | +6.75 |
@@ -29,9 +29,11 @@ Scores (scoring v1, as-of 2026-07-25):
 
 What moved, and why:
 
-- **xAI +6.95.** Colossus 2 flipped from under construction to operational on Epoch AI's site
-  entry, taking operational capacity from 597 to 1,543 MW and the accelerator fleet from 640,000
-  to 1,080,000 chips. Both figures are Epoch's own estimates, built from satellite and drone
+- **xAI +5.85.** Colossus 2 flipped from under construction to operational on Epoch AI's site
+  entry, taking operational capacity from 597 to 1,543 MW and the accelerator fleet from 340,000
+  to 780,000 chips. All of the movement is power capacity; the fleet stays in the same band. (This
+  entry originally read +6.95 on a fleet of 1,080,000, both inflated by the double count corrected
+  below.) Both figures are Epoch's own estimates, built from satellite and drone
   imagery, a cooling-power model and the SpaceX S-1; the final 946 MW milestone is modelled
   rather than observed, and that is worth remembering before treating it as measured. Southaven's
   41 gas turbines also moved from a scheduled hearing to a permit granted by Mississippi DEQ.
@@ -109,6 +111,43 @@ Flagged for a human, deliberately not acted on:
   all confirmed, and none of them affect any score — every one is either a `cloud_partnership` or
   carries a prose value that aggregates to zero. The 16 score-bearing confirmations from the other
   batches were independently re-verified in isolated fetches and all 16 held.
+
+Ledger correction: cumulative snapshots were being summed as if they were separate assets.
+
+The engine sums `gpu_count` and `power_capacity_mw` across facts, which is right for separate
+sites and wrong for the same asset measured twice. Three facts had been left without the
+`superseded_by` pointer this project's own rule requires for progress at a site, so the same
+hardware was counted more than once:
+
+- `xai-2026-07-20-001` (Colossus 1 phase 1, 100,000 GPUs) and `xai-2026-07-20-002` (phase 2,
+  200,000) are earlier states of the cluster that `xai-2026-07-20-004` records at 230,000. Each
+  phase count includes the one before it — the ledger's own notes spell out the chip mix — so the
+  sum credited xAI with 530,000 GPUs at a site holding 230,000. They now supersede in a chain.
+  xAI's fleet reads 780,000 rather than 1,080,000 and its score moves 67.01 to **65.91**. The
+  ranking is unchanged.
+- `meta-2026-07-20-003` (Richland Parish, 2,000 MW, the conservative low end of a 2-to-5 GW range)
+  is the same campus `meta-2026-07-20-008` records at the full 5,000 MW. Under-construction
+  capacity reads 8,000 MW rather than 10,000. Meta's score does not move: both figures sit in the
+  same band.
+
+Still open, and deliberately not decided here, because each needs an owner ruling rather than a
+contributor's judgment:
+
+- **Anthropic counts one fleet twice.** `anthropic-total-fleet` (1,000,000 H100e, Epoch) and
+  `new-carlisle-in` (500,000 H100e, same Epoch report) overlap — the site is part of the total —
+  so the fleet aggregates to 1,500,000. Both facts are in the same band, so no score moves, but
+  the displayed number is wrong. Supersession is the wrong tool: neither fact replaced the other,
+  they are different scopes. The rule needed is whether a whole-company total and its site-level
+  parts may coexist, and which one scores.
+- **OpenAI's Stargate capital may double count.** `openai-2026-07-20-001` ($500bn program, Jan
+  2025) and `openai-2026-07-20-014` ($400bn, Sep 2025) sum to $900bn, but the September figure is
+  cumulative program investment, not new money on top. Same band either way.
+- **Multi-year capex guidance is summed.** Google's FY2025 ($91bn) and FY2026 ($195bn) guidance,
+  and Meta's 2025 actual ($72.2bn) plus 2026 guidance ($125bn), are added together. Defensible as
+  "capital committed across years", but it should be a stated decision rather than a side effect.
+- **`colossus-2` and `colossus-2-southaven-ms` may be one site under two slugs**, which would make
+  the 110,000 GB200 figure an earlier reading of the 440,000 Epoch records. Resolving it needs a
+  source check, not a judgment call.
 
 Site fixes shipped alongside this cycle:
 

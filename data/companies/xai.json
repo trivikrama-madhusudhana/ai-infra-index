@@ -20,7 +20,7 @@
       "excerpt": "This weekend, the @xAI team brought our Colossus 100k H100 training cluster online.... Moreover, it will double in size to 200k (50k H200s) in a few months",
       "notes": "Epoch AI tracker: Colossus Memphis Phase 1 = 100,000 NVIDIA H100 SXM5, first operational 2024-09-02.",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "xai-2026-07-20-002",
       "verification": {
         "verified": true,
         "checked_on": "2026-07-20",
@@ -46,7 +46,7 @@
       "excerpt": "the @xAI team brought our Colossus 100k H100 training cluster online.... Moreover, it will double in size to 200k (50k H200s) in a few months.",
       "notes": "Epoch AI tracker: Colossus Memphis Phase 2 = 200,000 GPUs (150k H100 + 50k H200), first operational 2025-02-18 (some evidence suggests operational by Dec 4, 2024).",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "xai-2026-07-20-004",
       "verification": {
         "verified": true,
         "checked_on": "2026-07-20",

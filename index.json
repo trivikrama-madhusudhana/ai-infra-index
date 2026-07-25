@@ -19,22 +19,20 @@
               "weighted_points": 15.0
             },
             "gpu_fleet": {
-              "aggregated_value": 1080000.0,
+              "aggregated_value": 780000.0,
               "aggregation": "sum",
-              "band_points": 100.0,
+              "band_points": 90.0,
               "decayed_fact_ids": [],
               "fact_ids": [
-                "xai-2026-07-20-001",
-                "xai-2026-07-20-002",
                 "xai-2026-07-20-004",
                 "xai-2026-07-20-006",
                 "xai-2026-07-25-002"
               ],
-              "input_expression": "sum(gpu_count where status in [announced,contracted,under_construction,operational,n/a]) = 1080000 chips",
+              "input_expression": "sum(gpu_count where status in [announced,contracted,under_construction,operational,n/a]) = 780000 chips",
               "label": "Accelerator fleet (chips)",
               "missing": false,
               "weight": 0.55,
-              "weighted_points": 55.0
+              "weighted_points": 49.5
             },
             "owned_sites": {
               "aggregated_value": 2.0,
@@ -53,9 +51,9 @@
             }
           },
           "label": "Compute ownership",
-          "points": 78.0,
+          "points": 72.5,
           "weight": 0.2,
-          "weighted_contribution": 15.6
+          "weighted_contribution": 14.5
         },
         "energy_security": {
           "components": {
@@ -248,8 +246,20 @@
         }
       },
       "company": "xai",
-      "eligible_fact_count": 23,
+      "eligible_fact_count": 21,
       "ineligible_facts": [
+        {
+          "id": "xai-2026-07-20-001",
+          "superseded": true,
+          "tier": "B",
+          "verified": true
+        },
+        {
+          "id": "xai-2026-07-20-002",
+          "superseded": true,
+          "tier": "B",
+          "verified": true
+        },
         {
           "id": "xai-2026-07-20-009",
           "superseded": false,
@@ -299,7 +309,7 @@
           "verified": false
         }
       ],
-      "score": 67.01
+      "score": 65.91
     },
     {
       "categories": {
@@ -853,18 +863,17 @@
               "weighted_points": 0.0
             },
             "under_construction_mw": {
-              "aggregated_value": 10000.0,
+              "aggregated_value": 8000.0,
               "aggregation": "sum",
               "band_points": 100.0,
               "decayed_fact_ids": [],
               "fact_ids": [
-                "meta-2026-07-20-003",
                 "meta-2026-07-20-007",
                 "meta-2026-07-20-008",
                 "meta-2026-07-20-017",
                 "meta-2026-07-25-001"
               ],
-              "input_expression": "sum(power_capacity_mw where status in [under_construction]) = 10000 MW",
+              "input_expression": "sum(power_capacity_mw where status in [under_construction]) = 8000 MW",
               "label": "Under-construction capacity (MW)",
               "missing": false,
               "weight": 0.35,
@@ -933,13 +942,19 @@
         }
       },
       "company": "meta",
-      "eligible_fact_count": 26,
+      "eligible_fact_count": 25,
       "ineligible_facts": [
         {
           "id": "meta-2026-07-20-001",
           "superseded": false,
           "tier": "A",
           "verified": false
+        },
+        {
+          "id": "meta-2026-07-20-003",
+          "superseded": true,
+          "tier": "A",
+          "verified": true
         },
         {
           "id": "meta-2026-07-20-009",

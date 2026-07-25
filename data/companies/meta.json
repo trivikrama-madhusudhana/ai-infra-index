@@ -72,7 +72,7 @@
       "excerpt": "over two gigawatts of compute capacity to train future open-source large language models",
       "notes": "Conservative low end of the 2GW-to-5GW range; ~2GW targeted online by 2030. Meta-owned campus.",
       "added": "2026-07-20",
-      "superseded_by": null,
+      "superseded_by": "meta-2026-07-20-008",
       "verification": {
         "verified": true,
         "checked_on": "2026-07-20",

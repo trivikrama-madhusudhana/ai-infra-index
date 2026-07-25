@@ -79,7 +79,8 @@ def test_evidence_pills_are_same_page_anchors(site):
 
 def test_tiles_agree_with_the_score(site):
     """A lab whose silicon component scores zero must not be shown as designing
-    its own chips. The tiles and the breakdown read the same eligibility rule."""
+    its own chips, and the fleet tile must print the number the breakdown scored.
+    The tiles and the breakdown read the same eligibility and aggregation rules."""
     import json
 
     index = json.loads((build_site.ROOT / "index.json").read_text())
@@ -87,8 +88,36 @@ def test_tiles_agree_with_the_score(site):
     for c in index["companies"]:
         facts = ledger.get(c["company"], [])
         tiles = build_site.stat_tiles(c["company"], facts)
+        comps = c["categories"]["compute_ownership"]["components"]
+
         silicon_tile_yes = ">yes<" in tiles.split("Designs its own chips")[0][-160:]
-        scored = c["categories"]["compute_ownership"]["components"]["custom_silicon_programs"]
-        assert silicon_tile_yes == (scored["band_points"] > 0), (
+        assert silicon_tile_yes == (comps["custom_silicon_programs"]["band_points"] > 0), (
             f'{c["company"]}: "designs its own chips" tile disagrees with the score'
         )
+
+        scored_fleet = comps["gpu_fleet"]["aggregated_value"]
+        tile_fleet = tiles.split("Accelerators on record")[0]
+        if scored_fleet:
+            assert build_site.fmt_int(scored_fleet) in tile_fleet, (
+                f'{c["company"]}: fleet tile does not show the scored {scored_fleet:,.0f}'
+            )
+        else:
+            assert "not disclosed" in tile_fleet[-260:], (
+                f'{c["company"]}: fleet tile claims a number the score does not have'
+            )
+
+
+def test_superseded_facts_stay_visible(site):
+    """The ledger is append-only and the site says so. A fact a later one replaced
+    must still appear on the page, marked, rather than silently disappearing."""
+    ledger = build_site.load_ledger()
+    for slug, facts in ledger.items():
+        superseded = [f for f in facts if f.get("superseded_by")]
+        if not superseded:
+            continue
+        html = (site / "company" / f"{slug}.html").read_text()
+        for f in superseded:
+            assert f'id="f-{f["id"]}"' in html, f'{slug}: superseded fact {f["id"]} is not shown'
+            assert f'superseded by <a href="#f-{f["superseded_by"]}">' in html, (
+                f'{slug}: {f["id"]} is not marked as superseded'
+            )

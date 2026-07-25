@@ -203,7 +203,12 @@ def ver_badge(v: dict) -> str:
     return '<span class="badge no" title="Not yet confirmed against its source; shown but not scored">unverified</span>'
 
 
-def scored_badge(f: dict) -> str:
+def scored_badge(f: dict, labels: dict | None = None) -> str:
+    if f.get("superseded_by"):
+        sid = f["superseded_by"]
+        label = (labels or {}).get(sid, sid[-3:])
+        return (f'<span class="badge off" title="A later fact replaced this one; it no longer '
+                f'scores">superseded by <a href="#f-{esc(sid)}">{esc(label)}</a></span>')
     reason = why_not_scored(f)
     if not reason:
         return ""
@@ -503,7 +508,11 @@ def stat_tiles(slug, facts):
     owned_uc = s("power_capacity_mw", {"under_construction"})
     owned_sites = len({f["site"] for f in live if f["metric"] == "owned_facility" and f["status"] in ("under_construction", "operational")})
     silicon = any(f["metric"] == "custom_silicon" for f in live)
-    fleet = max([f["value"] for f in live if f["metric"] == "gpu_count" and isinstance(f["value"], (int, float))], default=0)
+    # Summed, not max: the scoring engine sums gpu_count, and a tile that used a
+    # different aggregation would print a different fleet size to the breakdown
+    # a screen below it.
+    fleet = sum(f["value"] for f in live if f["metric"] == "gpu_count"
+                and isinstance(f["value"], (int, float)) and not isinstance(f["value"], bool))
     capex = s("capex_announced_usd", {"announced", "contracted", "under_construction", "operational", "n/a"})
     partner = sum(f["value"] for f in live if f["metric"] == "cloud_partnership" and f["unit"] == "MW"
                   and isinstance(f["value"], (int, float)) and not isinstance(f["value"], bool))
@@ -643,16 +652,19 @@ def build_company(c, facts, asof, rank, total):
             f'<span class="muted">at <span class="mono">{esc(f["site"])}</span>, '
             f'as of {esc(f["as_of_date"])}</span></div>'
             f'<blockquote>{esc(f["excerpt"])}</blockquote>'
-            f'<div class="fmeta">{tier_badge(t)}{ver_badge(f["verification"])}{jc_badge(f)}{scored_badge(f)}'
+            f'<div class="fmeta">{tier_badge(t)}{ver_badge(f["verification"])}{jc_badge(f)}'
+            f'{scored_badge(f, pill_labels)}'
             f'<span class="muted">{esc(src["publisher"])}, {esc(src["date_published"])}</span> &middot; '
             f'<a href="{esc(src["url"])}">source</a>{arch} '
             f'<a class="mono small permalink" href="#f-{esc(f["id"])}" '
             f'title="Permalink to this fact">{esc(f["id"])}</a></div>{notes}</article>'
         )
 
+    # Superseded facts are shown too. Nothing is ever deleted from the ledger, so
+    # hiding them here would misrepresent it — they are marked and do not score.
     ev = []
     for metric in ALL_METRICS:
-        group = sorted([f for f in live if f["metric"] == metric], key=lambda f: (f["site"], f["as_of_date"]))
+        group = sorted([f for f in facts if f["metric"] == metric], key=lambda f: (f["site"], f["as_of_date"]))
         if not group:
             continue
         ev.append(f'<h3 class="evgroup">{esc(METRIC_LABEL[metric])} '
@@ -663,7 +675,7 @@ def build_company(c, facts, asof, rank, total):
     missing_metrics = [METRIC_LABEL[m] for m in ALL_METRICS if m not in present]
     nd = NOT_DISCLOSED_ALWAYS + missing_metrics
     scored_n = c["eligible_fact_count"]
-    unscored_n = len(live) - sum(1 for f in live if scores(f))
+    unscored_n = len(facts) - sum(1 for f in facts if scores(f))
 
     jc_facts = [f for f in live if is_judgment_call(f)]
     jc_callout = ""
@@ -715,8 +727,9 @@ what we found and links to the evidence behind it.</p>
 {fac_html}
 
 <h2>Evidence</h2>
-<p class="muted section-sub">All {len(live)} facts on record for {esc(name)}, grouped by what they
-measure. Facts that fall outside the scoring rules are shown for transparency and marked.</p>
+<p class="muted section-sub">All {len(facts)} facts on record for {esc(name)}, grouped by what they
+measure. Nothing is ever removed from the ledger: facts that a later one replaced, or that fall
+outside the scoring rules, stay here and are marked.</p>
 {LEGEND}
 {''.join(ev)}
 
