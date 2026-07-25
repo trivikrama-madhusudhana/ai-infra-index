@@ -110,6 +110,26 @@ Flagged for a human, deliberately not acted on:
   carries a prose value that aggregates to zero. The 16 score-bearing confirmations from the other
   batches were independently re-verified in isolated fetches and all 16 held.
 
+Site fixes shipped alongside this cycle:
+
+- **Every evidence link on a company page was broken.** The score breakdown wrote its links as
+  `company/<lab>.html#f-...`, which is correct from the home page and 404s from inside
+  `docs/company/`. The facts sit on the same page, so those links are now bare `#f-...` fragments.
+  The "all labs" breadcrumb had the same bug and now points at `../index.html`. A new test
+  (`tests/test_site_links.py`) walks the generated HTML and fails CI if any internal link or
+  fragment does not resolve.
+- **The summary tiles could contradict the score below them.** "At a glance" counted any verified
+  fact, while the score also requires a Tier A or B source, so OpenAI showed "designs its own
+  chips: yes" above a silicon component scoring zero on two Tier C sources. The tiles now apply
+  the scoring engine's own eligibility rule, and a test asserts the two agree.
+- Changelog list items whose text wrapped onto a second line were being split out of the list as
+  stray paragraphs; the markdown renderer now folds continuation lines back into the item.
+- Readability: labs are named the way they name themselves rather than by ledger slug, capital is
+  shown as `$900B` with the exact figure on hover, the exact scoring expression sits behind a
+  toggle instead of running under every row, facilities read as a status/metric/value/date grid
+  instead of one long arrow chain, evidence is grouped by what it measures and facts outside the
+  scoring rules are marked, and a linked fact highlights when you land on it.
+
 ## 2026-07-20: Baseline
 
 First pass at all eight labs. Eight research agents pulled the documented record from public
